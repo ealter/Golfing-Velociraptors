@@ -1,0 +1,1350 @@
+given required-rot90-bm/rand10x10-3 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-3 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-bm/rand10x10-3 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-bm/rand10x10-3 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-bm/rand10x10-3 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-bm/rand10x10-3 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-bm/rand10x10-3 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-bm/rand10x10-3 test  1, 3e4643b68276c5738612c7b13bbe96b7 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-3 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-bm/rand10x10-3 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-3 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-bm/rand10x10-3 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-bm/rand10x10-3 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-bm/rand10x10-3 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-bm/rand10x10-3 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-3 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- unexpected output on stderr; test program found unequal images
+given required-rot90-bm/rand10x10-3 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-bm/rand10x10-3 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-bm/rand10x10-3 test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-3 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-3 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-bm/rand10x10-3 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-3 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-bm/rand10x10-3 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-bm/rand10x10-3 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-bm/animals test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/animals test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-bm/animals test  1, e396a0a1c736d794bc49f6c93f73905a failed -- test program found unequal images
+given required-rot90-bm/animals test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-bm/animals test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-bm/animals test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-bm/animals test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-bm/animals test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-bm/animals test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-bm/animals test  1, 84718569e8a254cba2f38cdfd008865e passed
+given required-rot90-bm/animals test  1, 2264dc44efa743ca8b287d271d42f45b failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/animals test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-bm/animals test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-bm/animals test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-bm/animals test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-bm/animals test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/animals test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-bm/animals test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-bm/animals test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/animals test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-bm/animals test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-bm/animals test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-bm/animals test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-bm/animals test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-bm/animals test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-cm/rand10x10-2 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-cm/rand10x10-2 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-cm/rand10x10-2 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-cm/rand10x10-2 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-cm/rand10x10-2 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-cm/rand10x10-2 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-cm/rand10x10-2 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-cm/rand10x10-2 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-cm/rand10x10-2 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-cm/rand10x10-2 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand10x10-2 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-cm/rand10x10-2 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-cm/rand10x10-2 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-cm/rand10x10-2 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-cm/rand10x10-2 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-cm/rand10x10-2 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand10x10-2 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-cm/rand10x10-2 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-cm/rand10x10-2 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot180-cm/rand10x10-2 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-cm/rand10x10-2 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-cm/rand10x10-2 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-cm/rand10x10-2 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-cm/rand10x10-2 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-cm/rand10x10-2 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-bm/rand172x148 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand172x148 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-bm/rand172x148 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-bm/rand172x148 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-bm/rand172x148 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-bm/rand172x148 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-bm/rand172x148 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-bm/rand172x148 test  1, 3e4643b68276c5738612c7b13bbe96b7 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand172x148 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-bm/rand172x148 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand172x148 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-bm/rand172x148 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-bm/rand172x148 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-bm/rand172x148 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-bm/rand172x148 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand172x148 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand172x148 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-bm/rand172x148 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-bm/rand172x148 test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand172x148 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-bm/rand172x148 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-bm/rand172x148 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand172x148 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-bm/rand172x148 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-bm/rand172x148 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-cm/rand169x153 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-cm/rand169x153 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-cm/rand169x153 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-cm/rand169x153 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-cm/rand169x153 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-cm/rand169x153 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-cm/rand169x153 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-cm/rand169x153 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-cm/rand169x153 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-cm/rand169x153 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand169x153 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-cm/rand169x153 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-cm/rand169x153 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-cm/rand169x153 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-cm/rand169x153 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-cm/rand169x153 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand169x153 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-cm/rand169x153 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-cm/rand169x153 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot90-cm/rand169x153 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-cm/rand169x153 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-cm/rand169x153 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-cm/rand169x153 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-cm/rand169x153 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-cm/rand169x153 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-cm/rand105x104 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-cm/rand105x104 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-cm/rand105x104 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-cm/rand105x104 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-cm/rand105x104 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-cm/rand105x104 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-cm/rand105x104 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-cm/rand105x104 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-cm/rand105x104 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-cm/rand105x104 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand105x104 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-cm/rand105x104 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-cm/rand105x104 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-cm/rand105x104 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-cm/rand105x104 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-cm/rand105x104 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand105x104 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-cm/rand105x104 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-cm/rand105x104 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot180-cm/rand105x104 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-cm/rand105x104 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-cm/rand105x104 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-cm/rand105x104 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-cm/rand105x104 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-cm/rand105x104 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-rm/rand10x10-4 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-rm/rand10x10-4 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-rm/rand10x10-4 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-rm/rand10x10-4 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-rm/rand10x10-4 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-rm/rand10x10-4 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-rm/rand10x10-4 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-rm/rand10x10-4 test  1, 3e4643b68276c5738612c7b13bbe96b7 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand10x10-4 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-rm/rand10x10-4 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand10x10-4 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-rm/rand10x10-4 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-rm/rand10x10-4 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-rm/rand10x10-4 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-rm/rand10x10-4 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-rm/rand10x10-4 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- unexpected output on stderr
+given required-rot90-rm/rand10x10-4 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-rm/rand10x10-4 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-rm/rand10x10-4 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot90-rm/rand10x10-4 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-rm/rand10x10-4 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-rm/rand10x10-4 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-rm/rand10x10-4 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-rm/rand10x10-4 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-rm/rand10x10-4 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-bm/rand10x10-2 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-2 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-bm/rand10x10-2 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-bm/rand10x10-2 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-bm/rand10x10-2 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-bm/rand10x10-2 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-bm/rand10x10-2 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-bm/rand10x10-2 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-bm/rand10x10-2 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-bm/rand10x10-2 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-2 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-bm/rand10x10-2 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-bm/rand10x10-2 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-bm/rand10x10-2 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-bm/rand10x10-2 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-bm/rand10x10-2 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- unexpected output on stderr; test program found unequal images
+given required-rot90-bm/rand10x10-2 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-bm/rand10x10-2 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-bm/rand10x10-2 test  1, bc362667e9ef822c4db349776a87e282 failed -- test program found unequal images
+given required-rot90-bm/rand10x10-2 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-2 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-bm/rand10x10-2 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images
+given required-rot90-bm/rand10x10-2 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-bm/rand10x10-2 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-bm/rand10x10-2 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-rm/rand112x165 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-rm/rand112x165 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-rm/rand112x165 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-rm/rand112x165 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-rm/rand112x165 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-rm/rand112x165 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-rm/rand112x165 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-rm/rand112x165 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-rm/rand112x165 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-rm/rand112x165 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand112x165 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-rm/rand112x165 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-rm/rand112x165 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-rm/rand112x165 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-rm/rand112x165 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-rm/rand112x165 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- unexpected output on stderr; test program found unequal images
+given required-rot90-rm/rand112x165 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-rm/rand112x165 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-rm/rand112x165 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot90-rm/rand112x165 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-rm/rand112x165 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-rm/rand112x165 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-rm/rand112x165 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-rm/rand112x165 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-rm/rand112x165 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-cm/rand112x165 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-cm/rand112x165 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-cm/rand112x165 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-cm/rand112x165 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-cm/rand112x165 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-cm/rand112x165 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-cm/rand112x165 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-cm/rand112x165 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-cm/rand112x165 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-cm/rand112x165 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand112x165 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-cm/rand112x165 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-cm/rand112x165 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-cm/rand112x165 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-cm/rand112x165 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-cm/rand112x165 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- unexpected output on stderr; test program found unequal images
+given required-rot90-cm/rand112x165 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-cm/rand112x165 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-cm/rand112x165 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot90-cm/rand112x165 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-cm/rand112x165 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-cm/rand112x165 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-cm/rand112x165 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-cm/rand112x165 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-cm/rand112x165 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-rm/rand105x104 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-rm/rand105x104 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-rm/rand105x104 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-rm/rand105x104 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-rm/rand105x104 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-rm/rand105x104 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-rm/rand105x104 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-rm/rand105x104 test  1, 3e4643b68276c5738612c7b13bbe96b7 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand105x104 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-rm/rand105x104 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand105x104 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-rm/rand105x104 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-rm/rand105x104 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-rm/rand105x104 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-rm/rand105x104 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-rm/rand105x104 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand105x104 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-rm/rand105x104 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-rm/rand105x104 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot90-rm/rand105x104 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-rm/rand105x104 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-rm/rand105x104 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-rm/rand105x104 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-rm/rand105x104 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-rm/rand105x104 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-rm/rand169x153 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-rm/rand169x153 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-rm/rand169x153 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-rm/rand169x153 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-rm/rand169x153 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-rm/rand169x153 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-rm/rand169x153 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-rm/rand169x153 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-rm/rand169x153 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-rm/rand169x153 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand169x153 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-rm/rand169x153 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-rm/rand169x153 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-rm/rand169x153 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-rm/rand169x153 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-rm/rand169x153 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand169x153 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-rm/rand169x153 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-rm/rand169x153 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot180-rm/rand169x153 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-rm/rand169x153 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-rm/rand169x153 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-rm/rand169x153 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-rm/rand169x153 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-rm/rand169x153 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-cm/rand105x104 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-cm/rand105x104 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-cm/rand105x104 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-cm/rand105x104 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-cm/rand105x104 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-cm/rand105x104 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-cm/rand105x104 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-cm/rand105x104 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-cm/rand105x104 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-cm/rand105x104 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand105x104 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-cm/rand105x104 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-cm/rand105x104 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-cm/rand105x104 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-cm/rand105x104 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-cm/rand105x104 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand105x104 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-cm/rand105x104 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-cm/rand105x104 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot90-cm/rand105x104 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-cm/rand105x104 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-cm/rand105x104 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-cm/rand105x104 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-cm/rand105x104 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-cm/rand105x104 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-cm/animals test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-cm/animals test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-cm/animals test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-cm/animals test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-cm/animals test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-cm/animals test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-cm/animals test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-cm/animals test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-cm/animals test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-cm/animals test  1, 84718569e8a254cba2f38cdfd008865e passed
+given required-rot90-cm/animals test  1, 2264dc44efa743ca8b287d271d42f45b failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/animals test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-cm/animals test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-cm/animals test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-cm/animals test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-cm/animals test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/animals test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-cm/animals test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-cm/animals test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot90-cm/animals test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-cm/animals test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-cm/animals test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-cm/animals test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-cm/animals test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-cm/animals test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-bm/rand10x10-1 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-1 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-bm/rand10x10-1 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-bm/rand10x10-1 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-bm/rand10x10-1 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-bm/rand10x10-1 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-bm/rand10x10-1 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-bm/rand10x10-1 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-bm/rand10x10-1 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-bm/rand10x10-1 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-1 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-bm/rand10x10-1 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-bm/rand10x10-1 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-bm/rand10x10-1 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-bm/rand10x10-1 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-bm/rand10x10-1 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- unexpected output on stderr; test program found unequal images
+given required-rot90-bm/rand10x10-1 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-bm/rand10x10-1 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-bm/rand10x10-1 test  1, bc362667e9ef822c4db349776a87e282 failed -- test program found unequal images
+given required-rot90-bm/rand10x10-1 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-1 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-bm/rand10x10-1 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images
+given required-rot90-bm/rand10x10-1 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-bm/rand10x10-1 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-bm/rand10x10-1 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-cm/rand10x10-3 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-cm/rand10x10-3 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-cm/rand10x10-3 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-cm/rand10x10-3 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-cm/rand10x10-3 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-cm/rand10x10-3 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-cm/rand10x10-3 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-cm/rand10x10-3 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-cm/rand10x10-3 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-cm/rand10x10-3 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand10x10-3 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-cm/rand10x10-3 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-cm/rand10x10-3 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-cm/rand10x10-3 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-cm/rand10x10-3 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand10x10-3 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- unexpected output on stderr
+given required-rot90-cm/rand10x10-3 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-cm/rand10x10-3 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-cm/rand10x10-3 test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand10x10-3 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-cm/rand10x10-3 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-cm/rand10x10-3 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand10x10-3 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-cm/rand10x10-3 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-cm/rand10x10-3 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-rm/rand172x148 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-rm/rand172x148 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-rm/rand172x148 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-rm/rand172x148 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-rm/rand172x148 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-rm/rand172x148 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-rm/rand172x148 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-rm/rand172x148 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-rm/rand172x148 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-rm/rand172x148 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand172x148 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-rm/rand172x148 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-rm/rand172x148 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-rm/rand172x148 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-rm/rand172x148 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand172x148 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand172x148 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-rm/rand172x148 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-rm/rand172x148 test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand172x148 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-rm/rand172x148 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-rm/rand172x148 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand172x148 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-rm/rand172x148 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-rm/rand172x148 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-cm/rand10x10-1 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-cm/rand10x10-1 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-cm/rand10x10-1 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-cm/rand10x10-1 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-cm/rand10x10-1 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-cm/rand10x10-1 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-cm/rand10x10-1 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-cm/rand10x10-1 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-cm/rand10x10-1 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-cm/rand10x10-1 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand10x10-1 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-cm/rand10x10-1 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-cm/rand10x10-1 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-cm/rand10x10-1 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-cm/rand10x10-1 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-cm/rand10x10-1 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand10x10-1 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-cm/rand10x10-1 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-cm/rand10x10-1 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot180-cm/rand10x10-1 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-cm/rand10x10-1 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-cm/rand10x10-1 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-cm/rand10x10-1 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-cm/rand10x10-1 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-cm/rand10x10-1 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-rm/rand169x153 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-rm/rand169x153 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-rm/rand169x153 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-rm/rand169x153 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-rm/rand169x153 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-rm/rand169x153 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-rm/rand169x153 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-rm/rand169x153 test  1, 3e4643b68276c5738612c7b13bbe96b7 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand169x153 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-rm/rand169x153 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand169x153 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-rm/rand169x153 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-rm/rand169x153 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-rm/rand169x153 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-rm/rand169x153 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-rm/rand169x153 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand169x153 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-rm/rand169x153 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-rm/rand169x153 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot90-rm/rand169x153 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-rm/rand169x153 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-rm/rand169x153 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-rm/rand169x153 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-rm/rand169x153 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-rm/rand169x153 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-bm/rand10x10-4 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-4 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-bm/rand10x10-4 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-bm/rand10x10-4 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-bm/rand10x10-4 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-bm/rand10x10-4 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-bm/rand10x10-4 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-bm/rand10x10-4 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-bm/rand10x10-4 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-bm/rand10x10-4 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-4 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-bm/rand10x10-4 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-bm/rand10x10-4 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-bm/rand10x10-4 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-bm/rand10x10-4 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-bm/rand10x10-4 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- unexpected output on stderr; test program found unequal images
+given required-rot90-bm/rand10x10-4 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-bm/rand10x10-4 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-bm/rand10x10-4 test  1, bc362667e9ef822c4db349776a87e282 failed -- test program found unequal images
+given required-rot90-bm/rand10x10-4 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand10x10-4 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-bm/rand10x10-4 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images
+given required-rot90-bm/rand10x10-4 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-bm/rand10x10-4 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-bm/rand10x10-4 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-rm/rand172x148 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-rm/rand172x148 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-rm/rand172x148 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-rm/rand172x148 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-rm/rand172x148 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-rm/rand172x148 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-rm/rand172x148 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-rm/rand172x148 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-rm/rand172x148 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-rm/rand172x148 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand172x148 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-rm/rand172x148 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-rm/rand172x148 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-rm/rand172x148 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-rm/rand172x148 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand172x148 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand172x148 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-rm/rand172x148 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-rm/rand172x148 test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand172x148 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-rm/rand172x148 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-rm/rand172x148 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand172x148 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-rm/rand172x148 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-rm/rand172x148 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-rm/rand10x10-1 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-rm/rand10x10-1 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-rm/rand10x10-1 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-rm/rand10x10-1 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-rm/rand10x10-1 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-rm/rand10x10-1 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-rm/rand10x10-1 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-rm/rand10x10-1 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-rm/rand10x10-1 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-rm/rand10x10-1 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand10x10-1 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-rm/rand10x10-1 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-rm/rand10x10-1 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-rm/rand10x10-1 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-rm/rand10x10-1 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-rm/rand10x10-1 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand10x10-1 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-rm/rand10x10-1 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-rm/rand10x10-1 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot180-rm/rand10x10-1 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-rm/rand10x10-1 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-rm/rand10x10-1 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-rm/rand10x10-1 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-rm/rand10x10-1 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-rm/rand10x10-1 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-bm/rand172x148 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand172x148 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-bm/rand172x148 test  1, e396a0a1c736d794bc49f6c93f73905a failed -- test program found unequal images
+given required-rot90-bm/rand172x148 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-bm/rand172x148 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-bm/rand172x148 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-bm/rand172x148 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-bm/rand172x148 test  1, 3e4643b68276c5738612c7b13bbe96b7 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand172x148 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-bm/rand172x148 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand172x148 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-bm/rand172x148 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-bm/rand172x148 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-bm/rand172x148 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-bm/rand172x148 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand172x148 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand172x148 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-bm/rand172x148 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-bm/rand172x148 test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand172x148 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-bm/rand172x148 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-bm/rand172x148 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand172x148 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-bm/rand172x148 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-bm/rand172x148 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-bm/rand112x165 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand112x165 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-bm/rand112x165 test  1, e396a0a1c736d794bc49f6c93f73905a failed -- test program found unequal images
+given required-rot90-bm/rand112x165 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-bm/rand112x165 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-bm/rand112x165 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-bm/rand112x165 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-bm/rand112x165 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-bm/rand112x165 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-bm/rand112x165 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand112x165 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-bm/rand112x165 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-bm/rand112x165 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-bm/rand112x165 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-bm/rand112x165 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-bm/rand112x165 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand112x165 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-bm/rand112x165 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-bm/rand112x165 test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand112x165 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-bm/rand112x165 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-bm/rand112x165 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-bm/rand112x165 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-bm/rand112x165 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-bm/rand112x165 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-rm/rand10x10-2 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-rm/rand10x10-2 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-rm/rand10x10-2 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-rm/rand10x10-2 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-rm/rand10x10-2 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-rm/rand10x10-2 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-rm/rand10x10-2 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-rm/rand10x10-2 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-rm/rand10x10-2 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-rm/rand10x10-2 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand10x10-2 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-rm/rand10x10-2 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-rm/rand10x10-2 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-rm/rand10x10-2 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-rm/rand10x10-2 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-rm/rand10x10-2 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand10x10-2 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-rm/rand10x10-2 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-rm/rand10x10-2 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot180-rm/rand10x10-2 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-rm/rand10x10-2 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-rm/rand10x10-2 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-rm/rand10x10-2 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-rm/rand10x10-2 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-rm/rand10x10-2 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-cm/rand10x10-3 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-cm/rand10x10-3 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-cm/rand10x10-3 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-cm/rand10x10-3 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-cm/rand10x10-3 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-cm/rand10x10-3 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-cm/rand10x10-3 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-cm/rand10x10-3 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-cm/rand10x10-3 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-cm/rand10x10-3 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand10x10-3 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-cm/rand10x10-3 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-cm/rand10x10-3 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-cm/rand10x10-3 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-cm/rand10x10-3 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand10x10-3 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand10x10-3 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-cm/rand10x10-3 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-cm/rand10x10-3 test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand10x10-3 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-cm/rand10x10-3 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-cm/rand10x10-3 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand10x10-3 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-cm/rand10x10-3 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-cm/rand10x10-3 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-cm/rand10x10-1 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-cm/rand10x10-1 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-cm/rand10x10-1 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-cm/rand10x10-1 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-cm/rand10x10-1 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-cm/rand10x10-1 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-cm/rand10x10-1 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-cm/rand10x10-1 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-cm/rand10x10-1 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-cm/rand10x10-1 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand10x10-1 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-cm/rand10x10-1 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-cm/rand10x10-1 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-cm/rand10x10-1 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-cm/rand10x10-1 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-cm/rand10x10-1 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- unexpected output on stderr
+given required-rot90-cm/rand10x10-1 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-cm/rand10x10-1 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-cm/rand10x10-1 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot90-cm/rand10x10-1 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-cm/rand10x10-1 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-cm/rand10x10-1 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-cm/rand10x10-1 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-cm/rand10x10-1 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-cm/rand10x10-1 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-rm/rand10x10-4 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-rm/rand10x10-4 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-rm/rand10x10-4 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-rm/rand10x10-4 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-rm/rand10x10-4 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-rm/rand10x10-4 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-rm/rand10x10-4 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-rm/rand10x10-4 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-rm/rand10x10-4 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-rm/rand10x10-4 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand10x10-4 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-rm/rand10x10-4 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-rm/rand10x10-4 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-rm/rand10x10-4 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-rm/rand10x10-4 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-rm/rand10x10-4 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand10x10-4 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-rm/rand10x10-4 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-rm/rand10x10-4 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot180-rm/rand10x10-4 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-rm/rand10x10-4 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-rm/rand10x10-4 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-rm/rand10x10-4 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-rm/rand10x10-4 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-rm/rand10x10-4 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-rm/animals test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-rm/animals test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-rm/animals test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-rm/animals test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-rm/animals test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-rm/animals test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-rm/animals test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-rm/animals test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-rm/animals test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-rm/animals test  1, 84718569e8a254cba2f38cdfd008865e passed
+given required-rot180-rm/animals test  1, 2264dc44efa743ca8b287d271d42f45b failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/animals test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-rm/animals test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-rm/animals test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-rm/animals test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-rm/animals test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/animals test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-rm/animals test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-rm/animals test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot180-rm/animals test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-rm/animals test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-rm/animals test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-rm/animals test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-rm/animals test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-rm/animals test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-bm/rand112x165 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand112x165 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-bm/rand112x165 test  1, e396a0a1c736d794bc49f6c93f73905a failed -- test program found unequal images
+given required-rot180-bm/rand112x165 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-bm/rand112x165 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-bm/rand112x165 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-bm/rand112x165 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-bm/rand112x165 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-bm/rand112x165 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-bm/rand112x165 test  1, 84718569e8a254cba2f38cdfd008865e passed
+given required-rot180-bm/rand112x165 test  1, 2264dc44efa743ca8b287d271d42f45b failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand112x165 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-bm/rand112x165 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-bm/rand112x165 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-bm/rand112x165 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-bm/rand112x165 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand112x165 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-bm/rand112x165 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-bm/rand112x165 test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand112x165 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-bm/rand112x165 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-bm/rand112x165 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-bm/rand112x165 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-bm/rand112x165 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-bm/rand112x165 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-cm/rand112x165 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-cm/rand112x165 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-cm/rand112x165 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-cm/rand112x165 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-cm/rand112x165 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-cm/rand112x165 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-cm/rand112x165 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-cm/rand112x165 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-cm/rand112x165 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-cm/rand112x165 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand112x165 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-cm/rand112x165 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-cm/rand112x165 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-cm/rand112x165 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-cm/rand112x165 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-cm/rand112x165 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand112x165 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-cm/rand112x165 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-cm/rand112x165 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot180-cm/rand112x165 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-cm/rand112x165 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-cm/rand112x165 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-cm/rand112x165 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-cm/rand112x165 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-cm/rand112x165 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-rm/rand112x165 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-rm/rand112x165 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-rm/rand112x165 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-rm/rand112x165 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-rm/rand112x165 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-rm/rand112x165 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-rm/rand112x165 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-rm/rand112x165 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-rm/rand112x165 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-rm/rand112x165 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand112x165 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-rm/rand112x165 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-rm/rand112x165 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-rm/rand112x165 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-rm/rand112x165 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-rm/rand112x165 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand112x165 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-rm/rand112x165 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-rm/rand112x165 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot180-rm/rand112x165 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-rm/rand112x165 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-rm/rand112x165 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-rm/rand112x165 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-rm/rand112x165 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-rm/rand112x165 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-rm/rand10x10-2 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-rm/rand10x10-2 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-rm/rand10x10-2 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-rm/rand10x10-2 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-rm/rand10x10-2 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-rm/rand10x10-2 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-rm/rand10x10-2 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-rm/rand10x10-2 test  1, 3e4643b68276c5738612c7b13bbe96b7 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand10x10-2 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-rm/rand10x10-2 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand10x10-2 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-rm/rand10x10-2 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-rm/rand10x10-2 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-rm/rand10x10-2 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-rm/rand10x10-2 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-rm/rand10x10-2 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- unexpected output on stderr
+given required-rot90-rm/rand10x10-2 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-rm/rand10x10-2 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-rm/rand10x10-2 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot90-rm/rand10x10-2 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-rm/rand10x10-2 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-rm/rand10x10-2 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-rm/rand10x10-2 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-rm/rand10x10-2 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-rm/rand10x10-2 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-bm/rand169x153 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand169x153 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-bm/rand169x153 test  1, e396a0a1c736d794bc49f6c93f73905a failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand169x153 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-bm/rand169x153 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-bm/rand169x153 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-bm/rand169x153 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-bm/rand169x153 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-bm/rand169x153 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-bm/rand169x153 test  1, 84718569e8a254cba2f38cdfd008865e passed
+given required-rot90-bm/rand169x153 test  1, 2264dc44efa743ca8b287d271d42f45b failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand169x153 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-bm/rand169x153 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-bm/rand169x153 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-bm/rand169x153 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-bm/rand169x153 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand169x153 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-bm/rand169x153 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-bm/rand169x153 test  1, bc362667e9ef822c4db349776a87e282 failed -- test program found unequal images
+given required-rot90-bm/rand169x153 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-bm/rand169x153 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-bm/rand169x153 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-bm/rand169x153 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-bm/rand169x153 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-bm/rand169x153 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-rm/rand105x104 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-rm/rand105x104 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-rm/rand105x104 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-rm/rand105x104 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-rm/rand105x104 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-rm/rand105x104 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-rm/rand105x104 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-rm/rand105x104 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-rm/rand105x104 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-rm/rand105x104 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand105x104 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-rm/rand105x104 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-rm/rand105x104 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-rm/rand105x104 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-rm/rand105x104 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-rm/rand105x104 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand105x104 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-rm/rand105x104 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-rm/rand105x104 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot180-rm/rand105x104 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-rm/rand105x104 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-rm/rand105x104 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-rm/rand105x104 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-rm/rand105x104 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-rm/rand105x104 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-cm/rand169x153 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-cm/rand169x153 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-cm/rand169x153 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-cm/rand169x153 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-cm/rand169x153 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-cm/rand169x153 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-cm/rand169x153 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-cm/rand169x153 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-cm/rand169x153 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-cm/rand169x153 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand169x153 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-cm/rand169x153 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-cm/rand169x153 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-cm/rand169x153 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-cm/rand169x153 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-cm/rand169x153 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand169x153 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-cm/rand169x153 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-cm/rand169x153 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot180-cm/rand169x153 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-cm/rand169x153 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-cm/rand169x153 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-cm/rand169x153 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-cm/rand169x153 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-cm/rand169x153 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-cm/rand10x10-4 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-cm/rand10x10-4 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-cm/rand10x10-4 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-cm/rand10x10-4 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-cm/rand10x10-4 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-cm/rand10x10-4 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-cm/rand10x10-4 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-cm/rand10x10-4 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-cm/rand10x10-4 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-cm/rand10x10-4 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand10x10-4 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-cm/rand10x10-4 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-cm/rand10x10-4 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-cm/rand10x10-4 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-cm/rand10x10-4 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-cm/rand10x10-4 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- unexpected output on stderr
+given required-rot90-cm/rand10x10-4 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-cm/rand10x10-4 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-cm/rand10x10-4 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot90-cm/rand10x10-4 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-cm/rand10x10-4 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-cm/rand10x10-4 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-cm/rand10x10-4 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-cm/rand10x10-4 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-cm/rand10x10-4 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-rm/animals test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-rm/animals test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-rm/animals test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-rm/animals test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-rm/animals test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-rm/animals test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-rm/animals test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-rm/animals test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-rm/animals test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-rm/animals test  1, 84718569e8a254cba2f38cdfd008865e passed
+given required-rot90-rm/animals test  1, 2264dc44efa743ca8b287d271d42f45b failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/animals test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-rm/animals test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-rm/animals test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-rm/animals test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-rm/animals test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/animals test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-rm/animals test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-rm/animals test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot90-rm/animals test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-rm/animals test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-rm/animals test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-rm/animals test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-rm/animals test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-rm/animals test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-bm/rand169x153 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand169x153 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-bm/rand169x153 test  1, e396a0a1c736d794bc49f6c93f73905a failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand169x153 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-bm/rand169x153 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-bm/rand169x153 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-bm/rand169x153 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-bm/rand169x153 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-bm/rand169x153 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-bm/rand169x153 test  1, 84718569e8a254cba2f38cdfd008865e passed
+given required-rot180-bm/rand169x153 test  1, 2264dc44efa743ca8b287d271d42f45b failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand169x153 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-bm/rand169x153 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-bm/rand169x153 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-bm/rand169x153 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-bm/rand169x153 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand169x153 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-bm/rand169x153 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-bm/rand169x153 test  1, bc362667e9ef822c4db349776a87e282 failed -- test program found unequal images
+given required-rot180-bm/rand169x153 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-bm/rand169x153 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-bm/rand169x153 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-bm/rand169x153 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-bm/rand169x153 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-bm/rand169x153 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-bm/rand105x104 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand105x104 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-bm/rand105x104 test  1, e396a0a1c736d794bc49f6c93f73905a failed -- test program found unequal images
+given required-rot180-bm/rand105x104 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-bm/rand105x104 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-bm/rand105x104 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-bm/rand105x104 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-bm/rand105x104 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-bm/rand105x104 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-bm/rand105x104 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand105x104 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-bm/rand105x104 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-bm/rand105x104 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-bm/rand105x104 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-bm/rand105x104 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-bm/rand105x104 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand105x104 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-bm/rand105x104 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-bm/rand105x104 test  1, bc362667e9ef822c4db349776a87e282 failed -- test program found unequal images
+given required-rot180-bm/rand105x104 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-bm/rand105x104 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-bm/rand105x104 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-bm/rand105x104 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-bm/rand105x104 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-bm/rand105x104 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-bm/rand10x10-4 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-4 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-bm/rand10x10-4 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-bm/rand10x10-4 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-bm/rand10x10-4 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-bm/rand10x10-4 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-bm/rand10x10-4 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-bm/rand10x10-4 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-bm/rand10x10-4 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-bm/rand10x10-4 test  1, 84718569e8a254cba2f38cdfd008865e passed
+given required-rot180-bm/rand10x10-4 test  1, 2264dc44efa743ca8b287d271d42f45b failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-4 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-bm/rand10x10-4 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-bm/rand10x10-4 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-bm/rand10x10-4 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-bm/rand10x10-4 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-4 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-bm/rand10x10-4 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-bm/rand10x10-4 test  1, bc362667e9ef822c4db349776a87e282 failed -- test program found unequal images
+given required-rot180-bm/rand10x10-4 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-4 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-bm/rand10x10-4 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images
+given required-rot180-bm/rand10x10-4 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-bm/rand10x10-4 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-bm/rand10x10-4 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-cm/rand172x148 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-cm/rand172x148 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-cm/rand172x148 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-cm/rand172x148 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-cm/rand172x148 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-cm/rand172x148 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-cm/rand172x148 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-cm/rand172x148 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-cm/rand172x148 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-cm/rand172x148 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand172x148 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-cm/rand172x148 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-cm/rand172x148 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-cm/rand172x148 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-cm/rand172x148 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand172x148 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand172x148 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-cm/rand172x148 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-cm/rand172x148 test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand172x148 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-cm/rand172x148 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-cm/rand172x148 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand172x148 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-cm/rand172x148 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-cm/rand172x148 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-bm/rand10x10-1 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-1 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-bm/rand10x10-1 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-bm/rand10x10-1 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-bm/rand10x10-1 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-bm/rand10x10-1 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-bm/rand10x10-1 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-bm/rand10x10-1 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-bm/rand10x10-1 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-bm/rand10x10-1 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-1 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-bm/rand10x10-1 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-bm/rand10x10-1 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-bm/rand10x10-1 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-bm/rand10x10-1 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-bm/rand10x10-1 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-1 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-bm/rand10x10-1 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-bm/rand10x10-1 test  1, bc362667e9ef822c4db349776a87e282 failed -- test program found unequal images
+given required-rot180-bm/rand10x10-1 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-1 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-bm/rand10x10-1 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images
+given required-rot180-bm/rand10x10-1 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-bm/rand10x10-1 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-bm/rand10x10-1 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-bm/rand10x10-3 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-3 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-bm/rand10x10-3 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-bm/rand10x10-3 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-bm/rand10x10-3 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-bm/rand10x10-3 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-bm/rand10x10-3 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-bm/rand10x10-3 test  1, 3e4643b68276c5738612c7b13bbe96b7 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-3 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-bm/rand10x10-3 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-3 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-bm/rand10x10-3 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-bm/rand10x10-3 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-bm/rand10x10-3 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-bm/rand10x10-3 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-3 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-3 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-bm/rand10x10-3 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-bm/rand10x10-3 test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-3 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-3 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-bm/rand10x10-3 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-3 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-bm/rand10x10-3 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-bm/rand10x10-3 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-rm/rand10x10-3 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-rm/rand10x10-3 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-rm/rand10x10-3 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-rm/rand10x10-3 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-rm/rand10x10-3 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-rm/rand10x10-3 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-rm/rand10x10-3 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-rm/rand10x10-3 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-rm/rand10x10-3 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-rm/rand10x10-3 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand10x10-3 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-rm/rand10x10-3 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-rm/rand10x10-3 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-rm/rand10x10-3 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-rm/rand10x10-3 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand10x10-3 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand10x10-3 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-rm/rand10x10-3 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-rm/rand10x10-3 test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand10x10-3 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-rm/rand10x10-3 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-rm/rand10x10-3 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-rm/rand10x10-3 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-rm/rand10x10-3 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-rm/rand10x10-3 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-cm/animals test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-cm/animals test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-cm/animals test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-cm/animals test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-cm/animals test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-cm/animals test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-cm/animals test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-cm/animals test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-cm/animals test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-cm/animals test  1, 84718569e8a254cba2f38cdfd008865e passed
+given required-rot180-cm/animals test  1, 2264dc44efa743ca8b287d271d42f45b failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/animals test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-cm/animals test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-cm/animals test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-cm/animals test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-cm/animals test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/animals test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-cm/animals test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-cm/animals test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot180-cm/animals test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-cm/animals test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-cm/animals test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-cm/animals test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-cm/animals test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-cm/animals test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-rm/rand10x10-3 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-rm/rand10x10-3 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-rm/rand10x10-3 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-rm/rand10x10-3 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-rm/rand10x10-3 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-rm/rand10x10-3 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-rm/rand10x10-3 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-rm/rand10x10-3 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-rm/rand10x10-3 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-rm/rand10x10-3 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand10x10-3 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-rm/rand10x10-3 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-rm/rand10x10-3 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-rm/rand10x10-3 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-rm/rand10x10-3 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand10x10-3 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- unexpected output on stderr
+given required-rot90-rm/rand10x10-3 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-rm/rand10x10-3 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-rm/rand10x10-3 test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand10x10-3 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-rm/rand10x10-3 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-rm/rand10x10-3 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand10x10-3 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-rm/rand10x10-3 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-rm/rand10x10-3 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-rm/rand10x10-1 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-rm/rand10x10-1 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-rm/rand10x10-1 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-rm/rand10x10-1 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-rm/rand10x10-1 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-rm/rand10x10-1 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-rm/rand10x10-1 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-rm/rand10x10-1 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-rm/rand10x10-1 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-rm/rand10x10-1 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-rm/rand10x10-1 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-rm/rand10x10-1 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-rm/rand10x10-1 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-rm/rand10x10-1 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-rm/rand10x10-1 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-rm/rand10x10-1 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- unexpected output on stderr
+given required-rot90-rm/rand10x10-1 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-rm/rand10x10-1 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-rm/rand10x10-1 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot90-rm/rand10x10-1 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-rm/rand10x10-1 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-rm/rand10x10-1 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-rm/rand10x10-1 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-rm/rand10x10-1 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-rm/rand10x10-1 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-cm/rand10x10-4 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-cm/rand10x10-4 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-cm/rand10x10-4 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-cm/rand10x10-4 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-cm/rand10x10-4 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-cm/rand10x10-4 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-cm/rand10x10-4 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-cm/rand10x10-4 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-cm/rand10x10-4 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-cm/rand10x10-4 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand10x10-4 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-cm/rand10x10-4 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-cm/rand10x10-4 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-cm/rand10x10-4 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-cm/rand10x10-4 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-cm/rand10x10-4 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand10x10-4 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-cm/rand10x10-4 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-cm/rand10x10-4 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot180-cm/rand10x10-4 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-cm/rand10x10-4 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-cm/rand10x10-4 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-cm/rand10x10-4 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-cm/rand10x10-4 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-cm/rand10x10-4 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-bm/animals test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/animals test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-bm/animals test  1, e396a0a1c736d794bc49f6c93f73905a failed -- test program found unequal images
+given required-rot180-bm/animals test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-bm/animals test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-bm/animals test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-bm/animals test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-bm/animals test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-bm/animals test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-bm/animals test  1, 84718569e8a254cba2f38cdfd008865e passed
+given required-rot180-bm/animals test  1, 2264dc44efa743ca8b287d271d42f45b failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/animals test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-bm/animals test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-bm/animals test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-bm/animals test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-bm/animals test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/animals test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-bm/animals test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-bm/animals test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/animals test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-bm/animals test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-bm/animals test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot180-bm/animals test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-bm/animals test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-bm/animals test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-cm/rand172x148 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot180-cm/rand172x148 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-cm/rand172x148 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-cm/rand172x148 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-cm/rand172x148 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-cm/rand172x148 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-cm/rand172x148 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-cm/rand172x148 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-cm/rand172x148 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-cm/rand172x148 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand172x148 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-cm/rand172x148 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-cm/rand172x148 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-cm/rand172x148 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-cm/rand172x148 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand172x148 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand172x148 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-cm/rand172x148 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-cm/rand172x148 test  1, bc362667e9ef822c4db349776a87e282 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand172x148 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot180-cm/rand172x148 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-cm/rand172x148 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-cm/rand172x148 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-cm/rand172x148 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-cm/rand172x148 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-cm/rand10x10-2 test  1, 943935e8966af2fe90eba0c9d633c2a9 passed
+given required-rot90-cm/rand10x10-2 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-cm/rand10x10-2 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot90-cm/rand10x10-2 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-cm/rand10x10-2 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-cm/rand10x10-2 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-cm/rand10x10-2 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-cm/rand10x10-2 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-cm/rand10x10-2 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-cm/rand10x10-2 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-cm/rand10x10-2 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-cm/rand10x10-2 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-cm/rand10x10-2 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-cm/rand10x10-2 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-cm/rand10x10-2 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-cm/rand10x10-2 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- unexpected output on stderr
+given required-rot90-cm/rand10x10-2 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-cm/rand10x10-2 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-cm/rand10x10-2 test  1, bc362667e9ef822c4db349776a87e282 passed
+given required-rot90-cm/rand10x10-2 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-cm/rand10x10-2 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-cm/rand10x10-2 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-cm/rand10x10-2 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-cm/rand10x10-2 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-cm/rand10x10-2 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot180-bm/rand10x10-2 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-2 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot180-bm/rand10x10-2 test  1, e396a0a1c736d794bc49f6c93f73905a passed
+given required-rot180-bm/rand10x10-2 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot180-bm/rand10x10-2 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot180-bm/rand10x10-2 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot180-bm/rand10x10-2 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot180-bm/rand10x10-2 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot180-bm/rand10x10-2 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot180-bm/rand10x10-2 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-2 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot180-bm/rand10x10-2 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot180-bm/rand10x10-2 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot180-bm/rand10x10-2 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot180-bm/rand10x10-2 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot180-bm/rand10x10-2 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-2 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot180-bm/rand10x10-2 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot180-bm/rand10x10-2 test  1, bc362667e9ef822c4db349776a87e282 failed -- test program found unequal images
+given required-rot180-bm/rand10x10-2 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot180-bm/rand10x10-2 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot180-bm/rand10x10-2 test  1, 2970bd408ff6c215db67d14cb76c7e0d failed -- bad exit code; test program found unequal images
+given required-rot180-bm/rand10x10-2 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot180-bm/rand10x10-2 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot180-bm/rand10x10-2 test  1, a9db5b60cf090a75461852168163b28b passed
+given required-rot90-bm/rand105x104 test  1, 943935e8966af2fe90eba0c9d633c2a9 failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand105x104 test  1, 592672c1242b4289059f947c4995b659 passed
+given required-rot90-bm/rand105x104 test  1, e396a0a1c736d794bc49f6c93f73905a failed -- test program found unequal images
+given required-rot90-bm/rand105x104 test  1, f49ae463d17537e901a99ed2a59406d2 passed
+given required-rot90-bm/rand105x104 test  1, d881d47131ae6a1a962de5e1e643d250 passed
+given required-rot90-bm/rand105x104 test  1, 20f03dc2967eed08d31eb1a7cc9b08c2 passed
+given required-rot90-bm/rand105x104 test  1, 91e97e6f62a85ba100404ad68e2dcb0f passed
+given required-rot90-bm/rand105x104 test  1, 3e4643b68276c5738612c7b13bbe96b7 passed
+given required-rot90-bm/rand105x104 test  1, 426571dfbbe2fb055ae3b9f0d278a0e3 passed
+given required-rot90-bm/rand105x104 test  1, 84718569e8a254cba2f38cdfd008865e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand105x104 test  1, 2264dc44efa743ca8b287d271d42f45b passed
+given required-rot90-bm/rand105x104 test  1, 7cb25a56d6dd076500e48db0c26dd72d passed
+given required-rot90-bm/rand105x104 test  1, 6830180e5c1a482ac1880f81218e6305 passed
+given required-rot90-bm/rand105x104 test  1, 9690e8e3829fe3606ca1c9d581024064 passed
+given required-rot90-bm/rand105x104 test  1, 2dbf797bc78cc2a42de5b1f41ebfcfd6 passed
+given required-rot90-bm/rand105x104 test  1, 81cf7831299987a5fe60ace03bbf351e failed -- bad exit code; test program found unequal images; unexpected output on stderr
+given required-rot90-bm/rand105x104 test  1, 74ac4c6e6bb197884337b618c4d49075 passed
+given required-rot90-bm/rand105x104 test  1, 2adc6766fc72707734e0af53b6269cbc passed
+given required-rot90-bm/rand105x104 test  1, bc362667e9ef822c4db349776a87e282 failed -- test program found unequal images
+given required-rot90-bm/rand105x104 test  1, 4525bb14eb7de1b73cc1e1eeee5780ff passed
+given required-rot90-bm/rand105x104 test  1, 2dd7694e68a9bd5bb343b0bf1dc7b4b1 passed
+given required-rot90-bm/rand105x104 test  1, 2970bd408ff6c215db67d14cb76c7e0d passed
+given required-rot90-bm/rand105x104 test  1, 425f226f2f15ad6da7c21e572f199a97 passed
+given required-rot90-bm/rand105x104 test  1, c3b0f81ce320cefd87d0b7756c3317b9 passed
+given required-rot90-bm/rand105x104 test  1, a9db5b60cf090a75461852168163b28b passed

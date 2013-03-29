@@ -1,0 +1,71 @@
+Visualize test results from student's homework projects
+=======================================================
+
+Data format
+-----------
+There are some sample data here.  Student IDs have been anonymized.
+
+Outcomes are in ASCII format that is intended to be both
+machine-readable and somewhat human-readable.  There is one outcome
+per line.  It is a five-tuple, and the format is
+
+  given <testname> test <number>, <student> <outcome> -- <witness>
+
+The <testname>, <number>, <student>, and <outcome> are guaranteed not
+to contain whitespace.  The <witness> may contain any character except
+newline.
+
+
+If the outcome is 'passed', the double dash and witness are optional.
+
+Here are a few sample cases:
+
+  given merge  test  1, b7ad91 errored -- calling (merge '(0) '(0)) caused a run-time error: integers expected
+  given merge    test  1, e52dca6337ebab084eaab0d3ee51f61f passed -- (merge '(0) '(0)) returned a good result
+  given tshah02-test3 test  1, 1d35208899359440e42d5f7ed249a2a3 failed -- bad exit code; test program found bad pixels; unexpected output on stderr
+  given tshah02-test3 test  1, 2744af0a0041bbb475581bfdeab08442 passed
+
+
+Most of the files contain set of closely related tests and should be
+visualized all at once.  But the `split-me` files contain a bunch of
+unrelated tests that should be segregated by the test name and
+visualized separately.
+
+I've included some .pdf of existing visualizations made with graphviz.
+
+
+Problems and goals
+------------------
+Visualize solutions in some kind of ranking graph.  A fair grading
+scheme is a set of cuts in the graph.
+
+Lay out the visualization so that the *position* (geometry) of
+solutions is meaningful.  (In the existing visualization, only the
+topology---the connectedness of nodes---is meaningful.)
+
+Find a better way to deal with graphs that are too complicated to
+understand.  Better heuristics?
+
+Find a way to understand how edges are related.  When do edges share
+tests?
+
+Find better ways of visualizing the witnesses for failed tests.
+
+What if a single set of outcomes mixes essentially unrelated
+information.  Can this situation be detected heuristically?
+
+Can a good visualization be constructed interactively?  Perhaps by
+adding and removing tests, bringing information into play in response
+to the mouse?
+
+Can we use visualization to find out which tests are important?
+
+There is a dual view of the data that treats tests as nodes and shows
+how tests are related by solutions.  What can we learn from this view?
+Can we figure out what is being tested, perhaps by examining
+witnesses?  
+
+Can a visualization tool support some form of data entry,
+so that when something is learned from a visualization, it can be
+added to the data?
+
