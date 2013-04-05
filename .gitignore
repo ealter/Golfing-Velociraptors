@@ -4,3 +4,7 @@
 *.jar
 *.war
 *.ear
+
+# Temp Files #
+*.*#
+.DS_Store
