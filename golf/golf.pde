@@ -18,46 +18,57 @@ void setup() {
   _graph.addEdge(5, 4, 100);
   _graph.addEdge(6, 5, 100);
   _graph.addEdge(7, 5, 100);
+
+  mouseEvents.subscribe(new MainHandler());
 }
 
 void draw() {
   background(color(0, 0, 0));
   _graph.update();
   _graph.render();
-  
+
   _graph.drawTooltip();
 }
 
-void mousePressed() {
-  if (mouseButton == LEFT) {
-    for (Node n : _graph.getNodes()) {
-      if (n.containsPoint(mouseX, mouseY)) {
-        _moving = n;
-        _x = mouseX;
-        _y = mouseY;
+
+class MainHandler implements MouseEventHandler {
+  public MainHandler() {}
+
+  void mouseEvent_pressed() {
+    if (mouseButton == LEFT) {
+      for (Node n : _graph.getNodes()) {
+        if (n.containsPoint(mouseX, mouseY)) {
+          _moving = n;
+          _x = mouseX;
+          _y = mouseY;
+        }
+      }
+      if (_moving != null) {
+        _graph.setSimulating(true);
+        _moving.setOverriding(true);
       }
     }
+  }
+
+  void mouseEvent_dragged() {
     if (_moving != null) {
       _graph.setSimulating(true);
-      _moving.setOverriding(true);
+      _moving.moveDelta((float)(mouseX - _x), (float)(mouseY - _y));
+      _x = mouseX;
+      _y = mouseY;
     }
   }
-}
 
-void mouseDragged() {
-  if (_moving != null) {
-    _graph.setSimulating(true);
-    _moving.moveDelta((float)(mouseX - _x), (float)(mouseY - _y));
-    _x = mouseX;
-    _y = mouseY;
-  }
-}
-
-void mouseReleased() {
-  if (mouseButton == LEFT) {
-    if (_moving != null) {
-      _moving.setOverriding(false);
-      _moving = null;
+  void mouseEvent_released() {
+    if (mouseButton == LEFT) {
+      if (_moving != null) {
+        _moving.setOverriding(false);
+        _moving = null;
+      }
     }
   }
+
+  void mouseEvent_moved() {}
+  void mouseEvent_clicked() {}
 }
+
