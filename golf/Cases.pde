@@ -1,11 +1,11 @@
-class TestCase {
+class Case {
   public String name;
   public int number;
   public String student;
   public Boolean didPass; //True if the test succeeded
   public String witness;
 
-  public TestCase(String name, int number, String student, Boolean passed,
+  public Case(String name, int number, String student, Boolean passed,
       String witness) {
     this.name = name;
     this.number = number;
@@ -15,3 +15,6 @@ class TestCase {
   }
 }
 
+class Cases {
+  
+}
