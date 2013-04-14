@@ -9,6 +9,7 @@ import javax.swing.Timer;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+import edu.tufts.cs.gv.model.Dataset;
 import edu.tufts.cs.gv.view.GraphView;
 import edu.tufts.cs.gv.view.ResultsView;
 import edu.tufts.cs.gv.view.StudentView;
