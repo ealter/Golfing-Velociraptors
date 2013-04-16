@@ -49,18 +49,26 @@ public class Dataset {
 	}
 	
 	private Set<TestCase> testCases;
+	private Set<String> tests;
+	private Set<String> students;
 	private Map<String, Set<TestCase>> testToTestCases;
 	private Map<String, Set<TestCase>> studentToTestCases;
+	private Map<String, Set<String>> testToPassingStudents;
 	
 	public Dataset() {
 		testCases = new HashSet<>();
+		tests = new HashSet<>();
+		students = new HashSet<>();
 		testToTestCases = new HashMap<>();
 		studentToTestCases = new HashMap<>();
+		testToPassingStudents = new HashMap<>();
 	}
 	
 	public void addTestCase(TestCase testCase) {
 		// Add testCase to set of all TestCases
 		testCases.add(testCase);
+		tests.add(testCase.getName());
+		students.add(testCase.getStudent());
 		
 		// Add testCase to set for all TestCases of test [Name]
 		if (!testToTestCases.containsKey(testCase.getName())) {
@@ -69,12 +77,29 @@ public class Dataset {
 		Set<TestCase> testSet = testToTestCases.get(testCase.getName());
 		testSet.add(testCase);
 		
-		// Add testCase to set for all TestCases 
-		if (!studentToTestCases.containsKey(testCase.getName())) {
-			studentToTestCases.put(testCase.getName(), new HashSet<TestCase>());
+		// Add testCase to set for all TestCases of student [Student]
+		if (!studentToTestCases.containsKey(testCase.getStudent())) {
+			studentToTestCases.put(testCase.getStudent(), new HashSet<TestCase>());
 		}
-		Set<TestCase> studentSet = studentToTestCases.get(testCase.getName());
+		Set<TestCase> studentSet = studentToTestCases.get(testCase.getStudent());
 		studentSet.add(testCase);
+		
+		// Add student to set for all Students who passed test [Name]
+		if (!testToPassingStudents.containsKey(testCase.getName())) {
+			testToPassingStudents.put(testCase.getName(), new HashSet<String>());
+		}
+		Set<String> passingSet = testToPassingStudents.get(testCase.getName());
+		if (testCase.getOutcome()) {
+			passingSet.add(testCase.getStudent());
+		}
+	}
+	
+	public Set<String> getAllTests() {
+		return tests;
+	}
+	
+	public Set<String> getAllStudents() {
+		return students;
 	}
 	
 	public Set<TestCase> getAllTestCases() {
@@ -87,6 +112,14 @@ public class Dataset {
 	
 	public Set<TestCase> getTestCasesForStudent(String student) {
 		return studentToTestCases.get(student);
+	}
+	
+	public Set<String> getPassersOfTest(String test) {
+		return testToPassingStudents.get(test);
+	}
+	
+	public Map<String, Set<String>> getTestToPassersMap() {
+		return testToPassingStudents;
 	}
 	
 	public String toString() {

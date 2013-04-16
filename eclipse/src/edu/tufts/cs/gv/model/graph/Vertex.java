@@ -7,12 +7,16 @@ import java.util.Set;
 public class Vertex {
 	private Set<String> testNames;
 	
-	private Vertex(String testName) {
+	public Vertex(String testName) {
 		testNames = new HashSet<>();
 		testNames.add(testName);
 	}
 	
-	private Vertex(Collection<String> testNames) {
+	public Vertex(Collection<String> testNames) {
 		this.testNames = new HashSet<>(testNames);
+	}
+	
+	public Set<String> getTestNames() {
+		return testNames;
 	}
 }
