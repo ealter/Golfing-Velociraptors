@@ -16,7 +16,7 @@ public class Dataset {
 		BufferedReader in;
 		try {
 			in = new BufferedReader(new FileReader(filename));
-			Pattern pattern = Pattern.compile("given\\s+(\\S+)\\s+test\\s+(\\d+),\\s+(\\w+)\\s+(\\w+)(.*)");
+			Pattern pattern = Pattern.compile("given\\s+(\\S+)\\s+test\\s+(\\d+),\\s+(\\w+)\\s+(\\w+)\\s*(.*)");
 			String line;
 			while ((line = in.readLine()) != null) {
 				Matcher m = pattern.matcher(line);
@@ -28,6 +28,9 @@ public class Dataset {
 					String witness = m.group(5);
 					if(witness.length() == 0) {
 						witness = null;
+					} else {
+						String[] witnessParts = witness.split("-- ");
+						witness = witnessParts[1];
 					}
 					Boolean didPass;
 					if(outcome.equals("passed")) {
