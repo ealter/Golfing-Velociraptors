@@ -10,6 +10,30 @@ public class Edge {
 		this.studentDiff = studentDiff;
 	}
 	
+	public void setStudentDiff(int studentDiff) {
+		this.studentDiff = studentDiff;
+	}
+
+	public void setA(Vertex a) {
+		this.a = a;
+	}
+
+	public void setB(Vertex b) {
+		this.b = b;
+	}
+
+	public int getStudentDiff() {
+		return studentDiff;
+	}
+
+	public Vertex getA() {
+		return a;
+	}
+
+	public Vertex getB() {
+		return b;
+	}
+
 	public boolean equals(Object other) {
 		if (other instanceof Edge) {
 			Edge e = (Edge)other;
@@ -19,5 +43,9 @@ public class Edge {
 		} else {
 			return false;
 		}
+	}
+	
+	public String toString() {
+		return a.toString() + " " + b.toString() + " " + studentDiff;
 	}
 }

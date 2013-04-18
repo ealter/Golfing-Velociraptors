@@ -19,4 +19,8 @@ public class Vertex {
 	public Set<String> getTestNames() {
 		return testNames;
 	}
+	
+	public String toString() {
+		return testNames.toString();
+	}
 }

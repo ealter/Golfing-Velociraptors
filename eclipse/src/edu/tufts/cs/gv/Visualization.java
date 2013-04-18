@@ -15,6 +15,7 @@ import javax.swing.UnsupportedLookAndFeelException;
 
 import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.model.Dataset;
+import edu.tufts.cs.gv.model.graph.Graph;
 import edu.tufts.cs.gv.view.GraphView;
 import edu.tufts.cs.gv.view.ResultsView;
 import edu.tufts.cs.gv.view.StudentView;
@@ -91,5 +92,6 @@ public class Visualization extends JFrame{
 			e.printStackTrace();
 		}
 		new Visualization(1); //TODO: This defines the fps. It should not be 1!
+		new Graph(null, 1);
 	}
 }
