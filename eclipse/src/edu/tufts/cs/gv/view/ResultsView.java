@@ -1,6 +1,9 @@
 package edu.tufts.cs.gv.view;
 
 import java.awt.Graphics;
+import java.awt.Color;
+
+//This class will be a bar chart of the witnesses.
 
 public class ResultsView extends VizView {
 	private static final long serialVersionUID = 1L;
@@ -22,5 +25,4 @@ public class ResultsView extends VizView {
 		// TODO Auto-generated method stub
 		//System.out.println("Results update");
 	}
-
 }
