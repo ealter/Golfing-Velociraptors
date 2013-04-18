@@ -13,6 +13,7 @@ import javax.swing.Timer;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.model.Dataset;
 import edu.tufts.cs.gv.view.GraphView;
 import edu.tufts.cs.gv.view.ResultsView;
@@ -54,7 +55,7 @@ public class Visualization extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				int result = datasetChooser.showOpenDialog(Visualization.this);
 				if (result == JFileChooser.APPROVE_OPTION) {
-					//loadLog(datasetChooser.getSelectedFile());
+					VizState.getState().setDataset(Dataset.parseFromFile(datasetChooser.getSelectedFile().getAbsolutePath()));
 				}
 			}
 		});
