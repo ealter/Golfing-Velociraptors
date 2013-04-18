@@ -3,7 +3,11 @@ package edu.tufts.cs.gv;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 import javax.swing.JSplitPane;
 import javax.swing.Timer;
 import javax.swing.UIManager;
@@ -19,6 +23,12 @@ public class Visualization extends JFrame{
 	private static final long serialVersionUID = 1L;
 
 	private Timer renderTimer;
+	
+	private JMenuBar menu;
+	private JMenu file;
+	private JMenuItem openDataset;
+	
+	private JFileChooser datasetChooser;
 	
 	private JSplitPane studentSplit, testSplit;
 	private VizView graphView, studentView, resultsView;
@@ -37,8 +47,27 @@ public class Visualization extends JFrame{
 		studentSplit.setDividerLocation(.3);
 		studentSplit.setOneTouchExpandable(true);
 		
+		datasetChooser = new JFileChooser("..");
+		
+		openDataset = new JMenuItem("Open Dataset");
+		openDataset.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int result = datasetChooser.showOpenDialog(Visualization.this);
+				if (result == JFileChooser.APPROVE_OPTION) {
+					//loadLog(datasetChooser.getSelectedFile());
+				}
+			}
+		});
+		
+		file = new JMenu("File");
+		file.add(openDataset);
+		
+		menu = new JMenuBar();
+		menu.add(file);
+		
 		this.setSize(600, 600);
 		this.add(studentSplit);
+		this.setJMenuBar(menu);
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
