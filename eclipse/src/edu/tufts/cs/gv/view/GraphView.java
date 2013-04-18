@@ -13,8 +13,8 @@ import edu.tufts.cs.gv.util.Vector;
 public class GraphView extends VizView {
 	private static final long serialVersionUID = 1L;
 
-	private static final double Kc = 1000;
-	private static final double Ks = .001;
+	private static final double Kc = 100000;
+	private static final double Ks = .01;
 	private static final double radius = 10;
 	private static final double diameter = radius * 2;
 	
@@ -67,7 +67,7 @@ public class GraphView extends VizView {
 					if (a == b) { continue; }
 					Vector repel = new Vector(b.getX() - a.getX(), b.getY() - a.getY());
 					repel.normalize();
-					double mag = - Kc / a.getDistance2(b);
+					double mag = - Kc / (a.getDistance2(b) * a.getDistance(b));
 					repel.scale(mag);
 					a.applyForce(repel.getX(), repel.getY());
 				}

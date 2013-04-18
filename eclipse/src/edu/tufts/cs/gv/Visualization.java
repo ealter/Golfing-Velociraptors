@@ -16,7 +16,6 @@ import javax.swing.UnsupportedLookAndFeelException;
 
 import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.model.Dataset;
-import edu.tufts.cs.gv.model.graph.Graph;
 import edu.tufts.cs.gv.view.GraphView;
 import edu.tufts.cs.gv.view.ResultsView;
 import edu.tufts.cs.gv.view.StudentView;
