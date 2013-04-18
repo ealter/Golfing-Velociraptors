@@ -42,6 +42,9 @@ public class Vector {
 		if (length != 0) {
 			x /= length;
 			y /= length;
+		} else {
+			x = Math.sqrt(2);
+			y = Math.sqrt(2);
 		}
 	}
 	
