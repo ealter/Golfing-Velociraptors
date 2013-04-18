@@ -54,7 +54,7 @@ public class Dataset {
 	private Set<TestCase> testCases;
 	private Set<String> tests;
 	private Set<String> students;
-	private Map<String, Set<TestCase>> testToTestCases;
+	private Map<String, Set<TestCase>> testToTestCases; //Key is test name.
 	private Map<String, Set<TestCase>> studentToTestCases;
 	private Map<String, Set<String>> testToPassingStudents;
 	
@@ -97,7 +97,7 @@ public class Dataset {
 		}
 	}
 	
-	public Set<String> getAllTests() {
+	public Set<String> getAllTestNames() {
 		return tests;
 	}
 	

@@ -20,7 +20,7 @@ public class Graph {
 	
 	public Graph(Dataset dataset) {
 		this();
-		List<String> tests = new ArrayList<>(dataset.getAllTests());
+		List<String> tests = new ArrayList<>(dataset.getAllTestNames());
 		Map<String, Set<String>> passersForTests = dataset.getTestToPassersMap();
 		Map<String, Vertex> testToVertex = new HashMap<>();
 		// Add vertices
@@ -46,7 +46,7 @@ public class Graph {
 	
 	public Graph(Dataset dataset, int cutLength) {
 		this();
-		List<String> tests = new ArrayList<>(dataset.getAllTests());
+		List<String> tests = new ArrayList<>(dataset.getAllTestNames());
 		Map<String, Set<String>> passersForTests = dataset.getTestToPassersMap();
 		// Build uncut graph
 		Graph uncut = new Graph(dataset);
