@@ -3,6 +3,7 @@ package edu.tufts.cs.gv.model.graph;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -127,5 +128,17 @@ public class Graph {
 		addVertex(e.getB());
 		adjacency.get(e.getA()).add(e);
 		adjacency.get(e.getB()).add(e);
+	}
+	
+	public Collection<Vertex> getVertices() {
+		return adjacency.keySet();
+	}
+	
+	public Collection<Edge> getEdges() {
+		Set<Edge> edges = new HashSet<>();
+		for (List<Edge> es : adjacency.values()) {
+			edges.addAll(es);
+		}
+		return edges;
 	}
 }
