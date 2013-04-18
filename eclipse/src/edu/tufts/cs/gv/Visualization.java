@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.Timer;
 import javax.swing.UIManager;
@@ -33,13 +34,16 @@ public class Visualization extends JFrame{
 	
 	private JSplitPane studentSplit, testSplit;
 	private VizView graphView, studentView, resultsView;
+	private JScrollPane resultsScrollView;
 	
 	public Visualization(int fps) {
 		graphView = new GraphView();
 		resultsView = new ResultsView();
 		studentView = new StudentView();
 		
-		testSplit = new JSplitPane(JSplitPane.VERTICAL_SPLIT, true, graphView, resultsView);
+		resultsScrollView = new JScrollPane(resultsView);
+		
+		testSplit = new JSplitPane(JSplitPane.VERTICAL_SPLIT, true, graphView, resultsScrollView);
 		testSplit.setResizeWeight(.7);
 		testSplit.setDividerLocation(.7);
 		testSplit.setOneTouchExpandable(true);
