@@ -21,13 +21,13 @@ public class GraphView extends VizView {
 		g.fillRect(100, 100, 50, 50);
 		g.setColor(Color.CYAN);
 		g.drawRect(10, 10, 50, 50);
-		System.out.println("Graph render");
+		//System.out.println("Graph render");
 	}
 
 	@Override
 	public void update() {
 		// TODO Auto-generated method stub
-		System.out.println("Graph update");
+		//System.out.println("Graph update");
 	}
 
 }

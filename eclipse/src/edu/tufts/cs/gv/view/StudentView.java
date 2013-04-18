@@ -14,13 +14,13 @@ public class StudentView extends VizView {
 	@Override
 	public void paint(Graphics g) {
 		// TODO Auto-generated method stub
-		System.out.println("Students render");
+		//System.out.println("Students render");
 	}
 
 	@Override
 	public void update() {
 		// TODO Auto-generated method stub
-		System.out.println("Students update");
+		//System.out.println("Students update");
 	}
 
 }
