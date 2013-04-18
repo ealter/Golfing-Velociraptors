@@ -66,6 +66,7 @@ public class ResultsView extends VizView {
 					maxBarChartHeight = Math.max(maxBarChartHeight, count);
 					witnessMap.put(witness, count);
 				}
+				//TODO: if there are more than 5, limit to 5
 				screenWidth += testCaseSpacing;
 			}
 			this.setPreferredSize(new Dimension(screenWidth, this.getHeight()));
@@ -80,12 +81,16 @@ public class ResultsView extends VizView {
 		float heightFactor = height/(float)maxBarChartHeight;
 		float x = 0;
 		int y = height - 1;
-		g.setColor(Color.BLUE);
+		Color[] colors = {Color.BLUE, Color.GREEN, Color.ORANGE};
+		int colorIndex = 0;
 		for(HashMap<String, Integer> testcase : witnesses) {
+			colorIndex = 0;
 			for(Integer count : testcase.values()) {
+				g.setColor(colors[colorIndex]);
 				int barHeight = (int)(count * heightFactor);
 				g.fillRect((int)x, y - barHeight, barWidth, barHeight);
 				x += barWidth + barSpacing;
+				colorIndex = (colorIndex + 1) % colors.length;
 			}
 			x += testCaseSpacing;
 		}
