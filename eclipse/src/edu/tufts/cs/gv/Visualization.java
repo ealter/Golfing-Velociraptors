@@ -89,6 +89,6 @@ public class Visualization extends JFrame{
 				| IllegalAccessException | UnsupportedLookAndFeelException e) {
 			e.printStackTrace();
 		}
-		new Visualization(1);
+		new Visualization(1); //TODO: This defines the fps. It should not be 1!
 	}
 }

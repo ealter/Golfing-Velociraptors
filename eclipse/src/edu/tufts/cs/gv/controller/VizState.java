@@ -3,14 +3,34 @@ package edu.tufts.cs.gv.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.tufts.cs.gv.model.Dataset;
+
 public class VizState {
-	private static List<VizUpdateListener> updateListeners = new ArrayList<>();
+	private List<VizUpdateListener> updateListeners = new ArrayList<>();
 	
-	public static void addVizUpdateListener(VizUpdateListener listener) {
+	private static VizState singletonVizState;
+	private Dataset dataset;
+	
+	public Dataset getDataset() {
+		return dataset;
+	}
+
+	public void setDataset(Dataset dataset) {
+		this.dataset = dataset;
+	}
+
+	public static VizState getState() {
+		if(singletonVizState == null) {
+			singletonVizState = new VizState();
+		}
+		return singletonVizState;
+	}
+	
+	public void addVizUpdateListener(VizUpdateListener listener) {
 		updateListeners.add(listener);
 	}
 	
-	private static void fireVizUpdateEvent() {
+	private void fireVizUpdateEvent() {
 		for (VizUpdateListener listener : updateListeners) {
 			listener.vizUpdated();
 		}
