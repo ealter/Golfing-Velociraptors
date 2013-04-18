@@ -2,6 +2,7 @@ package edu.tufts.cs.gv.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import edu.tufts.cs.gv.model.Dataset;
 
@@ -18,7 +19,17 @@ public class VizState {
 	
 	private List<VizUpdateListener> updateListeners;
 	private Dataset dataset;
+	private Set<String> mousedOverTests;
 	
+	public Set<String> getMousedOverTests() {
+		return mousedOverTests;
+	}
+
+	public void setMousedOverTests(Set<String> mousedOverTests) {
+		this.mousedOverTests = mousedOverTests;
+		fireVizUpdateEvent(VizEventType.HOVERING_TESTS);
+	}
+
 	private VizState() {
 		updateListeners = new ArrayList<>();
 	}
@@ -29,16 +40,16 @@ public class VizState {
 
 	public void setDataset(Dataset dataset) {
 		this.dataset = dataset;
-		fireVizUpdateEvent();
+		fireVizUpdateEvent(VizEventType.NEW_DATA_SOURCE);
 	}
 	
 	public void addVizUpdateListener(VizUpdateListener listener) {
 		updateListeners.add(listener);
 	}
 	
-	private void fireVizUpdateEvent() {
+	private void fireVizUpdateEvent(VizEventType type) {
 		for (VizUpdateListener listener : updateListeners) {
-			listener.vizUpdated();
+			listener.vizUpdated(type);
 		}
 	}
 }

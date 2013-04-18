@@ -3,15 +3,11 @@ package edu.tufts.cs.gv.view;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Color;
-import java.awt.List;
-import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Set;
 
-import javax.swing.Scrollable;
-
+import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.model.Dataset;
 import edu.tufts.cs.gv.model.TestCase;
@@ -26,7 +22,6 @@ public class ResultsView extends VizView {
 	private static final int barWidth   = 7;
 	private static final float testCaseSpacing = 20; //Spacing between test cases
 	
-	private Dataset dataset;
 	private ArrayList<HashMap<String, Integer>> witnesses;
 	private ArrayList<String> testcases;
 	private int maxBarChartHeight;
@@ -37,12 +32,10 @@ public class ResultsView extends VizView {
 	}
 	
 	@Override
-	public void vizUpdated() {
-		// TODO Auto-generated method stub
-		Dataset currentDataSet = VizState.getState().getDataset();
-		if(dataset != currentDataSet) {
+	public void vizUpdated(VizEventType eventType) {
+		if(eventType == VizEventType.NEW_DATA_SOURCE) {
 			int screenWidth = 0;
-			dataset = currentDataSet;
+			Dataset dataset = VizState.getState().getDataset();
 			Set<String> testNames = dataset.getAllTestNames();
 			witnesses = new ArrayList<>(testNames.size());
 			testcases = new ArrayList<>(testNames.size());
@@ -73,7 +66,6 @@ public class ResultsView extends VizView {
 		}
 	}
 
-	@Override
 	public void paint(Graphics g) {
 		if(witnesses == null)
 			return;

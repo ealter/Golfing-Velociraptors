@@ -3,11 +3,13 @@ package edu.tufts.cs.gv.view;
 import java.awt.Color;
 import java.awt.Graphics;
 
+import edu.tufts.cs.gv.controller.VizEventType;
+
 public class GraphView extends VizView {
 	private static final long serialVersionUID = 1L;
 
 	@Override
-	public void vizUpdated() {
+	public void vizUpdated(VizEventType eventType) {
 		// TODO Auto-generated method stub
 
 	}
