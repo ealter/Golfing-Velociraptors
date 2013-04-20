@@ -2,6 +2,8 @@ package edu.tufts.cs.gv.view;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 
 import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
@@ -43,7 +45,11 @@ public class GraphView extends VizView {
 	}
 
 	@Override
-	public void paint(Graphics g) {
+	public void paint(Graphics g1) {
+		Graphics2D g = (Graphics2D) g1;
+		g.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+			RenderingHints.VALUE_ANTIALIAS_ON);
+		
 		g.setColor(Color.WHITE);
 		g.fillRect(0, 0, this.getWidth(), this.getHeight());
 		if (graph != null) {
