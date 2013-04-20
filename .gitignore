@@ -8,3 +8,5 @@
 # Temp Files #
 *.*#
 .DS_Store
+
+eclipse/.classpath
