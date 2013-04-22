@@ -22,9 +22,10 @@ import edu.tufts.cs.gv.util.Vector;
 public class GraphView extends VizView implements MouseListener, MouseMotionListener {
 	private static final long serialVersionUID = 1L;
 
-	private static final double Kc = 1000;
-	private static final double Ks = .001;
-	private static final double ENERGY_LIMIT = 13;
+	private static final double Kc = 200;
+	private static final double Ks = .05;
+	private static final double Kg = .001;
+	private static final double ENERGY_LIMIT = .5;
 	private static final double radius = 10;
 	private static final double diameter = radius * 2;
 	
@@ -51,8 +52,13 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 			dataset = state.getDataset();
 			graph = new Graph(dataset);
 			for (Vertex v : graph.getVertices()) {
-				v.setX(Math.random() * getWidth() * .5 + .25 * getWidth());
-				v.setY(Math.random() * getWidth() * .5 + .25 * getHeight());
+				if (v.isRoot()) {
+					v.setX(getWidth() / 2);
+					v.setY(diameter);
+				} else {
+					v.setX(Math.random() * getWidth() * .5 + .25 * getWidth());
+					v.setY(Math.random() * getWidth() * .5 + .25 * getHeight());
+				}
 			}
 			simulating = true;
 		}
@@ -102,13 +108,14 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 					repel.scale(mag);
 					a.applyForce(repel.getX(), repel.getY());
 				}
+				a.applyForce(0, Kg);
 			}
 			for (Edge e : graph.getEdges()) {
 				Vertex a = e.getA();
 				Vertex b = e.getB();
 				Vector attract = new Vector(a.getX() - b.getX(), a.getY() - b.getY());
 				attract.normalize();
-				double mag = - Ks * (a.getDistance(b) - e.getStudentDiff() * 100);
+				double mag = - Ks * (a.getDistance(b) - (e.getStudentDiff() / (float)dataset.getAllStudents().size()) * getHeight() * 3);
 				attract.scale(mag);
 				a.applyForce(attract.getX(), attract.getY());
 				b.applyForce(-attract.getX(), -attract.getY());
@@ -128,7 +135,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 					v.setY(getHeight() - radius);
 				}
 			}
-			if (totalE < ENERGY_LIMIT) {
+			if (totalE < ENERGY_LIMIT * graph.getVertices().size()) {
 				simulating = false;
 			}
 		}

@@ -21,21 +21,31 @@ public class Graph {
 		this();
 		List<String> tests = new ArrayList<>(dataset.getAllTestNames());
 		Map<String, Set<String>> passersForTests = dataset.getTestToPassersMap();
-		Map<String, Vertex> testToVertex = new HashMap<>();
-		// Add vertices
+		
+		Map<Set<String>, Vertex> equivalentTests = new HashMap<>();
+		Vertex root = new Vertex(new ArrayList<String>());
+		root.setRoot(true);
+		equivalentTests.put(dataset.getAllStudents(), root);
+		
 		for (String test : tests) {
-			Vertex a = new Vertex(test);
-			testToVertex.put(test, a);
-			addVertex(a);
+			boolean equivalent = false;
+			for (Set<String> students : equivalentTests.keySet()) {
+				if (students.equals(passersForTests.get(test))) {
+					equivalent = true;
+					equivalentTests.get(passersForTests.get(test)).addTestName(test);
+				}
+			}
+			if (!equivalent) {
+				equivalentTests.put(passersForTests.get(test), new Vertex(test));
+			}
 		}
-		// Add edges
-		for (String a : tests) {
-			for (String b : tests) {
-				if (a == b) { continue; }
-				// b is a subset of a
-				if (passersForTests.get(a).containsAll(passersForTests.get(b))) {
-					addEdge(new Edge(testToVertex.get(a), testToVertex.get(b),
-									 Math.abs(passersForTests.get(a).size() - passersForTests.get(b).size())));
+		
+		for (Set<String> studentsA : equivalentTests.keySet()) {
+			for (Set<String> studentsB : equivalentTests.keySet()) {
+				if (studentsA == studentsB) { continue; }
+				if (studentsA.containsAll(studentsB)) {
+					addEdge(new Edge(equivalentTests.get(studentsA), equivalentTests.get(studentsB),
+							Math.abs(studentsA.size() - studentsB.size())));
 				}
 			}
 		}

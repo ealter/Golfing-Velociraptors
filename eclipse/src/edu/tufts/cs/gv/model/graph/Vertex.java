@@ -12,6 +12,7 @@ public class Vertex {
 	private double vx, vy;
 	private boolean overriding;
 	private boolean selected;
+	private boolean isRoot;
 	
 	public Vertex(String testName) {
 		this(Arrays.asList(testName));
@@ -23,10 +24,23 @@ public class Vertex {
 		y = 10;
 		overriding = false;
 		selected = false;
+		isRoot = false;
 	}
 	
 	public Set<String> getTestNames() {
 		return testNames;
+	}
+	
+	public void addTestName(String testName) {
+		testNames.add(testName);
+	}
+	
+	public void setRoot(boolean isRoot) {
+		this.isRoot = isRoot;
+	}
+	
+	public boolean isRoot() {
+		return isRoot;
 	}
 	
 	public double getX() {
@@ -76,7 +90,7 @@ public class Vertex {
 	}
 	
 	public void move() {
-		if (!overriding) {
+		if (!overriding && !isRoot) {
 			x += vx;
 			y += vy;
 		}
