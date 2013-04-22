@@ -4,14 +4,14 @@ public class TestCase {
 	private String name;
 	private int number;
 	private String student;
-	private boolean outcome;
+	private boolean passed; //True if the test is a pass
 	private String witness;
 	
 	public TestCase(String name, int number, String student, boolean outcome, String witness) {
 		this.name = name;
 		this.number = number;
 		this.student = student;
-		this.outcome = outcome;
+		this.passed = outcome;
 		this.witness = witness;
 	}
 
@@ -27,8 +27,8 @@ public class TestCase {
 		return student;
 	}
 
-	public boolean getOutcome() {
-		return outcome;
+	public boolean didPass() {
+		return passed;
 	}
 
 	public String getWitness() {
@@ -41,7 +41,7 @@ public class TestCase {
 			return name.equals(b.name) &&
 					number == b.number &&
 					student.equals(b.student) &&
-					outcome == b.outcome &&
+					passed == b.passed &&
 					witness.equals(b.witness);
 		} else {
 			return false;
@@ -50,7 +50,7 @@ public class TestCase {
 	
 	public String toString() {
 		String str = "given " + name + " test " + number + ", " + student + " ";
-		if (outcome) {
+		if (passed) {
 			str += "passed";
 		} else {
 			str += "failed";

@@ -22,7 +22,7 @@ public class ResultsView extends VizView {
 	
 	private static final int maxBars = 5; //The maximum number of bars for a particular test case
 	private static final float barSpacing = 2; //Number of pixels between bars of a test case
-	private static final int barWidth   = 70;
+	private static final int barWidth   = 14;
 	private static final float testCaseSpacing = 20; //Spacing between test cases
 	
 	private ArrayList<HashMap<String, Integer>> witnesses;
@@ -51,18 +51,20 @@ public class ResultsView extends VizView {
 				witnesses.add(witnessMap);
 				int numUniqueWitnesses = 0;
 				for(TestCase t : testCases) {
-					String witness = t.getWitness();
-					int count = 1;
-					if(witnessMap.containsKey(witness)) {
-						count += witnessMap.get(witness);
-					} else {
-						numUniqueWitnesses++;
-						if(numUniqueWitnesses <= maxBars) {
-							screenWidth += barSpacing + barWidth;
+					if(!t.didPass()) {
+						String witness = t.getWitness();
+						int count = 1;
+						if(witnessMap.containsKey(witness)) {
+							count += witnessMap.get(witness);
+						} else {
+							numUniqueWitnesses++;
+							if(numUniqueWitnesses <= maxBars) {
+								screenWidth += barSpacing + barWidth;
+							}
 						}
+						maxBarChartHeight = Math.max(maxBarChartHeight, count);
+						witnessMap.put(witness, count);
 					}
-					maxBarChartHeight = Math.max(maxBarChartHeight, count);
-					witnessMap.put(witness, count);
 				}
 				//TODO: if there are more than 5, limit to 5
 				screenWidth += testCaseSpacing;
@@ -108,6 +110,9 @@ public class ResultsView extends VizView {
 	}
 	
 	public String getToolTipText(MouseEvent e) {
+		if(bars == null) {
+			updateRectangles();
+		}
 		if (bars != null) {
 			for (Rectangle bar : bars.keySet()) {
 				if(bar.contains(e.getX(), e.getY())) {

@@ -92,7 +92,7 @@ public class Dataset {
 			testToPassingStudents.put(testCase.getName(), new HashSet<String>());
 		}
 		Set<String> passingSet = testToPassingStudents.get(testCase.getName());
-		if (testCase.getOutcome()) {
+		if (testCase.didPass()) {
 			passingSet.add(testCase.getStudent());
 		}
 	}
