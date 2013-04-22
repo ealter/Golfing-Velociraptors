@@ -30,6 +30,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 	private static double Ks = .05;
 	private static double Kg = .1;
 	private static double ENERGY_LIMIT = .5;
+	private static double SPRING_LENGTH = 3;
 	private static final double radius = 10;
 	private static final double diameter = radius * 2;
 	
@@ -119,7 +120,8 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 				Vertex b = e.getB();
 				Vector attract = new Vector(a.getX() - b.getX(), a.getY() - b.getY());
 				attract.normalize();
-				double mag = - Ks * (a.getDistance(b) - (e.getStudentDiff() / (float)dataset.getAllStudents().size()) * getHeight() * 3);
+				double mag = - Ks * (a.getDistance(b) - (e.getStudentDiff() / (float)dataset.getAllStudents().size())
+						* getHeight() * SPRING_LENGTH);
 				attract.scale(mag);
 				a.applyForce(attract.getX(), attract.getY());
 				b.applyForce(-attract.getX(), -attract.getY());
@@ -149,6 +151,15 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		return new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
 				Ks = ((JSlider)e.getSource()).getValue() / 10000.0;
+				simulating = true;
+			}
+		};
+	}
+	
+	public ChangeListener getSpringLengthListener() {
+		return new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				SPRING_LENGTH = ((JSlider)e.getSource()).getValue() / 100.0;
 				simulating = true;
 			}
 		};

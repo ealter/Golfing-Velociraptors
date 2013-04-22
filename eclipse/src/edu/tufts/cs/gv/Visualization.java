@@ -44,18 +44,21 @@ public class Visualization extends JFrame{
 	private JScrollPane resultsScrollView;
 	// Graph view
 	private GraphView graphView;
-	private JLabel lblSpring, lblRepel, lblGrav, lblEnergy;
-	private JSlider sldSpring, sldRepel, sldGrav, sldEnergy;
+	private JLabel lblSpring, lblSpringLen, lblRepel, lblGrav, lblEnergy;
+	private JSlider sldSpring, sldSpringLen, sldRepel, sldGrav, sldEnergy;
 	private JPanel pnlGraphView;
 	
 	public Visualization(int fps) {
 		graphView = new GraphView();
 		lblSpring = new JLabel("Spring", JLabel.CENTER);
+		lblSpringLen = new JLabel("Spring Length", JLabel.CENTER);
 		lblRepel = new JLabel("Repulsion", JLabel.CENTER);
 		lblGrav = new JLabel("Gravity", JLabel.CENTER);
 		lblEnergy = new JLabel("Energy", JLabel.CENTER);
 		sldSpring = new JSlider(JSlider.HORIZONTAL, 0, 1000, 500);
 		sldSpring.addChangeListener(graphView.getSpringListener());
+		sldSpringLen = new JSlider(JSlider.HORIZONTAL, 0, 1000, 300);
+		sldSpringLen.addChangeListener(graphView.getSpringLengthListener());
 		sldRepel = new JSlider(JSlider.HORIZONTAL, 0, 1000, 200);
 		sldRepel.addChangeListener(graphView.getRepulstionListener());
 		sldGrav = new JSlider(JSlider.HORIZONTAL, 0, 1000, 100);
@@ -68,11 +71,13 @@ public class Visualization extends JFrame{
 		layout.setHorizontalGroup(layout.createParallelGroup()
 				.addGroup(layout.createSequentialGroup()
 						.addComponent(lblSpring, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(lblSpringLen, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(lblRepel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(lblGrav, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(lblEnergy, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 				.addGroup(layout.createSequentialGroup()
 						.addComponent(sldSpring, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(sldSpringLen, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(sldRepel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(sldGrav, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(sldEnergy, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -80,11 +85,13 @@ public class Visualization extends JFrame{
 		layout.setVerticalGroup(layout.createSequentialGroup()
 				.addGroup(layout.createParallelGroup()
 						.addComponent(lblSpring)
+						.addComponent(lblSpringLen)
 						.addComponent(lblRepel)
 						.addComponent(lblGrav)
 						.addComponent(lblEnergy))
 				.addGroup(layout.createParallelGroup()
 						.addComponent(sldSpring)
+						.addComponent(sldSpringLen)
 						.addComponent(sldRepel)
 						.addComponent(sldGrav)
 						.addComponent(sldEnergy))
