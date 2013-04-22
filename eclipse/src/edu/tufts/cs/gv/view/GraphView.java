@@ -3,7 +3,11 @@ package edu.tufts.cs.gv.view;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Point;
 import java.awt.RenderingHints;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 
 import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
@@ -13,26 +17,33 @@ import edu.tufts.cs.gv.model.graph.Graph;
 import edu.tufts.cs.gv.model.graph.Vertex;
 import edu.tufts.cs.gv.util.Vector;
 
-public class GraphView extends VizView {
+public class GraphView extends VizView implements MouseListener, MouseMotionListener {
 	private static final long serialVersionUID = 1L;
 
-	private static final double Kc = 100000;
-	private static final double Ks = .01;
+	private static final double Kc = 1000;
+	private static final double Ks = .001;
+	private static final double ENERGY_LIMIT = 13;
 	private static final double radius = 10;
 	private static final double diameter = radius * 2;
 	
 	private Dataset dataset;
 	private Graph graph;
+	private boolean simulating;
+	private Vertex moving;
+	private Point lastPoint;
 	
 	public GraphView() {
 		VizState.getState().addVizUpdateListener(this);
+		this.addMouseListener(this);
+		this.addMouseMotionListener(this);
 		dataset = null;
 		graph = null;
+		simulating = false;
+		lastPoint = null;
 	}
 	
 	@Override
 	public void vizUpdated(VizEventType eventType) {
-		// TODO Auto-generated method stub
 		VizState state = VizState.getState();
 		if (state.getDataset() != dataset) {
 			dataset = state.getDataset();
@@ -41,6 +52,7 @@ public class GraphView extends VizView {
 				v.setX(Math.random() * getWidth() * .5 + .25 * getWidth());
 				v.setY(Math.random() * getWidth() * .5 + .25 * getHeight());
 			}
+			simulating = true;
 		}
 	}
 
@@ -68,13 +80,16 @@ public class GraphView extends VizView {
 
 	@Override
 	public void update() {
-		if (graph != null) {
+		if (graph != null && simulating) {
 			for (Vertex a : graph.getVertices()) {
 				for (Vertex b : graph.getVertices()) {
 					if (a == b) { continue; }
 					Vector repel = new Vector(b.getX() - a.getX(), b.getY() - a.getY());
 					repel.normalize();
-					double mag = - Kc / (a.getDistance2(b) * a.getDistance(b));
+					double mag = - Kc / (a.getDistance2(b));
+					if (a.getDistance2(b) < .0001) {
+						mag = 0;
+					}
 					repel.scale(mag);
 					a.applyForce(repel.getX(), repel.getY());
 				}
@@ -89,7 +104,9 @@ public class GraphView extends VizView {
 				a.applyForce(attract.getX(), attract.getY());
 				b.applyForce(-attract.getX(), -attract.getY());
 			}
+			double totalE = 0;
 			for (Vertex v : graph.getVertices()) {
+				totalE += v.getVelocity2();
 				v.move();
 				if (v.getX() < radius) {
 					v.setX(radius);
@@ -102,7 +119,51 @@ public class GraphView extends VizView {
 					v.setY(getHeight() - radius);
 				}
 			}
+			if (totalE < ENERGY_LIMIT) {
+				simulating = false;
+			}
 		}
 	}
 
+
+
+	@Override
+	public void mouseDragged(MouseEvent e) {
+		if (moving == null) { return; }
+		double dx = e.getX() - lastPoint.x;
+		double dy = e.getY() - lastPoint.y;
+		moving.moveDelta(dx, dy);
+		simulating = true;
+		lastPoint = e.getPoint();
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		if (graph == null) { return; }
+		Point p = e.getPoint();
+		for (Vertex v : graph.getVertices()) {
+			if (v.getDistance(p.x, p.y) < radius) {
+				moving = v;
+			}
+		}
+		if (moving != null) {
+			lastPoint = p;
+			simulating = true;
+			moving.setOverriding(true);
+		}
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		if (moving != null) {
+			moving.setOverriding(false);
+			moving = null;
+			lastPoint = null;
+		}
+	}
+
+	public void mouseMoved(MouseEvent e) {}
+	public void mouseClicked(MouseEvent e) {}
+	public void mouseEntered(MouseEvent e) {}
+	public void mouseExited(MouseEvent e) {}
 }

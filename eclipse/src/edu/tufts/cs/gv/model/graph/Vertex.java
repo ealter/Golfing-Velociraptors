@@ -9,18 +9,21 @@ public class Vertex {
 	
 	private double x, y;
 	private double vx, vy;
+	private boolean overriding;
 	
 	public Vertex(String testName) {
 		testNames = new HashSet<>();
 		testNames.add(testName);
 		x = 10;
 		y = 10;
+		overriding = false;
 	}
 	
 	public Vertex(Collection<String> testNames) {
 		this.testNames = new HashSet<>(testNames);
 		x = 10;
 		y = 10;
+		overriding = false;
 	}
 	
 	public Set<String> getTestNames() {
@@ -50,6 +53,10 @@ public class Vertex {
 	public double getVy() {
 		return vy;
 	}
+	
+	public void setOverriding(boolean overriding) {
+		this.overriding = overriding;
+	}
 
 	public void moveDelta(double dx, double dy) {
 		x += dx;
@@ -62,10 +69,12 @@ public class Vertex {
 	}
 	
 	public void move() {
-		x += vx;
-		y += vy;
-		vx = 0;
-		vy = 0;
+		if (!overriding) {
+			x += vx;
+			y += vy;
+		}
+		vx *= .8;
+		vy *= .8;
 	}
 	
 	public double getDistance(Vertex v) {
@@ -74,6 +83,14 @@ public class Vertex {
 	
 	public double getDistance2(Vertex v) {
 		return (v.getX() - x) * (v.getX() - x) + (v.getY() - y) * (v.getY() - y);
+	}
+	
+	public double getDistance(double x, double y) {
+		return Math.sqrt(getDistance2(x, y));
+	}
+	
+	public double getDistance2(double x, double y) {
+		return (x - this.x) * (x - this.x) + (y - this.y) * (y - this.y);
 	}
 	
 	public double getVelocity() {
