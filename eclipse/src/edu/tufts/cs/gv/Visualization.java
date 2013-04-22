@@ -63,7 +63,7 @@ public class Visualization extends JFrame{
 		sldRepel.addChangeListener(graphView.getRepulstionListener());
 		sldGrav = new JSlider(JSlider.HORIZONTAL, 0, 1000, 100);
 		sldGrav.addChangeListener(graphView.getGravityListener());
-		sldEnergy = new JSlider(JSlider.HORIZONTAL, 0, 1000, 500);
+		sldEnergy = new JSlider(JSlider.HORIZONTAL, 0, 1000, 50);
 		sldEnergy.addChangeListener(graphView.getEnergyListener());
 		pnlGraphView = new JPanel();
 		GroupLayout layout = new GroupLayout(pnlGraphView);

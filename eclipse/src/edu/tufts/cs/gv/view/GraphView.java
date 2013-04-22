@@ -12,6 +12,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import javax.swing.JSlider;
+import javax.swing.ToolTipManager;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
@@ -48,6 +49,8 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		graph = null;
 		simulating = false;
 		lastPoint = null;
+		this.setToolTipText("");
+		ToolTipManager.sharedInstance().setDismissDelay(Integer.MAX_VALUE);
 	}
 	
 	@Override
@@ -147,6 +150,27 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		}
 	}
 	
+	public String getToolTipText(MouseEvent e) {
+		if (graph != null) {
+			for (Vertex v : graph.getVertices()) {
+				if (v.getDistance(e.getX(), e.getY()) <= radius) {
+					String tooltip = "<html>";
+					if (v.getTestNames().size() == 0) {
+						tooltip += "No Tests";
+					} else {
+						for (String test : v.getTestNames()) {
+							tooltip += test + "<br>";
+						}
+					}
+					tooltip += "</html>";
+					return tooltip;
+				}
+			}
+			return null;
+		}
+		return null;
+	}
+	
 	public ChangeListener getSpringListener() {
 		return new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
@@ -186,7 +210,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 	public ChangeListener getEnergyListener() {
 		return new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
-				ENERGY_LIMIT = ((JSlider)e.getSource()).getValue() / 1000.0;
+				ENERGY_LIMIT = ((JSlider)e.getSource()).getValue() / 100.0;
 				simulating = true;
 			}
 		};
