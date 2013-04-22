@@ -42,18 +42,22 @@ public class StudentView extends JPanel implements VizUpdateListener {
 		} else if (eventType == VizEventType.HOVERING_TESTS) {
 			VizState state = VizState.getState();
 			Set<String> tests = state.getMousedOverTests();
-			Set<String> students = new HashSet<>();
-			for (String test : tests) {
-				students.addAll(state.getDataset().getPassersOfTest(test));
-			}
-			
-			String text = studentText.getText();
-			studentText.setText("");
-			studentText.setText(text);
-			
-			StyledDocument doc = studentText.getStyledDocument();
-			SimpleAttributeSet highlight = new SimpleAttributeSet();
-			if (students.size() > 0) {
+			if (tests == null) {
+				String text = studentText.getText();
+				studentText.setText("");
+				studentText.setText(text);
+			} else {
+				Set<String> students = new HashSet<>();
+				for (String test : tests) {
+					students.addAll(state.getDataset().getPassersOfTest(test));
+				}
+				
+				String text = studentText.getText();
+				studentText.setText("");
+				studentText.setText(text);
+				
+				StyledDocument doc = studentText.getStyledDocument();
+				SimpleAttributeSet highlight = new SimpleAttributeSet();
 				StyleConstants.setBackground(highlight, new Color(255, 100, 100));
 				doc.setCharacterAttributes(0, doc.getLength(), highlight, true);
 				StyleConstants.setBackground(highlight, new Color(173, 216, 230));

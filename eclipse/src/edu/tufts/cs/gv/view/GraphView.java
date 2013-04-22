@@ -265,30 +265,37 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 				v.setSelected(false);
 			}
 		}
-		Set<String> selectedTests = new HashSet<>();
+		/*Set<String> selectedTests = new HashSet<>();
 		for (Vertex v : graph.getVertices()) {
 			if (v.isSelected()) {
 				selectedTests.addAll(v.getTestNames());
 			}
 		}
 		VizState.getState().setMousedOverTests(selectedTests);
+		*/
 	}
 
 	public void mouseMoved(MouseEvent e) {
 		if (graph == null) { return; }
 		Point p = e.getPoint();
 		Set<String> selectedTests = new HashSet<>();
+		boolean none = true;
 		for (Vertex v : graph.getVertices()) {
 			if (v.getDistance(p.x, p.y) <= radius) {
 				selectedTests.addAll(v.getTestNames());
+				none = false;
 			}
 		}
-		for (Vertex v : graph.getVertices()) {
+		/*for (Vertex v : graph.getVertices()) {
 			if (v.isSelected()) {
 				selectedTests.addAll(v.getTestNames());
 			}
+		}*/
+		if (none) {
+			VizState.getState().setMousedOverTests(null);
+		} else {
+			VizState.getState().setMousedOverTests(selectedTests);
 		}
-		VizState.getState().setMousedOverTests(selectedTests);
 	}
 	
 	public void mouseEntered(MouseEvent e) {}
