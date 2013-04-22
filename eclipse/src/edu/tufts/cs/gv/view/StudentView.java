@@ -51,12 +51,16 @@ public class StudentView extends JPanel implements VizUpdateListener {
 			studentText.setText("");
 			studentText.setText(text);
 			
-			SimpleAttributeSet highlight = new SimpleAttributeSet();
-			StyleConstants.setBackground(highlight, new Color(173, 216, 230));
 			StyledDocument doc = studentText.getStyledDocument();
-			for (String student : students) {
-				int offset = studentText.getText().indexOf(student);
-				doc.setCharacterAttributes(offset, student.length(), highlight, true);
+			SimpleAttributeSet highlight = new SimpleAttributeSet();
+			if (students.size() > 0) {
+				StyleConstants.setBackground(highlight, new Color(255, 100, 100));
+				doc.setCharacterAttributes(0, doc.getLength(), highlight, true);
+				StyleConstants.setBackground(highlight, new Color(173, 216, 230));
+				for (String student : students) {
+					int offset = studentText.getText().indexOf(student);
+					doc.setCharacterAttributes(offset, student.length(), highlight, true);
+				}
 			}
 		}
 	}

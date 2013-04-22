@@ -15,6 +15,7 @@ import javax.swing.JSlider;
 import javax.swing.ToolTipManager;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import javax.tools.Tool;
 
 import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
@@ -51,6 +52,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		lastPoint = null;
 		this.setToolTipText("");
 		ToolTipManager.sharedInstance().setDismissDelay(Integer.MAX_VALUE);
+		ToolTipManager.sharedInstance().setInitialDelay(100);
 	}
 	
 	@Override
