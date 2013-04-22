@@ -1,5 +1,6 @@
 package edu.tufts.cs.gv.model.graph;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -10,13 +11,10 @@ public class Vertex {
 	private double x, y;
 	private double vx, vy;
 	private boolean overriding;
+	private boolean selected;
 	
 	public Vertex(String testName) {
-		testNames = new HashSet<>();
-		testNames.add(testName);
-		x = 10;
-		y = 10;
-		overriding = false;
+		this(Arrays.asList(testName));
 	}
 	
 	public Vertex(Collection<String> testNames) {
@@ -24,6 +22,7 @@ public class Vertex {
 		x = 10;
 		y = 10;
 		overriding = false;
+		selected = false;
 	}
 	
 	public Set<String> getTestNames() {
@@ -56,6 +55,14 @@ public class Vertex {
 	
 	public void setOverriding(boolean overriding) {
 		this.overriding = overriding;
+	}
+	
+	public void setSelected(boolean selected) {
+		this.selected = selected;
+	}
+	
+	public boolean isSelected() {
+		return selected;
 	}
 
 	public void moveDelta(double dx, double dy) {

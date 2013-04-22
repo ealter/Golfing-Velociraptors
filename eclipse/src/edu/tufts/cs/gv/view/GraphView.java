@@ -8,6 +8,8 @@ import java.awt.RenderingHints;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
+import java.util.HashSet;
+import java.util.Set;
 
 import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
@@ -54,6 +56,9 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 			}
 			simulating = true;
 		}
+		if (eventType == VizEventType.HOVERING_TESTS) {
+			System.out.println(VizState.getState().getMousedOverTests().toString());
+		}
 	}
 
 	@Override
@@ -70,7 +75,11 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 				g.drawLine((int)e.getA().getX(), (int)e.getA().getY(), (int)e.getB().getX(), (int)e.getB().getY());
 			}
 			for (Vertex v : graph.getVertices()) {
-				g.setColor(Color.RED);
+				if (v.isSelected()) {
+					g.setColor(Color.CYAN);
+				} else {
+					g.setColor(Color.RED);
+				}
 				g.fillOval((int)(v.getX() - radius), (int)(v.getY() - radius), (int)diameter, (int)diameter);
 				g.setColor(Color.BLACK);
 				g.drawOval((int)(v.getX() - radius), (int)(v.getY() - radius), (int)diameter, (int)diameter);
@@ -125,9 +134,6 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		}
 	}
 
-
-
-	@Override
 	public void mouseDragged(MouseEvent e) {
 		if (moving == null) { return; }
 		double dx = e.getX() - lastPoint.x;
@@ -137,12 +143,11 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		lastPoint = e.getPoint();
 	}
 
-	@Override
 	public void mousePressed(MouseEvent e) {
 		if (graph == null) { return; }
 		Point p = e.getPoint();
 		for (Vertex v : graph.getVertices()) {
-			if (v.getDistance(p.x, p.y) < radius) {
+			if (v.getDistance(p.x, p.y) <= radius) {
 				moving = v;
 			}
 		}
@@ -153,7 +158,6 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		}
 	}
 
-	@Override
 	public void mouseReleased(MouseEvent e) {
 		if (moving != null) {
 			moving.setOverriding(false);
@@ -161,9 +165,48 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 			lastPoint = null;
 		}
 	}
+	
+	public void mouseClicked(MouseEvent e) {
+		if (graph == null) { return; }
+		Point p = e.getPoint();
+		boolean clickedSomething = false;
+		for (Vertex v : graph.getVertices()) {
+			if (v.getDistance(p.x, p.y) <= radius) {
+				v.setSelected(!v.isSelected());
+				clickedSomething = true;
+			}
+		}
+		if (!clickedSomething) {
+			for (Vertex v : graph.getVertices()) {
+				v.setSelected(false);
+			}
+		}
+		Set<String> selectedTests = new HashSet<>();
+		for (Vertex v : graph.getVertices()) {
+			if (v.isSelected()) {
+				selectedTests.addAll(v.getTestNames());
+			}
+		}
+		VizState.getState().setMousedOverTests(selectedTests);
+	}
 
-	public void mouseMoved(MouseEvent e) {}
-	public void mouseClicked(MouseEvent e) {}
+	public void mouseMoved(MouseEvent e) {
+		if (graph == null) { return; }
+		Point p = e.getPoint();
+		Set<String> selectedTests = new HashSet<>();
+		for (Vertex v : graph.getVertices()) {
+			if (v.getDistance(p.x, p.y) <= radius) {
+				selectedTests.addAll(v.getTestNames());
+			}
+		}
+		for (Vertex v : graph.getVertices()) {
+			if (v.isSelected()) {
+				selectedTests.addAll(v.getTestNames());
+			}
+		}
+		VizState.getState().setMousedOverTests(selectedTests);
+	}
+	
 	public void mouseEntered(MouseEvent e) {}
 	public void mouseExited(MouseEvent e) {}
 }
