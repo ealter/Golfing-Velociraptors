@@ -38,7 +38,8 @@ public class Visualization extends JFrame{
 	
 	private JSplitPane studentSplit, testSplit;
 	// Student view
-	private VizView studentView;
+	private StudentView studentView;
+	private JScrollPane studentScrollView;
 	// Results view
 	private VizView resultsView;
 	private JScrollPane resultsScrollView;
@@ -49,6 +50,13 @@ public class Visualization extends JFrame{
 	private JPanel pnlGraphView;
 	
 	public Visualization(int fps) {
+		// Student view
+		studentView = new StudentView();
+		studentScrollView = new JScrollPane(studentView);
+		// Results view
+		resultsView = new ResultsView();
+		resultsScrollView = new JScrollPane(resultsView);
+		// Graph view
 		graphView = new GraphView();
 		lblSpring = new JLabel("Spring", JLabel.CENTER);
 		lblSpringLen = new JLabel("Spring Length", JLabel.CENTER);
@@ -97,16 +105,13 @@ public class Visualization extends JFrame{
 						.addComponent(sldEnergy))
 				.addComponent(graphView));
 		
-		resultsView = new ResultsView();
-		studentView = new StudentView();
-		
-		resultsScrollView = new JScrollPane(resultsView);
-		
+		// Layout setup
 		testSplit = new JSplitPane(JSplitPane.VERTICAL_SPLIT, true, pnlGraphView, resultsScrollView);
 		testSplit.setResizeWeight(.7);
 		testSplit.setDividerLocation(.7);
 		testSplit.setOneTouchExpandable(true);
-		studentSplit = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true, studentView, testSplit);
+		
+		studentSplit = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true, studentScrollView, testSplit);
 		studentSplit.setResizeWeight(.3);
 		studentSplit.setDividerLocation(.3);
 		studentSplit.setOneTouchExpandable(true);
@@ -139,7 +144,6 @@ public class Visualization extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				graphView.update();
 				resultsView.update();
-				studentView.update();
 				repaint();
 			}
 		});
