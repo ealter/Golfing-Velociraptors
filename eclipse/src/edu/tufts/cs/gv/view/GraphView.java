@@ -11,6 +11,10 @@ import java.awt.event.MouseMotionListener;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.swing.JSlider;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+
 import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.model.Dataset;
@@ -22,10 +26,10 @@ import edu.tufts.cs.gv.util.Vector;
 public class GraphView extends VizView implements MouseListener, MouseMotionListener {
 	private static final long serialVersionUID = 1L;
 
-	private static final double Kc = 200;
-	private static final double Ks = .05;
-	private static final double Kg = .001;
-	private static final double ENERGY_LIMIT = .5;
+	private static double Kc = 200;
+	private static double Ks = .05;
+	private static double Kg = .1;
+	private static double ENERGY_LIMIT = .5;
 	private static final double radius = 10;
 	private static final double diameter = radius * 2;
 	
@@ -140,7 +144,43 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 			}
 		}
 	}
-
+	
+	public ChangeListener getSpringListener() {
+		return new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				Ks = ((JSlider)e.getSource()).getValue() / 10000.0;
+				simulating = true;
+			}
+		};
+	}
+	
+	public ChangeListener getRepulstionListener() {
+		return new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				Kc = ((JSlider)e.getSource()).getValue();
+				simulating = true;
+			}
+		};
+	}
+	
+	public ChangeListener getGravityListener() {
+		return new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				Kg = ((JSlider)e.getSource()).getValue() / 1000.0;
+				simulating = true;
+			}
+		};
+	}
+	
+	public ChangeListener getEnergyListener() {
+		return new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				ENERGY_LIMIT = ((JSlider)e.getSource()).getValue() / 1000.0;
+				simulating = true;
+			}
+		};
+	}
+	
 	public void mouseDragged(MouseEvent e) {
 		if (moving == null) { return; }
 		double dx = e.getX() - lastPoint.x;
