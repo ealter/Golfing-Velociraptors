@@ -3,6 +3,7 @@ package edu.tufts.cs.gv.view;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Color;
+import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
@@ -25,6 +26,7 @@ public class ResultsView extends VizView {
 	private ArrayList<HashMap<String, Integer>> witnesses;
 	private ArrayList<String> testcases;
 	private int maxBarChartHeight;
+	private ArrayList<Rectangle> bars;
 
 	public ResultsView() {
 		VizState.getState().addVizUpdateListener(this);
@@ -63,28 +65,41 @@ public class ResultsView extends VizView {
 				screenWidth += testCaseSpacing;
 			}
 			this.setPreferredSize(new Dimension(screenWidth, this.getHeight()));
+			updateRectangles();
 		}
 	}
-
-	public void paint(Graphics g) {
+	
+	private void updateRectangles() {
 		if(witnesses == null)
 			return;
+		bars = new ArrayList<>();
 		int height = this.getHeight();
 		float heightFactor = height/(float)maxBarChartHeight;
 		float x = 0;
 		int y = height - 1;
-		Color[] colors = {Color.BLUE, Color.GREEN, Color.ORANGE};
-		int colorIndex = 0;
 		for(HashMap<String, Integer> testcase : witnesses) {
-			colorIndex = 0;
 			for(Integer count : testcase.values()) {
-				g.setColor(colors[colorIndex]);
 				int barHeight = (int)(count * heightFactor);
-				g.fillRect((int)x, y - barHeight, barWidth, barHeight);
+				bars.add(new Rectangle((int)x, y - barHeight, barWidth, barHeight));
 				x += barWidth + barSpacing;
-				colorIndex = (colorIndex + 1) % colors.length;
 			}
 			x += testCaseSpacing;
+		}
+	}
+
+	public void paint(Graphics g) {
+		if(bars == null) {
+			updateRectangles();
+		}
+		if(bars == null) {
+			return;
+		}
+		Color[] colors = {Color.BLUE, Color.GREEN, Color.ORANGE};
+		int colorIndex = 0;
+		for(Rectangle bar : bars) {
+			g.setColor(colors[colorIndex]);
+			colorIndex = (colorIndex + 1) % colors.length;
+			g.fillRect(bar.x, bar.y, bar.width, bar.height);
 		}
 	}
 
