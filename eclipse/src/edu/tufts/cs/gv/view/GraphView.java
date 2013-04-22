@@ -71,7 +71,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 			simulating = true;
 		}
 		if (eventType == VizEventType.HOVERING_TESTS) {
-			System.out.println(VizState.getState().getMousedOverTests().toString());
+			//System.out.println(VizState.getState().getMousedOverTests().toString());
 		}
 	}
 
@@ -133,15 +133,15 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 			for (Vertex v : graph.getVertices()) {
 				totalE += v.getVelocity2();
 				v.move();
-				if (v.getX() < radius) {
-					v.setX(radius);
-				} else if (v.getX() > getWidth() - radius) {
-					v.setX(getWidth() - radius);
+				if (v.getX() < diameter) {
+					v.setX(diameter);
+				} else if (v.getX() > getWidth() - diameter) {
+					v.setX(getWidth() - diameter);
 				}
-				if (v.getY() < radius) {
-					v.setY(radius);
-				} else if (v.getY() > getHeight() - radius) {
-					v.setY(getHeight() - radius);
+				if (v.getY() < diameter) {
+					v.setY(diameter);
+				} else if (v.getY() > getHeight() - diameter) {
+					v.setY(getHeight() - diameter);
 				}
 			}
 			if (totalE < ENERGY_LIMIT * graph.getVertices().size()) {
