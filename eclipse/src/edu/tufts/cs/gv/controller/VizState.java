@@ -20,6 +20,7 @@ public class VizState {
 	private List<VizUpdateListener> updateListeners;
 	private Dataset dataset;
 	private Set<String> mousedOverTests;
+	private String mousedOverStudent;
 	
 	public Set<String> getMousedOverTests() {
 		return mousedOverTests;
@@ -28,6 +29,15 @@ public class VizState {
 	public void setMousedOverTests(Set<String> mousedOverTests) {
 		this.mousedOverTests = mousedOverTests;
 		fireVizUpdateEvent(VizEventType.HOVERING_TESTS);
+	}
+	
+	public String getMousedOverStudent() {
+		return mousedOverStudent;
+	}
+
+	public void setMousedOverStudent(String mousedOverStudent) {
+		this.mousedOverStudent = mousedOverStudent;
+		fireVizUpdateEvent(VizEventType.HOVERING_STUDENT);
 	}
 
 	private VizState() {

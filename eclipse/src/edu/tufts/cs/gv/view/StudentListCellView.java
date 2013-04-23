@@ -2,9 +2,6 @@ package edu.tufts.cs.gv.view;
 
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
 import java.util.HashSet;
 import java.util.Set;
 
