@@ -111,11 +111,17 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 					g.setColor(Color.RED);
 				}
 				Vector center = worldToScreen(v.getX(), v.getY());
+				double radius = calcRadius(v.getTestNames().size());
+				double diameter = 2 * radius;
 				g.fillOval((int)(center.x - radius * scale), (int)(center.y - radius * scale), (int)(diameter * scale), (int)(diameter * scale));
 				g.setColor(Color.BLACK);
 				g.drawOval((int)(center.x - radius * scale), (int)(center.y - radius * scale), (int)(diameter * scale), (int)(diameter * scale));
 			}
 		}
+	}
+	
+	public int calcRadius(int numTests) {
+		return Math.max((int)(Math.sqrt(numTests) * radius), 5);
 	}
 	
 	public Vector worldToScreen(Point world) {
@@ -166,17 +172,6 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 			for (Vertex v : graph.getVertices()) {
 				totalE += v.getVelocity2();
 				v.move();
-				/*
-				if (v.getX() < diameter) {
-					v.setX(diameter);
-				} else if (v.getX() > getWidth() - diameter) {
-					v.setX(getWidth() - diameter);
-				}
-				if (v.getY() < diameter) {
-					v.setY(diameter);
-				} else if (v.getY() > getHeight() - diameter) {
-					v.setY(getHeight() - diameter);
-				}*/
 			}
 			if (totalE < ENERGY_LIMIT * graph.getVertices().size()) {
 				simulating = false;
@@ -186,8 +181,9 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 	
 	public String getToolTipText(MouseEvent e) {
 		if (graph != null) {
+			Vector point = screenToWorld(e.getPoint());
 			for (Vertex v : graph.getVertices()) {
-				if (v.getDistance(e.getX(), e.getY()) <= radius) {
+				if (v.getDistance(point.x, point.y) <= calcRadius(v.getTestNames().size())) {
 					String tooltip = "<html>";
 					if (v.getTestNames().size() == 0) {
 						tooltip += "No Tests";
@@ -254,7 +250,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		if (moving != null) {
 			double dx = e.getX() - lastPoint.x;
 			double dy = e.getY() - lastPoint.y;
-			moving.moveDelta(dx, dy);
+			moving.moveDelta(dx / scale, dy / scale);
 			simulating = true;
 			lastPoint = e.getPoint();
 		} else {
@@ -268,18 +264,18 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 
 	public void mousePressed(MouseEvent e) {
 		if (graph == null) { return; }
-		Point p = e.getPoint();
+		Vector p = screenToWorld(e.getPoint());
 		for (Vertex v : graph.getVertices()) {
 			if (v.getDistance(p.x, p.y) <= radius) {
 				moving = v;
 			}
 		}
 		if (moving != null) {
-			lastPoint = p;
+			lastPoint = e.getPoint();
 			simulating = true;
 			moving.setOverriding(true);
 		} else {
-			lastPoint = p;
+			lastPoint = e.getPoint();
 		}
 	}
 
