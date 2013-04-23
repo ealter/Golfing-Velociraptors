@@ -68,7 +68,6 @@ public class Visualization extends JFrame {
 	private JButton btnDiff;
 	private JPanel pnlDiff;
 	private StudentView studentView;
-	private JScrollPane studentScrollView;
 	
 	// Results view
 	private VizView resultsView;
@@ -111,14 +110,13 @@ public class Visualization extends JFrame {
 		
 		// Student view & button
 		studentView = new StudentView();
-		studentScrollView = new JScrollPane(studentView);
 		btnDiff = new JButton("Change the dataset...");
 		btnDiff.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) { onOpenDataset(); }
 		});
 		
 		pnlDiff = new JPanel(new BorderLayout());
-		pnlDiff.add(studentScrollView, BorderLayout.CENTER);
+		pnlDiff.add(studentView, BorderLayout.CENTER);
 		pnlDiff.add(btnDiff, BorderLayout.NORTH);
 		
 		// Results view
