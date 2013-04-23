@@ -1,71 +1,48 @@
 package edu.tufts.cs.gv.view;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Font;
-import java.util.HashSet;
-import java.util.Set;
 
+import javax.swing.DefaultListModel;
+import javax.swing.JList;
 import javax.swing.JPanel;
-import javax.swing.JTextPane;
-import javax.swing.text.SimpleAttributeSet;
-import javax.swing.text.StyleConstants;
-import javax.swing.text.StyledDocument;
+import javax.swing.ListSelectionModel;
 
 import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.controller.VizUpdateListener;
+import edu.tufts.cs.gv.view.StudentListCellView;
 
 public class StudentView extends JPanel implements VizUpdateListener {
 	private static final long serialVersionUID = 1L;
 	
-	private JTextPane studentText;
+	private JList<String> lstStudents;
+	private DefaultListModel<String> modStudents;
+	private StudentListCellView viewStudent;
 
 	public StudentView() {
-		studentText = new JTextPane();
-		studentText.setEditable(false);
-		studentText.setFont(new Font("courier new", Font.PLAIN, 14));
+		modStudents = new DefaultListModel<String>();
+		
+		lstStudents = new JList<String>(modStudents);
+		viewStudent = new StudentListCellView(lstStudents);
+		
+		lstStudents.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		lstStudents.setVisibleRowCount(-1);
+		lstStudents.setCellRenderer(viewStudent);
+		
 		this.setLayout(new BorderLayout());
-		this.add(studentText, BorderLayout.CENTER);
+		this.add(lstStudents, BorderLayout.CENTER);
 		
 		VizState.getState().addVizUpdateListener(this);
 	}
 	
 	@Override
 	public void vizUpdated(VizEventType eventType) {
-		if (eventType == VizEventType.NEW_DATA_SOURCE) {
-			String str = "";
-			for (String student : VizState.getState().getDataset().getAllStudents()) {
-				str += student + "\n";
-			}
-			studentText.setText(str);
-		} else if (eventType == VizEventType.HOVERING_TESTS) {
-			VizState state = VizState.getState();
-			Set<String> tests = state.getMousedOverTests();
-			if (tests == null) {
-				String text = studentText.getText();
-				studentText.setText("");
-				studentText.setText(text);
-			} else {
-				Set<String> students = new HashSet<>();
-				for (String test : tests) {
-					students.addAll(state.getDataset().getPassersOfTest(test));
-				}
-				
-				String text = studentText.getText();
-				studentText.setText("");
-				studentText.setText(text);
-				
-				StyledDocument doc = studentText.getStyledDocument();
-				SimpleAttributeSet highlight = new SimpleAttributeSet();
-				StyleConstants.setBackground(highlight, new Color(255, 100, 100));
-				doc.setCharacterAttributes(0, doc.getLength(), highlight, true);
-				StyleConstants.setBackground(highlight, new Color(173, 216, 230));
-				for (String student : students) {
-					int offset = studentText.getText().indexOf(student);
-					doc.setCharacterAttributes(offset, student.length(), highlight, true);
-				}
-			}
+		if (eventType != VizEventType.NEW_DATA_SOURCE) 
+			return;
+		
+		modStudents.removeAllElements();
+		for (String student : VizState.getState().getDataset().getAllStudents()) {
+			modStudents.addElement(student);
 		}
 	}
 }
