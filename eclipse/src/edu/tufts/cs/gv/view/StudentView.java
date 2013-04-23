@@ -43,11 +43,11 @@ public class StudentView extends JPanel implements VizUpdateListener {
 		super.paintComponent(gg);
 		
 		//if (!VizState.getState().isShowingHelp()) {
-			Graphics2D g = (Graphics2D) gg;
+		/*	Graphics2D g = (Graphics2D) gg;
 			
 			g.setColor(Color.BLACK);
 			g.fillRect(5, 5, getWidth() - 10, getHeight() - 10);
-			g.drawString("List of students.", 10, 10);
+			g.drawString("List of students.", 10, 10);*/
 		//}
 	}
 	
