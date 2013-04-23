@@ -10,8 +10,8 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
+import java.awt.geom.Rectangle2D;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 import javax.swing.JSlider;
@@ -22,7 +22,6 @@ import javax.swing.event.ChangeListener;
 import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.model.Dataset;
-import edu.tufts.cs.gv.model.TestCase;
 import edu.tufts.cs.gv.model.graph.Edge;
 import edu.tufts.cs.gv.model.graph.Graph;
 import edu.tufts.cs.gv.model.graph.Vertex;
@@ -38,6 +37,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 	private static double SPRING_LENGTH = 7.5;
 	private static final double radius = 10;
 	private static final double diameter = radius * 2;
+	private static final String helpString = "You can zoom the view with the mouse wheel";
 	
 	private static final double zoom_rate = .9;
 	
@@ -85,11 +85,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 			moving = null;
 			offset = new Vector(0, 0);
 			scale = 1;
-		}
-		if (eventType == VizEventType.HOVERING_TESTS) {
-			//System.out.println(VizState.getState().getMousedOverTests().toString());
-		}
-		if (eventType == VizEventType.HOVERING_STUDENT) {
+		} else if (eventType == VizEventType.HOVERING_STUDENT) {
 			if (dataset != null && graph != null) {
 				String student = VizState.getState().getMousedOverStudent();
 				if (student != null) {
@@ -139,6 +135,13 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 				g.setColor(Color.BLACK);
 				g.drawOval((int)(center.x - radius * scale), (int)(center.y - radius * scale), (int)(diameter * scale), (int)(diameter * scale));
 			}
+		}
+		if (VizState.getState().isShowingHelp()) {
+			g.setColor(Color.BLACK);
+			g.fillRect(0, 0, getWidth(), getHeight());
+			Rectangle2D bounds = g.getFontMetrics().getStringBounds(helpString, g);
+			g.setColor(Color.WHITE);
+			g.drawString(helpString, (int)(getWidth() / 2 - bounds.getWidth() / 2), (int)(getHeight() / 2 - bounds.getHeight() / 2));
 		}
 	}
 	
@@ -288,7 +291,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		if (graph == null) { return; }
 		Vector p = screenToWorld(e.getPoint());
 		for (Vertex v : graph.getVertices()) {
-			if (v.getDistance(p.x, p.y) <= radius) {
+			if (v.getDistance(p.x, p.y) <= calcRadius(v.getTestNames().size())) {
 				moving = v;
 			}
 		}

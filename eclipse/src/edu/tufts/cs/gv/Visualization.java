@@ -38,6 +38,8 @@ public class Visualization extends JFrame {
 	
 	static final String STARTSCREEN = "Start Screen";
 	static final String VIZSCREEN = "Visualization Screen";
+	static final String SIMPLE = "Simple Options";
+	static final String ADVANCED = "Advanced Options";
 	
 	private Timer renderTimer;
 	
@@ -75,7 +77,14 @@ public class Visualization extends JFrame {
 	private GraphView graphView;
 	private JLabel lblSpring, lblSpringLen, lblRepel, lblGrav, lblEnergy;
 	private JSlider sldSpring, sldSpringLen, sldRepel, sldGrav, sldEnergy;
-	private JPanel pnlVisualization, pnlGraphView;
+	private JPanel pnlAdvanced;
+	private JButton btnAdvanced, btnHelp;
+	private JPanel pnlSimple, pnlFiller;
+	private JPanel pnlOptions;
+	private CardLayout crdOptionsLayout;
+	private JPanel pnlGraphView;
+	
+	private JPanel pnlVisualization;
 	
 	public Visualization(int fps) {
 		//
@@ -105,6 +114,7 @@ public class Visualization extends JFrame {
 		
 		// Graph view
 		graphView = new GraphView();
+		
 		lblSpring = new JLabel("Spring", JLabel.CENTER);
 		lblSpringLen = new JLabel("Spring Length", JLabel.CENTER);
 		lblRepel = new JLabel("Repulsion", JLabel.CENTER);
@@ -120,9 +130,9 @@ public class Visualization extends JFrame {
 		sldGrav.addChangeListener(graphView.getGravityListener());
 		sldEnergy = new JSlider(JSlider.HORIZONTAL, 0, 1000, 50);
 		sldEnergy.addChangeListener(graphView.getEnergyListener());
-		pnlGraphView = new JPanel();
-		GroupLayout layout = new GroupLayout(pnlGraphView);
-		pnlGraphView.setLayout(layout);
+		pnlAdvanced = new JPanel();
+		GroupLayout layout = new GroupLayout(pnlAdvanced);
+		pnlAdvanced.setLayout(layout);
 		layout.setHorizontalGroup(layout.createParallelGroup()
 				.addGroup(layout.createSequentialGroup()
 						.addComponent(lblSpring, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -135,8 +145,7 @@ public class Visualization extends JFrame {
 						.addComponent(sldSpringLen, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(sldRepel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(sldGrav, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(sldEnergy, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-				.addComponent(graphView));
+						.addComponent(sldEnergy, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
 		layout.setVerticalGroup(layout.createSequentialGroup()
 				.addGroup(layout.createParallelGroup()
 						.addComponent(lblSpring)
@@ -149,8 +158,43 @@ public class Visualization extends JFrame {
 						.addComponent(sldSpringLen)
 						.addComponent(sldRepel)
 						.addComponent(sldGrav)
-						.addComponent(sldEnergy))
-				.addComponent(graphView));
+						.addComponent(sldEnergy)));
+		
+		btnAdvanced = new JButton("Advanced Mode");
+		btnAdvanced.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				crdOptionsLayout.show(pnlOptions, ADVANCED);
+			}
+		});
+		btnHelp = new JButton("Help");
+		btnHelp.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				VizState.getState().setShowingHelp(!VizState.getState().isShowingHelp());
+			}
+		});
+		pnlFiller = new JPanel();
+		pnlSimple = new JPanel();
+		layout = new GroupLayout(pnlSimple);
+		pnlSimple.setLayout(layout);
+		layout.setHorizontalGroup(layout.createSequentialGroup()
+				.addComponent(pnlFiller)
+				.addComponent(btnAdvanced)
+				.addComponent(btnHelp));
+		layout.setVerticalGroup(layout.createParallelGroup()
+				.addComponent(pnlFiller)
+				.addComponent(btnAdvanced)
+				.addComponent(btnHelp));
+		
+		crdOptionsLayout = new CardLayout();
+		pnlOptions = new JPanel(crdOptionsLayout);
+		pnlOptions.add(pnlSimple, SIMPLE);
+		pnlOptions.add(pnlAdvanced, ADVANCED);
+		
+		pnlGraphView = new JPanel();
+		pnlGraphView.setLayout(new BorderLayout());
+		pnlGraphView.add(pnlOptions, BorderLayout.NORTH);
+		pnlGraphView.add(graphView, BorderLayout.CENTER);
+		
 		
 		// Layout setup
 		testSplit = new JSplitPane(JSplitPane.VERTICAL_SPLIT, true, pnlGraphView, resultsScrollView);
