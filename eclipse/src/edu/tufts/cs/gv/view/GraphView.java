@@ -11,6 +11,7 @@ import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.swing.JSlider;
@@ -21,6 +22,7 @@ import javax.swing.event.ChangeListener;
 import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.model.Dataset;
+import edu.tufts.cs.gv.model.TestCase;
 import edu.tufts.cs.gv.model.graph.Edge;
 import edu.tufts.cs.gv.model.graph.Graph;
 import edu.tufts.cs.gv.model.graph.Vertex;
@@ -86,6 +88,26 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		}
 		if (eventType == VizEventType.HOVERING_TESTS) {
 			//System.out.println(VizState.getState().getMousedOverTests().toString());
+		}
+		if (eventType == VizEventType.HOVERING_STUDENT) {
+			if (dataset != null && graph != null) {
+				String student = VizState.getState().getMousedOverStudent();
+				if (student != null) {
+					for (Vertex v : graph.getVertices()) {
+						v.setSelected(false);
+						if (v.getTestNames().size() > 0) {
+							String test = v.getTestNames().iterator().next();
+							if (dataset.getPassersOfTest(test).contains(student)) {
+								v.setSelected(true);
+							}
+						}
+					}
+				} else {
+					for (Vertex v : graph.getVertices()) {
+						v.setSelected(false);
+					}
+				}
+			}
 		}
 	}
 
