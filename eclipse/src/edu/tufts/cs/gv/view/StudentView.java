@@ -39,19 +39,6 @@ public class StudentView extends JPanel implements VizUpdateListener {
 	}
 	
 	@Override
-	public void paintComponent(Graphics gg) {
-		super.paintComponent(gg);
-		
-		//if (!VizState.getState().isShowingHelp()) {
-		/*	Graphics2D g = (Graphics2D) gg;
-			
-			g.setColor(Color.BLACK);
-			g.fillRect(5, 5, getWidth() - 10, getHeight() - 10);
-			g.drawString("List of students.", 10, 10);*/
-		//}
-	}
-	
-	@Override
 	public void vizUpdated(VizEventType eventType) {
 		if (eventType != VizEventType.NEW_DATA_SOURCE) 
 			return;
