@@ -112,11 +112,11 @@ public class Visualization extends JFrame {
 		lblEnergy = new JLabel("Energy", JLabel.CENTER);
 		sldSpring = new JSlider(JSlider.HORIZONTAL, 0, 1000, 500);
 		sldSpring.addChangeListener(graphView.getSpringListener());
-		sldSpringLen = new JSlider(JSlider.HORIZONTAL, 0, 1000, 300);
+		sldSpringLen = new JSlider(JSlider.HORIZONTAL, 0, 1000, 750);
 		sldSpringLen.addChangeListener(graphView.getSpringLengthListener());
-		sldRepel = new JSlider(JSlider.HORIZONTAL, 0, 1000, 200);
+		sldRepel = new JSlider(JSlider.HORIZONTAL, 0, 1000, 500);
 		sldRepel.addChangeListener(graphView.getRepulstionListener());
-		sldGrav = new JSlider(JSlider.HORIZONTAL, 0, 1000, 100);
+		sldGrav = new JSlider(JSlider.HORIZONTAL, 0, 1000, 1000);
 		sldGrav.addChangeListener(graphView.getGravityListener());
 		sldEnergy = new JSlider(JSlider.HORIZONTAL, 0, 1000, 50);
 		sldEnergy.addChangeListener(graphView.getEnergyListener());

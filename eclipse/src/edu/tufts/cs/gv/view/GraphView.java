@@ -29,11 +29,11 @@ import edu.tufts.cs.gv.util.Vector;
 public class GraphView extends VizView implements MouseListener, MouseMotionListener, MouseWheelListener {
 	private static final long serialVersionUID = 1L;
 
-	private static double Kc = 200;
+	private static double Kc = 50;
 	private static double Ks = .05;
-	private static double Kg = .1;
+	private static double Kg = 1;
 	private static double ENERGY_LIMIT = .5;
-	private static double SPRING_LENGTH = 3;
+	private static double SPRING_LENGTH = 7.5;
 	private static final double radius = 10;
 	private static final double diameter = radius * 2;
 	
@@ -222,7 +222,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 	public ChangeListener getRepulstionListener() {
 		return new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
-				Kc = ((JSlider)e.getSource()).getValue();
+				Kc = ((JSlider)e.getSource()).getValue() / 10.0;
 				simulating = true;
 			}
 		};
