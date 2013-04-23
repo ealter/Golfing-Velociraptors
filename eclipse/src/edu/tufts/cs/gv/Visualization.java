@@ -3,9 +3,12 @@ package edu.tufts.cs.gv;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.Box;
+import javax.swing.BoxLayout;
 import javax.swing.GroupLayout;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
@@ -42,10 +45,6 @@ public class Visualization extends JFrame {
 	static final String ADVANCED = "Advanced Options";
 	
 	private Timer renderTimer;
-	
-	private JMenuBar menu;
-	private JMenu file;
-	private JMenuItem openDataset;
 	
 	private JFileChooser datasetChooser;
 	
@@ -92,13 +91,17 @@ public class Visualization extends JFrame {
 		//
 	
 		btnChoose = new JButton("Open a Dataset");
-		btnChoose.setPreferredSize(new Dimension(200, 50));
+		btnChoose.setFont(btnChoose.getFont().deriveFont(30.0f));
+		btnChoose.setAlignmentX(CENTER_ALIGNMENT);
 		btnChoose.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) { onOpenDataset(); }
 		});
 		
-		pnlStart = new JPanel(new BorderLayout());
-		pnlStart.add(btnChoose, BorderLayout.CENTER);
+		pnlStart = new JPanel();
+		pnlStart.setLayout(new BoxLayout(pnlStart, BoxLayout.PAGE_AXIS));
+		pnlStart.add(Box.createVerticalGlue());
+		pnlStart.add(btnChoose);
+		pnlStart.add(Box.createVerticalGlue());
 		
 		//
 		// Visualization Screen
@@ -222,20 +225,8 @@ public class Visualization extends JFrame {
 		
 		datasetChooser = new JFileChooser("..");
 		
-		openDataset = new JMenuItem("Open Dataset");
-		openDataset.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) { onOpenDataset(); }
-		});
-		
-		file = new JMenu("File");
-		file.add(openDataset);
-		
-		menu = new JMenuBar();
-		menu.add(file);
-		
 		this.setSize(600, 600);
 		this.add(pnlRoot);
-		this.setJMenuBar(menu);
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		

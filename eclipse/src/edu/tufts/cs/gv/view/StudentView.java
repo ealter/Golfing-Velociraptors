@@ -1,6 +1,9 @@
 package edu.tufts.cs.gv.view;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
