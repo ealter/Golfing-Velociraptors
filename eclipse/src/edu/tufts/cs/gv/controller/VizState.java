@@ -21,6 +21,7 @@ public class VizState {
 	private Dataset dataset;
 	private Set<String> mousedOverTests;
 	private String mousedOverStudent;
+	private boolean isShowingHelp;
 	
 	public Set<String> getMousedOverTests() {
 		return mousedOverTests;
@@ -38,6 +39,15 @@ public class VizState {
 	public void setMousedOverStudent(String mousedOverStudent) {
 		this.mousedOverStudent = mousedOverStudent;
 		fireVizUpdateEvent(VizEventType.HOVERING_STUDENT);
+	}
+	
+	public boolean isShowingHelp() {
+		return isShowingHelp;
+	}
+
+	public void setShowingHelp(boolean isShowingHelp) {
+		this.isShowingHelp = isShowingHelp;
+		fireVizUpdateEvent(VizEventType.TOGGLE_HELP);
 	}
 
 	private VizState() {

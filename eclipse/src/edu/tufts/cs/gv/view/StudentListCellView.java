@@ -22,14 +22,20 @@ public class StudentListCellView extends JLabel implements
 
 	private static final Color clrFail = new Color(255, 100, 100);
 	private static final Color clrPass = new Color(173, 216, 230);
+	private static final Color clrHover = new Color(200, 200, 200);
 	
 	private Set<String> tests, students;
+	private String student;
 	private JList<String> lstStudents;
 	private StudentListCellMouseAdapter adpStudents;
 	
 	public StudentListCellView (JList<String> list) {
 		lstStudents = list;
-		adpStudents = new StudentListCellMouseAdapter(list);		
+		
+		adpStudents = new StudentListCellMouseAdapter(list);	
+		list.addMouseListener(adpStudents);
+		list.addMouseMotionListener(adpStudents);
+		
 		VizState.getState().addVizUpdateListener(this);
 	}
 
@@ -41,6 +47,8 @@ public class StudentListCellView extends JLabel implements
 		
 		if (tests != null) {
 			setBackground(students.contains(value) ? clrPass : clrFail);
+		} else if (student != null && student == value) {
+			setBackground(clrHover);
 		} else {
 			setBackground(list.getBackground());
 		}
@@ -51,19 +59,21 @@ public class StudentListCellView extends JLabel implements
 
 	@Override
 	public void vizUpdated(VizEventType eventType) {
-		if (eventType != VizEventType.HOVERING_TESTS)
-			return;
-		
 		VizState state = VizState.getState();
-		tests = state.getMousedOverTests();
 		
-		if (tests != null) {
-			students = new HashSet<>();
-			for (String test : tests) {
-				students.addAll(state.getDataset().getPassersOfTest(test));
+		if (eventType == VizEventType.HOVERING_TESTS) {		
+			tests = state.getMousedOverTests();
+			
+			if (tests != null) {
+				students = new HashSet<>();
+				for (String test : tests) {
+					students.addAll(state.getDataset().getPassersOfTest(test));
+				}
+			} else {
+				students = null;
 			}
-		} else {
-			students = null;
+		} else if (eventType == VizEventType.HOVERING_STUDENT) {
+			student = state.getMousedOverStudent();
 		}
 		
 		lstStudents.repaint();
@@ -74,14 +84,13 @@ public class StudentListCellView extends JLabel implements
 		
 		public StudentListCellMouseAdapter(JList<String> list) {
 			lstStudents = list;
-			list.addMouseListener(adpStudents);
-			list.addMouseMotionListener(adpStudents);
 		}
 		
 		@Override
 		public void mouseMoved(MouseEvent e) {
 			int index = lstStudents.locationToIndex(e.getPoint());
 			String student = lstStudents.getModel().getElementAt(index);
+		
 			VizState.getState().setMousedOverStudent(student);
 		}
 		
