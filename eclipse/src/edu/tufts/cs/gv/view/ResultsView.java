@@ -1,16 +1,19 @@
 package edu.tufts.cs.gv.view;
 
+import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
-import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
+import java.awt.RenderingHints;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
 import java.awt.event.MouseEvent;
 import java.awt.geom.AffineTransform;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Set;
 
 import edu.tufts.cs.gv.controller.VizEventType;
@@ -34,12 +37,32 @@ public class ResultsView extends VizView {
 	private ArrayList<HashMap<String, Integer>> witnesses;
 	private ArrayList<String> testcases;
 	private int maxBarChartHeight;
-	private HashMap<Rectangle, String> bars;
+	private LinkedHashMap<Rectangle, String> bars;
 
 	public ResultsView() {
 		VizState.getState().addVizUpdateListener(this);
 		maxBarChartHeight = 0;
 		this.setToolTipText("");
+		
+		this.addComponentListener(new ComponentListener() {
+			
+			@Override
+			public void componentShown(ComponentEvent arg0) {	
+			}
+			
+			@Override
+			public void componentResized(ComponentEvent arg0) {
+				bars = null;
+			}
+			
+			@Override
+			public void componentMoved(ComponentEvent arg0) {
+			}
+			
+			@Override
+			public void componentHidden(ComponentEvent arg0) {
+			}
+		});
 	}
 
 	@Override
@@ -84,13 +107,12 @@ public class ResultsView extends VizView {
 		if (witnesses == null)
 			return;
 		FontMetrics metrics = g.getFontMetrics();
-		bars = new HashMap<>();
+		bars = new LinkedHashMap<>();
 		int height = this.getHeight();
 		// Find the height that the text will take up
 		int maxTextHeight = 0;
 		for (String testname : testcases) {
-			maxTextHeight = Math.max(maxTextHeight,
-					getTextHeight(metrics, testname));
+			maxTextHeight = Math.max(maxTextHeight,	getTextHeight(metrics, testname));
 		}
 		float heightFactor = height / (float) maxBarChartHeight;
 		float x = 0;
@@ -133,6 +155,8 @@ public class ResultsView extends VizView {
 		}
 		int x = 0;
 		Graphics2D g2 = (Graphics2D) g;
+		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+				RenderingHints.VALUE_ANTIALIAS_ON);
 		int maxTextHeight = 0;
 		for(String testname : testcases) {
 			maxTextHeight = Math.max(maxTextHeight, getTextHeight(g.getFontMetrics(), testname));
@@ -143,7 +167,7 @@ public class ResultsView extends VizView {
 			String text = testcases.get(i);
 			AffineTransform orig = g2.getTransform();
 			AffineTransform rotation = new AffineTransform(orig);
-			rotation.translate(x + getTestcaseWidth(g.getFontMetrics(), i) / 2, y);
+			rotation.translate(x + getTestcaseWidth(g.getFontMetrics(), i) / 2, y + 5);
 			rotation.rotate(Math.PI / 3);
 			g2.setTransform(rotation);
 			g2.drawString(text, 0, 0);
