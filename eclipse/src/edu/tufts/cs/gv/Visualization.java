@@ -1,9 +1,13 @@
 package edu.tufts.cs.gv;
 
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.GroupLayout;
+import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -25,9 +29,16 @@ import edu.tufts.cs.gv.view.ResultsView;
 import edu.tufts.cs.gv.view.StudentView;
 import edu.tufts.cs.gv.view.VizView;
 
-public class Visualization extends JFrame{
+public class Visualization extends JFrame {
+	//
+	// Global
+	//
+	
 	private static final long serialVersionUID = 1L;
-
+	
+	static final String STARTSCREEN = "Start Screen";
+	static final String VIZSCREEN = "Visualization Screen";
+	
 	private Timer renderTimer;
 	
 	private JMenuBar menu;
@@ -36,26 +47,62 @@ public class Visualization extends JFrame{
 	
 	private JFileChooser datasetChooser;
 	
+	private JPanel pnlRoot;
+	private CardLayout crdRoot;
+	
+	//
+	// Start Screen
+	//
+	
+	private JPanel pnlStart;
+	private JButton btnChoose;
+	
+	//
+	// Visualization Screen
+	//
+	
 	private JSplitPane studentSplit, testSplit;
+	
 	// Student view
 	private StudentView studentView;
 	private JScrollPane studentScrollView;
+	
 	// Results view
 	private VizView resultsView;
 	private JScrollPane resultsScrollView;
+	
 	// Graph view
 	private GraphView graphView;
 	private JLabel lblSpring, lblSpringLen, lblRepel, lblGrav, lblEnergy;
 	private JSlider sldSpring, sldSpringLen, sldRepel, sldGrav, sldEnergy;
-	private JPanel pnlGraphView;
+	private JPanel pnlVisualization, pnlGraphView;
 	
 	public Visualization(int fps) {
+		//
+		// Start Screen
+		//
+	
+		btnChoose = new JButton("Open a Dataset");
+		btnChoose.setPreferredSize(new Dimension(200, 50));
+		btnChoose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) { onOpenDataset(); }
+		});
+		
+		pnlStart = new JPanel(new BorderLayout());
+		pnlStart.add(btnChoose, BorderLayout.CENTER);
+		
+		//
+		// Visualization Screen
+		//
+		
 		// Student view
 		studentView = new StudentView();
 		studentScrollView = new JScrollPane(studentView);
+		
 		// Results view
 		resultsView = new ResultsView();
 		resultsScrollView = new JScrollPane(resultsView);
+		
 		// Graph view
 		graphView = new GraphView();
 		lblSpring = new JLabel("Spring", JLabel.CENTER);
@@ -116,16 +163,24 @@ public class Visualization extends JFrame{
 		studentSplit.setDividerLocation(.3);
 		studentSplit.setOneTouchExpandable(true);
 		
+		pnlVisualization = new JPanel(new BorderLayout());
+		pnlVisualization.add(studentSplit, BorderLayout.CENTER);
+		
+		//
+		// Global
+		//
+		
+		crdRoot = new CardLayout();
+		
+		pnlRoot = new JPanel(crdRoot);
+		pnlRoot.add(pnlStart, STARTSCREEN);
+		pnlRoot.add(pnlVisualization, VIZSCREEN);
+		
 		datasetChooser = new JFileChooser("..");
 		
 		openDataset = new JMenuItem("Open Dataset");
 		openDataset.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				int result = datasetChooser.showOpenDialog(Visualization.this);
-				if (result == JFileChooser.APPROVE_OPTION) {
-					VizState.getState().setDataset(Dataset.parseFromFile(datasetChooser.getSelectedFile().getAbsolutePath()));
-				}
-			}
+			public void actionPerformed(ActionEvent e) { onOpenDataset(); }
 		});
 		
 		file = new JMenu("File");
@@ -135,7 +190,7 @@ public class Visualization extends JFrame{
 		menu.add(file);
 		
 		this.setSize(600, 600);
-		this.add(studentSplit);
+		this.add(pnlRoot);
 		this.setJMenuBar(menu);
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -148,6 +203,14 @@ public class Visualization extends JFrame{
 			}
 		});
 		renderTimer.start();
+	}
+	
+	private void onOpenDataset() {
+		int result = datasetChooser.showOpenDialog(Visualization.this);
+		if (result == JFileChooser.APPROVE_OPTION) {
+			VizState.getState().setDataset(Dataset.parseFromFile(datasetChooser.getSelectedFile().getAbsolutePath()));
+			crdRoot.show(pnlRoot, VIZSCREEN);
+		}
 	}
 	
 	public static void main(String[] args) {
