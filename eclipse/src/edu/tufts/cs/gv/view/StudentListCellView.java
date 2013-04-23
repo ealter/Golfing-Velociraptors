@@ -2,6 +2,8 @@ package edu.tufts.cs.gv.view;
 
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -23,10 +25,11 @@ public class StudentListCellView extends JLabel implements
 	
 	private Set<String> tests, students;
 	private JList<String> lstStudents;
+	private StudentListCellMouseAdapter adpStudents;
 	
 	public StudentListCellView (JList<String> list) {
 		lstStudents = list;
-		
+		adpStudents = new StudentListCellMouseAdapter(list);		
 		VizState.getState().addVizUpdateListener(this);
 	}
 
@@ -64,5 +67,27 @@ public class StudentListCellView extends JLabel implements
 		}
 		
 		lstStudents.repaint();
+	}
+	
+	class StudentListCellMouseAdapter extends MouseAdapter {
+		private JList<String> lstStudents;
+		
+		public StudentListCellMouseAdapter(JList<String> list) {
+			lstStudents = list;
+			list.addMouseListener(adpStudents);
+			list.addMouseMotionListener(adpStudents);
+		}
+		
+		@Override
+		public void mouseMoved(MouseEvent e) {
+			int index = lstStudents.locationToIndex(e.getPoint());
+			String student = lstStudents.getModel().getElementAt(index);
+			VizState.getState().setMousedOverStudent(student);
+		}
+		
+		@Override
+		public void mouseExited(MouseEvent e) {
+			VizState.getState().setMousedOverStudent(null);
+		}
 	}
 }
