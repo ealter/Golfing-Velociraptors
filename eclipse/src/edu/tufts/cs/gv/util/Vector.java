@@ -2,7 +2,7 @@ package edu.tufts.cs.gv.util;
 
 public class Vector {
 
-	private double x, y;
+	public double x, y;
 	
 	public Vector() {
 		this(0, 0);
