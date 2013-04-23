@@ -148,7 +148,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 					if (a == b) { continue; }
 					Vector repel = new Vector(b.getX() - a.getX(), b.getY() - a.getY());
 					repel.normalize();
-					double mag = - Kc / (a.getDistance2(b));
+					double mag = - (Kc * a.getTestNames().size() * b.getTestNames().size()) / (a.getDistance2(b));
 					if (a.getDistance2(b) < .0001) {
 						mag = 0;
 					}
