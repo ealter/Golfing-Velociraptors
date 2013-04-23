@@ -291,11 +291,11 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 
 	public void mouseMoved(MouseEvent e) {
 		if (graph == null) { return; }
-		Point p = e.getPoint();
+		Vector p = screenToWorld(e.getPoint());
 		Set<String> selectedTests = new HashSet<>();
 		boolean none = true;
 		for (Vertex v : graph.getVertices()) {
-			if (v.getDistance(p.x, p.y) <= radius) {
+			if (v.getDistance(p.x, p.y) <= calcRadius(v.getTestNames().size())) {
 				selectedTests.addAll(v.getTestNames());
 				none = false;
 			}
@@ -310,9 +310,9 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 	public void mouseWheelMoved(MouseWheelEvent e) {
 		Vector centerWorld = screenToWorld(e.getPoint());
 		if (e.getWheelRotation() < 0) {
-			scale *= Math.abs(e.getWheelRotation()) * zoom_rate;
-		} else {
 			scale /= Math.abs(e.getWheelRotation()) * zoom_rate;
+		} else {
+			scale *= Math.abs(e.getWheelRotation()) * zoom_rate;
 		}
 		Vector newCenterWorld = screenToWorld(e.getPoint());
 		offset.x += (newCenterWorld.x - centerWorld.x) * scale;
