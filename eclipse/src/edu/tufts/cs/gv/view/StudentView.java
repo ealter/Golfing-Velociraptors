@@ -1,6 +1,9 @@
 package edu.tufts.cs.gv.view;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
@@ -33,6 +36,19 @@ public class StudentView extends JPanel implements VizUpdateListener {
 		this.add(lstStudents, BorderLayout.CENTER);
 		
 		VizState.getState().addVizUpdateListener(this);
+	}
+	
+	@Override
+	public void paintComponent(Graphics gg) {
+		super.paintComponent(gg);
+		
+		//if (!VizState.getState().isShowingHelp()) {
+			Graphics2D g = (Graphics2D) gg;
+			
+			g.setColor(Color.BLACK);
+			g.fillRect(5, 5, getWidth() - 10, getHeight() - 10);
+			g.drawString("List of students.", 10, 10);
+		//}
 	}
 	
 	@Override
