@@ -97,31 +97,24 @@ public class ResultsView extends VizView {
 		int y = height - 1 - maxTextHeight;
 		for (int i = 0; i < witnesses.size(); i++) {
 			HashMap<String, Integer> testcase = witnesses.get(i);
-			int textWidth = getTextWidth(metrics, testcases.get(i));
-			int testcaseWidth = 0;
 			for (String witness : testcase.keySet()) {
 				int count = ((Integer) testcase.get(witness)).intValue();
 				int barHeight = (int) (count * heightFactor);
-				bars.put(new Rectangle((int) x + testcaseWidth, y - barHeight,
+				bars.put(new Rectangle((int)x, y - barHeight,
 						barWidth, barHeight), witness);
-				testcaseWidth += barWidth + barSpacing;
+				x += barWidth + barSpacing;
 			}
-			x += Math.max(testcaseWidth, textWidth) + testCaseSpacing;
+			x += testCaseSpacing;
 		}
 	}
 
 	private int getTextHeight(FontMetrics metrics, String text) {
-		return (int) (metrics.stringWidth(text) / Math.sqrt(2));
-	}
-
-	private int getTextWidth(FontMetrics metrics, String text) {
-		return (int) (metrics.stringWidth(text) / Math.sqrt(2));
+		return (int) (Math.sqrt(3) / 2 * metrics.stringWidth(text));
 	}
 
 	private int getTestcaseWidth(FontMetrics metrics, int testIndex) {
 		int numBars = Math.min(maxBars, witnesses.get(testIndex).size());
-		return (int) Math.max(numBars * (barSpacing + barWidth),
-				getTextWidth(metrics, testcases.get(testIndex)));
+		return (int)(numBars * (barSpacing + barWidth));
 	}
 
 	public void paint(Graphics g) {
@@ -140,12 +133,17 @@ public class ResultsView extends VizView {
 		}
 		int x = 0;
 		Graphics2D g2 = (Graphics2D) g;
-		int y = this.getHeight() - 100;
+		int maxTextHeight = 0;
+		for(String testname : testcases) {
+			maxTextHeight = Math.max(maxTextHeight, getTextHeight(g.getFontMetrics(), testname));
+		}
+		g.setColor(Color.BLACK);
+		int y = this.getHeight() - maxTextHeight;
 		for (int i = 0; i < testcases.size(); i++) {
 			String text = testcases.get(i);
 			AffineTransform orig = g2.getTransform();
 			AffineTransform rotation = new AffineTransform(orig);
-			rotation.translate(x, y);
+			rotation.translate(x + getTestcaseWidth(g.getFontMetrics(), i) / 2, y);
 			rotation.rotate(Math.PI / 3);
 			g2.setTransform(rotation);
 			g2.drawString(text, 0, 0);
