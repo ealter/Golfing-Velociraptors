@@ -5,8 +5,10 @@ import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Color;
+import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.event.MouseEvent;
+import java.awt.geom.AffineTransform;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
@@ -104,7 +106,7 @@ public class ResultsView extends VizView {
 	}
 	
 	private int getTextHeight(FontMetrics metrics, String text) {
-		return metrics.getHeight();
+		return (int)(metrics.stringWidth(text)/Math.sqrt(2));
 	}
 	
 	private int getTextWidth(FontMetrics metrics, String text) {
@@ -131,10 +133,18 @@ public class ResultsView extends VizView {
 			g.fillRect(bar.x, bar.y, bar.width, bar.height);
 		}
 		int x = 0;
+		Graphics2D g2 = (Graphics2D)g;
+		int y = this.getHeight();
 		for(int i=0; i<testcases.size(); i++) {
 			String text = testcases.get(i);
-			g.drawString(text, x, this.getHeight());
+			AffineTransform orig = g2.getTransform();
+			AffineTransform rotation = new AffineTransform();
+			rotation.setToTranslation(x, y - this.getTextHeight(g.getFontMetrics(), text));
+			rotation.rotate(Math.PI/2);
+			g2.setTransform(rotation);
+			g2.drawString(text, x, y);
 			x += getTestcaseWidth(g.getFontMetrics(), i) + testCaseSpacing;
+			g2.setTransform(orig);
 		}
 	}
 	
