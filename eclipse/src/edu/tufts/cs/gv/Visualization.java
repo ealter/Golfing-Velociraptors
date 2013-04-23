@@ -91,7 +91,7 @@ public class Visualization extends JFrame {
 		//
 	
 		btnChoose = new JButton("Open a Dataset");
-		btnChoose.setFont(btnChoose.getFont().deriveFont(30.0f));
+		btnChoose.setFont(btnChoose.getFont().deriveFont(60.0f));
 		btnChoose.setAlignmentX(CENTER_ALIGNMENT);
 		btnChoose.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) { onOpenDataset(); }
