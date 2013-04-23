@@ -64,7 +64,9 @@ public class Visualization extends JFrame {
 	
 	private JSplitPane studentSplit, testSplit;
 	
-	// Student view
+	// Student view & chooser button
+	private JButton btnDiff;
+	private JPanel pnlDiff;
 	private StudentView studentView;
 	private JScrollPane studentScrollView;
 	
@@ -90,7 +92,7 @@ public class Visualization extends JFrame {
 		// Start Screen
 		//
 	
-		btnChoose = new JButton("Open a Dataset");
+		btnChoose = new JButton("Open a dataset...");
 		btnChoose.setFont(btnChoose.getFont().deriveFont(60.0f));
 		btnChoose.setAlignmentX(CENTER_ALIGNMENT);
 		btnChoose.addActionListener(new ActionListener() {
@@ -107,9 +109,17 @@ public class Visualization extends JFrame {
 		// Visualization Screen
 		//
 		
-		// Student view
+		// Student view & button
 		studentView = new StudentView();
 		studentScrollView = new JScrollPane(studentView);
+		btnDiff = new JButton("Change the dataset...");
+		btnDiff.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) { onOpenDataset(); }
+		});
+		
+		pnlDiff = new JPanel(new BorderLayout());
+		pnlDiff.add(studentScrollView, BorderLayout.CENTER);
+		pnlDiff.add(btnDiff, BorderLayout.NORTH);
 		
 		// Results view
 		resultsView = new ResultsView();
@@ -205,7 +215,7 @@ public class Visualization extends JFrame {
 		testSplit.setDividerLocation(.7);
 		testSplit.setOneTouchExpandable(true);
 		
-		studentSplit = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true, studentScrollView, testSplit);
+		studentSplit = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true, pnlDiff, testSplit);
 		studentSplit.setResizeWeight(.3);
 		studentSplit.setDividerLocation(.3);
 		studentSplit.setOneTouchExpandable(true);
