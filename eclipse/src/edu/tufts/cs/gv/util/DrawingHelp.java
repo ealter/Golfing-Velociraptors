@@ -1,6 +1,5 @@
 package edu.tufts.cs.gv.util;
 
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.Graphics;
 import java.awt.geom.Rectangle2D;
@@ -10,6 +9,7 @@ public class DrawingHelp {
 	public static void renderHelpText(Component target, List<String> helpString, Graphics g) {
 		int height = 0;
 		int width = 0;
+		g.setFont(Fonts.helpFont);
 		for (String line : helpString) {
 			Rectangle2D bounds = g.getFontMetrics().getStringBounds(line, g);
 			height += bounds.getHeight();

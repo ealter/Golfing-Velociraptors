@@ -2,8 +2,6 @@ package edu.tufts.cs.gv;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -14,9 +12,6 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSlider;
@@ -174,7 +169,6 @@ public class Visualization extends JFrame {
 				pnlGraphView.add(pnlAdvanced, BorderLayout.NORTH);
 				pnlGraphView.revalidate();
 				validate();
-				//pack();
 			}
 		});
 		btnHelp = new JButton("Help");
