@@ -36,8 +36,8 @@ public class Colors {
 	
 	public static final Color resultsForeground = new Color(100, 100, 100);
 	public static final Color[] resultsBars = { 
-		Color.BLUE, 
-		Color.GREEN, 
-		Color.ORANGE
+		new Color(195, 235, 159), 
+		new Color(121, 189, 143),
+		new Color(0, 163, 136)
 	};
 }
