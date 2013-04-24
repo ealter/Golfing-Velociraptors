@@ -21,6 +21,8 @@ There's coordination via hovering:
 
 - Hover over students to see the test sets they passed.
 - Hover over test sets to see the students that passed/failed them.
+- Hover over bubbles in the test sets to see what tests are in them.
+- Hover over bars in the result sets to see what witness they represent.
 
 If you are unsure how to use the application, click "Help" in the upper right corner.
 

@@ -1,0 +1,7 @@
+# Stratification in Data Sets
+
+Screenshot: Scenario-images/clustering.png
+
+The gravity in the node-link diagram allows you to see rough clustering
+of different sets of tests passed. These clusterings could be directly used
+to determine cuts in the graph trivially.
