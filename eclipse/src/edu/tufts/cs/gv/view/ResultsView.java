@@ -23,6 +23,7 @@ import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.model.Dataset;
 import edu.tufts.cs.gv.model.TestCase;
+import edu.tufts.cs.gv.util.Colors;
 import edu.tufts.cs.gv.util.DrawingHelp;
 
 //This class will be a bar chart of the witnesses.
@@ -155,11 +156,10 @@ public class ResultsView extends VizView {
 		if (bars == null) {
 			return;
 		}
-		Color[] colors = { Color.BLUE, Color.GREEN, Color.ORANGE };
 		int colorIndex = 0;
 		for (Rectangle bar : bars.keySet()) {
-			g.setColor(colors[colorIndex]);
-			colorIndex = (colorIndex + 1) % colors.length;
+			g.setColor(Colors.resultsBars[colorIndex]);
+			colorIndex = (colorIndex + 1) % Colors.resultsBars.length;
 			g.fillRect(bar.x, bar.y, bar.width, bar.height);
 		}
 		int x = 0;
@@ -168,7 +168,7 @@ public class ResultsView extends VizView {
 		for(String testname : testcases) {
 			maxTextHeight = Math.max(maxTextHeight, getTextHeight(g.getFontMetrics(), testname));
 		}
-		g.setColor(Color.BLACK);
+		g.setColor(Colors.resultsForeground);
 		int y = this.getHeight() - maxTextHeight;
 		for (int i = 0; i < testcases.size(); i++) {
 			String text = testcases.get(i);
