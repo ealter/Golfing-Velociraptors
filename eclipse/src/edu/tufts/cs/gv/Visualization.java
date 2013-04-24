@@ -7,6 +7,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.GroupLayout;
@@ -118,6 +119,7 @@ public class Visualization extends JFrame {
 		// Results view
 		resultsView = new ResultsView();
 		resultsScrollView = new JScrollPane(resultsView);
+		resultsScrollView.setBorder(BorderFactory.createEmptyBorder());
 		
 		// Graph view
 		graphView = new GraphView();
@@ -200,18 +202,20 @@ public class Visualization extends JFrame {
 		pnlGraphView.setLayout(new BorderLayout());
 		pnlGraphView.add(pnlSimple, BorderLayout.NORTH);
 		pnlGraphView.add(graphView, BorderLayout.CENTER);
-		
+		pnlGraphView.setBorder(null);
 		
 		// Layout setup
 		testSplit = new JSplitPane(JSplitPane.VERTICAL_SPLIT, true, pnlGraphView, resultsScrollView);
 		testSplit.setResizeWeight(.7);
 		testSplit.setDividerLocation(.7);
 		testSplit.setOneTouchExpandable(true);
+		testSplit.setBorder(BorderFactory.createEmptyBorder());
 		
 		studentSplit = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true, pnlDiff, testSplit);
 		studentSplit.setResizeWeight(.3);
 		studentSplit.setDividerLocation(.3);
 		studentSplit.setOneTouchExpandable(true);
+		studentSplit.setBorder(BorderFactory.createEmptyBorder());
 		
 		pnlVisualization = new JPanel(new BorderLayout());
 		pnlVisualization.add(studentSplit, BorderLayout.CENTER);
