@@ -166,7 +166,8 @@ public class ResultsView extends VizView {
 			colorIndex = (colorIndex + 1) % Colors.resultsBars.length;
 			g.fillRect(bar.x, bar.y, bar.width, bar.height);
 		}
-		int bottomOfBars = bars.keySet().iterator().next().y;
+		Rectangle aBar = bars.keySet().iterator().next();
+		int bottomOfBars = aBar.y + aBar.height;
 		int x = 0;
 		Graphics2D g2 = (Graphics2D) g;
 		int maxTextHeight = 0;
@@ -175,7 +176,7 @@ public class ResultsView extends VizView {
 		}
 		
 		g.setColor(Colors.foreground);
-		int y = bottomOfBars + paddingY;
+		int y = bottomOfBars;
 		for (int i = 0; i < testcases.size(); i++) {
 			String text = testcases.get(i);
 			AffineTransform orig = g2.getTransform();
