@@ -12,6 +12,8 @@ import java.awt.event.MouseEvent;
 import java.awt.geom.AffineTransform;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -91,21 +93,32 @@ public class ResultsView extends VizView {
 				testcases.add(testName);
 				HashMap<String, Integer> witnessMap = new HashMap<>();
 				witnesses.add(witnessMap);
-				int numUniqueWitnesses = 0;
 				for (TestCase t : testCases) {
 					if (!t.didPass()) {
 						String witness = t.getWitness();
 						int count = 1;
 						if (witnessMap.containsKey(witness)) {
 							count += witnessMap.get(witness);
-						} else {
-							numUniqueWitnesses++;
 						}
 						maxBarChartHeight = Math.max(maxBarChartHeight, count);
 						witnessMap.put(witness, count);
 					}
 				}
-				// TODO: if there are more than 5, limit to 5
+				if(witnessMap.size() > maxBars) {
+					ArrayList<String> keys = new ArrayList<>(witnessMap.keySet());
+					final HashMap<String, Integer> clojures = witnessMap;
+					Collections.sort(keys, new Comparator<String>() {
+						public int compare(String s1, String s2) {
+							return clojures.get(s2).intValue() - clojures.get(s1).intValue();
+						  }
+					});
+					HashMap<String, Integer> smallerWitnessMap = new HashMap<>();
+					for(int i=0; i<maxBars && i<witnessMap.size(); i++) {
+						String key = keys.get(i);
+						smallerWitnessMap.put(key, witnessMap.get(key));
+					}
+					witnessMap = smallerWitnessMap;
+				}
 			}
 			shouldUpdatePreferredSize = true;
 			bars = null;
@@ -195,7 +208,6 @@ public class ResultsView extends VizView {
 			this.setPreferredSize(new Dimension(width, height));
 			this.getParent().revalidate();
 			shouldUpdatePreferredSize = false;
-			System.out.println("I updated my size");
 		}
 	}
 	
