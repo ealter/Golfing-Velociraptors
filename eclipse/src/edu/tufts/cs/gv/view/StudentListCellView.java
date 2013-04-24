@@ -51,6 +51,7 @@ public class StudentListCellView extends JLabel implements
 			setBackground(list.getBackground());
 		}
 		
+		setForeground(Colors.foreground);
 		setText(value);
 		return this;
 	}

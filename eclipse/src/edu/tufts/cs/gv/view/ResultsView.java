@@ -37,7 +37,7 @@ public class ResultsView extends VizView {
 	private static final float testCaseSpacing = 20; // Spacing between test
 														// cases
 	private static final int paddingX = 10;
-	private static final int paddingY = 5;
+	private static final int paddingY = 10;
 	private static final List<String> helpString = Arrays.asList("This view shows the distribution of witnesses for each test case.\n",
 																 "For each witness, the top " + maxBars + " witnesses are shown along with their\n",
 																 "respective counts. Mouse over various bars to see their witness names.\n",
@@ -108,7 +108,11 @@ public class ResultsView extends VizView {
 				// TODO: if there are more than 5, limit to 5
 				screenWidth += testCaseSpacing;
 			}
-			this.setPreferredSize(new Dimension(screenWidth + paddingX * 2, this.getHeight() + paddingY * 2));
+			
+			int height = this.getHeight() + paddingY * 2;
+			int width = screenWidth + paddingX * 2;
+			
+			this.setPreferredSize(new Dimension(height, width));
 			this.getParent().revalidate();
 			bars = null;
 		}
@@ -169,14 +173,9 @@ public class ResultsView extends VizView {
 		for(String testname : testcases) {
 			maxTextHeight = Math.max(maxTextHeight, getTextHeight(g.getFontMetrics(), testname));
 		}
-<<<<<<< HEAD
-		int y = this.getHeight() - maxTextHeight - paddingY;
-		g.setColor(Colors.resultsForeground);
-
-=======
+		
 		g.setColor(Colors.foreground);
-		int y = this.getHeight() - maxTextHeight;
->>>>>>> Simplifying colors to reduce duplication.
+		int y = this.getHeight() - maxTextHeight - paddingY;
 		for (int i = 0; i < testcases.size(); i++) {
 			String text = testcases.get(i);
 			AffineTransform orig = g2.getTransform();
