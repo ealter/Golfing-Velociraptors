@@ -166,7 +166,7 @@ public class ResultsView extends VizView {
 			for (String witness : testcase.keySet()) {
 				int count = ((Integer) testcase.get(witness)).intValue();
 				int barHeight = (int) (count * heightFactor);
-				bars.put(new Bar(Colors.resultsBars[q],
+				bars.put(new Bar(Colors.resultsBars[q % Colors.resultsBars.length],
 						(int) x, y - barHeight,
 						barWidth, barHeight), witness);
 				x += barWidth + barSpacing;
@@ -192,7 +192,6 @@ public class ResultsView extends VizView {
 		if (bars == null) {
 			return;
 		}
-		int colorIndex = 0;
 		for (Bar bar : bars.keySet()) {
 			g.setColor(bar.c);
 			g.fillRect(bar.x, bar.y, bar.width, bar.height);
