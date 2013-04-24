@@ -17,9 +17,9 @@ public class DrawingHelp {
 		}
 		height += 20;
 		width += 20;
-		g.setColor(Color.YELLOW);
+		g.setColor(Colors.helpBackground);
 		g.fillRect(target.getWidth() - width - 1, 0, width, height);
-		g.setColor(Color.BLACK);
+		g.setColor(Colors.helpForeground);
 		g.drawRect(target.getWidth() - width - 1, 0, width, height);
 		int y = 7;
 		for (String line : helpString) {
