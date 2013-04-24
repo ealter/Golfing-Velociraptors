@@ -14,6 +14,7 @@ import javax.swing.ListSelectionModel;
 import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.controller.VizUpdateListener;
+import edu.tufts.cs.gv.util.Colors;
 import edu.tufts.cs.gv.view.StudentListCellView;
 
 public class StudentView extends JPanel implements VizUpdateListener {
@@ -40,8 +41,8 @@ public class StudentView extends JPanel implements VizUpdateListener {
 		help.setOpaque(true);
 		help.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 		help.setAlignmentY(TOP_ALIGNMENT);
-		help.setBackground(Color.YELLOW);
-		help.setForeground(Color.BLACK);
+		help.setBackground(Colors.helpBackground);
+		help.setForeground(Colors.helpForeground);
 		help.setVisible(false);
 
 		this.setLayout(new BorderLayout());
