@@ -1,16 +1,38 @@
 # Tutorial
 
-## Basic Usage
+## Loading Data
 
 Open a dataset with the "Open a dataset..." button in the middle of the screen.
 
 After a dataset is open, change the dataset with the "Change the dataset..." 
 button in the upper left corner.
 
+## Sections
+
+There's three coordinated views:
+
+- Students: Shows list of students. Useful for seeing how particular people's 
+  data factors into the overall equation.
+- Test sets: Shows relationships between sets of tests with the same group of 
+  students that passed/failed.
+- Result sets: Shows which witnesses were most common for a given test.
+
+There's coordination via hovering:
+
+- Hover over students to see the test sets they passed.
+- Hover over test sets to see the students that passed/failed them.
+
 If you are unsure how to use the application, click "Help" in the upper right corner.
+
+The program generally doesn't work well with invalid data files.
 
 ## Graph Controls
 
-There are a number of sliders on the top of the network graph view:
+There are a number of sliders on the top of the network graph view.
+Tinker around with all of them to see what makes it work and not work:
 
-- 
+- Spring: Changes force of springs representing edges.
+- Spring Length: Changes normal length of springs for edges.
+- Repulsion: Amount of force to separate nodes with.
+- Gravity: Amount of force pulling the graph over to the side to 
+  straighten things out.
