@@ -10,6 +10,7 @@ import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.ListSelectionModel;
+import javax.swing.border.CompoundBorder;
 
 import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
@@ -36,10 +37,13 @@ public class StudentView extends JPanel implements VizUpdateListener {
 		lstStudents.setCellRenderer(viewStudent);
 		
 		scroll = new JScrollPane(lstStudents);
+		scroll.setBorder(BorderFactory.createEmptyBorder());
 		
 		help = new JLabel("<html>A list of students. Hover over a student to see what tests they passed and failed on the right.</html>");
 		help.setOpaque(true);
-		help.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+		help.setBorder(new CompoundBorder(
+							BorderFactory.createLineBorder(Colors.helpForeground, 1),
+							BorderFactory.createEmptyBorder(10, 10, 10, 10)));
 		help.setAlignmentY(TOP_ALIGNMENT);
 		help.setBackground(Colors.helpBackground);
 		help.setForeground(Colors.helpForeground);
@@ -48,6 +52,7 @@ public class StudentView extends JPanel implements VizUpdateListener {
 		this.setLayout(new BorderLayout());
 		this.add(scroll);
 		this.add(help, BorderLayout.NORTH);
+		this.setBorder(BorderFactory.createEmptyBorder());
 		
 		VizState.getState().addVizUpdateListener(this);
 	}

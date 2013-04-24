@@ -2,11 +2,10 @@ package edu.tufts.cs.gv;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.GroupLayout;
@@ -14,9 +13,6 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSlider;
@@ -118,6 +114,7 @@ public class Visualization extends JFrame {
 		// Results view
 		resultsView = new ResultsView();
 		resultsScrollView = new JScrollPane(resultsView);
+		resultsScrollView.setBorder(BorderFactory.createEmptyBorder());
 		
 		// Graph view
 		graphView = new GraphView();
@@ -174,7 +171,6 @@ public class Visualization extends JFrame {
 				pnlGraphView.add(pnlAdvanced, BorderLayout.NORTH);
 				pnlGraphView.revalidate();
 				validate();
-				//pack();
 			}
 		});
 		btnHelp = new JButton("Help");
@@ -200,18 +196,20 @@ public class Visualization extends JFrame {
 		pnlGraphView.setLayout(new BorderLayout());
 		pnlGraphView.add(pnlSimple, BorderLayout.NORTH);
 		pnlGraphView.add(graphView, BorderLayout.CENTER);
-		
+		pnlGraphView.setBorder(null);
 		
 		// Layout setup
 		testSplit = new JSplitPane(JSplitPane.VERTICAL_SPLIT, true, pnlGraphView, resultsScrollView);
 		testSplit.setResizeWeight(.7);
 		testSplit.setDividerLocation(.7);
 		testSplit.setOneTouchExpandable(true);
+		testSplit.setBorder(BorderFactory.createEmptyBorder());
 		
 		studentSplit = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true, pnlDiff, testSplit);
 		studentSplit.setResizeWeight(.3);
 		studentSplit.setDividerLocation(.3);
 		studentSplit.setOneTouchExpandable(true);
+		studentSplit.setBorder(BorderFactory.createEmptyBorder());
 		
 		pnlVisualization = new JPanel(new BorderLayout());
 		pnlVisualization.add(studentSplit, BorderLayout.CENTER);

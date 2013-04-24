@@ -1,6 +1,5 @@
 package edu.tufts.cs.gv.view;
 
-import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
@@ -10,7 +9,6 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
-import java.awt.geom.Rectangle2D;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
