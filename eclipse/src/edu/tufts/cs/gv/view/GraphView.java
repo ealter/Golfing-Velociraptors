@@ -119,10 +119,10 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		g.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
 			RenderingHints.VALUE_ANTIALIAS_ON);
 		
-		g.setColor(Colors.graphBackground);
+		g.setColor(Colors.canvasBackground);
 		g.fillRect(0, 0, this.getWidth(), this.getHeight());
 		if (graph != null) {
-			g.setColor(Colors.graphLine);
+			g.setColor(Colors.foreground);
 			for (Edge e : graph.getEdges()) {
 				Vector a = worldToScreen(e.getA().getX(), e.getA().getY());
 				Vector b = worldToScreen(e.getB().getX(), e.getB().getY());
@@ -130,19 +130,19 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 			}
 			for (Vertex v : graph.getVertices()) {
 				if (VizState.getState().getMousedOverStudent() == null) {
-					g.setColor(Colors.graphUnselected);
+					g.setColor(Colors.hover);
 				} else {
 					if (v.isSelected()) {
-						g.setColor(Colors.graphSelectedPass);
+						g.setColor(Colors.pass);
 					} else {
-						g.setColor(Colors.graphSelectedFail);
+						g.setColor(Colors.fail);
 					}
 				}
 				Vector center = worldToScreen(v.getX(), v.getY());
 				double radius = calcRadius(v.getTestNames().size());
 				double diameter = 2 * radius;
 				g.fillOval((int)(center.x - radius * scale), (int)(center.y - radius * scale), (int)(diameter * scale), (int)(diameter * scale));
-				g.setColor(Colors.graphLine);
+				g.setColor(Colors.foreground);
 				g.drawOval((int)(center.x - radius * scale), (int)(center.y - radius * scale), (int)(diameter * scale), (int)(diameter * scale));
 			}
 		}

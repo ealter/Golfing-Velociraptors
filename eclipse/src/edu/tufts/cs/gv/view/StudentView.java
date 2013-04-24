@@ -42,11 +42,11 @@ public class StudentView extends JPanel implements VizUpdateListener {
 		help = new JLabel("<html>A list of students. Hover over a student to see what tests they passed and failed on the right.</html>");
 		help.setOpaque(true);
 		help.setBorder(new CompoundBorder(
-							BorderFactory.createLineBorder(Colors.helpForeground, 1),
+							BorderFactory.createLineBorder(Colors.foreground, 1),
 							BorderFactory.createEmptyBorder(10, 10, 10, 10)));
 		help.setAlignmentY(TOP_ALIGNMENT);
 		help.setBackground(Colors.helpBackground);
-		help.setForeground(Colors.helpForeground);
+		help.setForeground(Colors.foreground);
 		help.setVisible(false);
 
 		this.setLayout(new BorderLayout());

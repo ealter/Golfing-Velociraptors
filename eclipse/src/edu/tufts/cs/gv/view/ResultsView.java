@@ -169,9 +169,14 @@ public class ResultsView extends VizView {
 		for(String testname : testcases) {
 			maxTextHeight = Math.max(maxTextHeight, getTextHeight(g.getFontMetrics(), testname));
 		}
+<<<<<<< HEAD
 		int y = this.getHeight() - maxTextHeight - paddingY;
 		g.setColor(Colors.resultsForeground);
 
+=======
+		g.setColor(Colors.foreground);
+		int y = this.getHeight() - maxTextHeight;
+>>>>>>> Simplifying colors to reduce duplication.
 		for (int i = 0; i < testcases.size(); i++) {
 			String text = testcases.get(i);
 			AffineTransform orig = g2.getTransform();

@@ -44,9 +44,9 @@ public class StudentListCellView extends JLabel implements
 		setOpaque(true);
 		
 		if (tests != null) {
-			setBackground(students.contains(value) ? Colors.listPass : Colors.listFail);
+			setBackground(students.contains(value) ? Colors.pass : Colors.fail);
 		} else if (student != null && student == value) {
-			setBackground(Colors.listHover);
+			setBackground(Colors.hover);
 		} else {
 			setBackground(list.getBackground());
 		}
