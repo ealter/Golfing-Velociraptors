@@ -69,8 +69,8 @@ public class Visualization extends JFrame {
 	
 	// Graph view
 	private GraphView graphView;
-	private JLabel lblSpring, lblSpringLen, lblRepel, lblGrav, lblEnergy;
-	private JSlider sldSpring, sldSpringLen, sldRepel, sldGrav, sldEnergy;
+	private JLabel lblSpring, lblSpringLen, lblRepel, lblGrav;
+	private JSlider sldSpring, sldSpringLen, sldRepel, sldGrav;
 	private JPanel pnlAdvanced;
 	private JPanel pnlGraphView;
 	
@@ -132,7 +132,6 @@ public class Visualization extends JFrame {
 		lblSpringLen = new JLabel("Spring Length", JLabel.CENTER);
 		lblRepel = new JLabel("Repulsion", JLabel.CENTER);
 		lblGrav = new JLabel("Gravity", JLabel.CENTER);
-		lblEnergy = new JLabel("Energy", JLabel.CENTER);
 		sldSpring = new JSlider(JSlider.HORIZONTAL, 0, 1000, 500);
 		sldSpring.addChangeListener(graphView.getSpringListener());
 		sldSpringLen = new JSlider(JSlider.HORIZONTAL, 0, 1000, 750);
@@ -141,8 +140,6 @@ public class Visualization extends JFrame {
 		sldRepel.addChangeListener(graphView.getRepulstionListener());
 		sldGrav = new JSlider(JSlider.HORIZONTAL, 0, 1000, 1000);
 		sldGrav.addChangeListener(graphView.getGravityListener());
-		sldEnergy = new JSlider(JSlider.HORIZONTAL, 0, 1000, 50);
-		sldEnergy.addChangeListener(graphView.getEnergyListener());
 		pnlAdvanced = new JPanel();
 		GroupLayout layout = new GroupLayout(pnlAdvanced);
 		pnlAdvanced.setLayout(layout);
@@ -151,27 +148,23 @@ public class Visualization extends JFrame {
 						.addComponent(lblSpring, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(lblSpringLen, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(lblRepel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(lblGrav, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(lblEnergy, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+						.addComponent(lblGrav, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 				.addGroup(layout.createSequentialGroup()
 						.addComponent(sldSpring, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(sldSpringLen, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(sldRepel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(sldGrav, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(sldEnergy, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
+						.addComponent(sldGrav, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
 		layout.setVerticalGroup(layout.createSequentialGroup()
 				.addGroup(layout.createParallelGroup()
 						.addComponent(lblSpring)
 						.addComponent(lblSpringLen)
 						.addComponent(lblRepel)
-						.addComponent(lblGrav)
-						.addComponent(lblEnergy))
+						.addComponent(lblGrav))
 				.addGroup(layout.createParallelGroup()
 						.addComponent(sldSpring)
 						.addComponent(sldSpringLen)
 						.addComponent(sldRepel)
-						.addComponent(sldGrav)
-						.addComponent(sldEnergy)));
+						.addComponent(sldGrav)));
 		
 		pnlGraphView = new JPanel();
 		pnlGraphView.setLayout(new BorderLayout());

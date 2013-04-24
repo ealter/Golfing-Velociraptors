@@ -37,7 +37,6 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 	private static double Kc = 50;
 	private static double Ks = .05;
 	private static double Kg = 1;
-	private static double ENERGY_LIMIT = .5;
 	private static double SPRING_LENGTH = 7.5;
 	private static final double radius = 10;
 	private static final double diameter = radius * 2;
@@ -52,7 +51,6 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 	private Dataset dataset;
 	private Graph graph;
 	
-	private boolean simulating;
 	private Vertex moving;
 	private Point lastPoint;
 	
@@ -69,7 +67,6 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		this.addComponentListener(this);
 		dataset = null;
 		graph = null;
-		simulating = false;
 		lastPoint = null;
 		offset = new Vector();
 		lastSize = new Vector(this.getWidth(), this.getHeight());
@@ -93,7 +90,6 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 					v.setY(Math.random() * getWidth() * .5 + .25 * getHeight());
 				}
 			}
-			simulating = true;
 			moving = null;
 			offset = new Vector(0, 0);
 			scale = 1;
@@ -179,7 +175,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 
 	@Override
 	public void update() {
-		if (graph != null && simulating) {
+		if (graph != null) {
 			for (Vertex a : graph.getVertices()) {
 				for (Vertex b : graph.getVertices()) {
 					if (a == b) { continue; }
@@ -205,13 +201,8 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 				a.applyForce(attract.getX(), attract.getY());
 				b.applyForce(-attract.getX(), -attract.getY());
 			}
-			double totalE = 0;
 			for (Vertex v : graph.getVertices()) {
-				totalE += v.getVelocity2();
 				v.move();
-			}
-			if (totalE < ENERGY_LIMIT * graph.getVertices().size()) {
-				simulating = false;
 			}
 		}
 	}
@@ -242,7 +233,6 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		return new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
 				Ks = ((JSlider)e.getSource()).getValue() / 10000.0;
-				simulating = true;
 			}
 		};
 	}
@@ -251,7 +241,6 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		return new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
 				SPRING_LENGTH = ((JSlider)e.getSource()).getValue() / 100.0;
-				simulating = true;
 			}
 		};
 	}
@@ -260,7 +249,6 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		return new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
 				Kc = ((JSlider)e.getSource()).getValue() / 10.0;
-				simulating = true;
 			}
 		};
 	}
@@ -269,16 +257,6 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		return new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
 				Kg = ((JSlider)e.getSource()).getValue() / 1000.0;
-				simulating = true;
-			}
-		};
-	}
-	
-	public ChangeListener getEnergyListener() {
-		return new ChangeListener() {
-			public void stateChanged(ChangeEvent e) {
-				ENERGY_LIMIT = ((JSlider)e.getSource()).getValue() / 100.0;
-				simulating = true;
 			}
 		};
 	}
@@ -294,7 +272,6 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 			double dx = e.getX() - lastPoint.x;
 			double dy = e.getY() - lastPoint.y;
 			moving.moveDelta(dx / scale, dy / scale);
-			simulating = true;
 			lastPoint = e.getPoint();
 		} else {
 			double dx = e.getX() - lastPoint.x;
@@ -315,7 +292,6 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		}
 		if (moving != null) {
 			lastPoint = e.getPoint();
-			simulating = true;
 			moving.setOverriding(true);
 		} else {
 			lastPoint = e.getPoint();
@@ -352,10 +328,12 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 	
 	public void mouseWheelMoved(MouseWheelEvent e) {
 		Vector centerWorld = screenToWorld(e.getPoint());
-		if (e.getWheelRotation() < 0) {
-			scale /= Math.abs(e.getWheelRotation()) * zoom_rate;
-		} else {
-			scale *= Math.abs(e.getWheelRotation()) * zoom_rate;
+		for (int i = 0; i < Math.abs(e.getWheelRotation()); i++) {
+			if (e.getWheelRotation() < 0) {
+				scale /= zoom_rate;
+			} else {
+				scale *= zoom_rate;
+			}
 		}
 		Vector newCenterWorld = screenToWorld(e.getPoint());
 		offset.x += (newCenterWorld.x - centerWorld.x) * scale;
