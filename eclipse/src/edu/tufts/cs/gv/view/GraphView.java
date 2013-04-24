@@ -11,6 +11,7 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
+import java.awt.geom.Rectangle2D;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -151,6 +152,19 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		if (VizState.getState().isShowingHelp()) {
 			DrawingHelp.renderHelpText(this, helpString, g);
 		}
+		g.setColor(Colors.foreground);
+		String allPass = "All Pass", allFail = "All Fail";
+		Rectangle2D passBounds = g.getFontMetrics().getStringBounds(allPass, g);
+		Rectangle2D failBounds = g.getFontMetrics().getStringBounds(allFail, g);
+		g.drawString(allPass, 10, getHeight() - 10);
+		g.drawString(allFail, (int)(getWidth() - 10 - failBounds.getWidth()), getHeight() - 10);
+		Point leftPoint = new Point((int)(15 + passBounds.getWidth()), (int)(getHeight() - 7 - passBounds.getHeight() / 2));
+		Point rightPoint = new Point((int)(getWidth() - 15 - failBounds.getWidth()), (int)(getHeight() - 7 - failBounds.getHeight() / 2));
+		g.drawLine(leftPoint.x, leftPoint.y, rightPoint.x, rightPoint.y);
+		g.drawLine(leftPoint.x, leftPoint.y, leftPoint.x + 5, leftPoint.y - 5);
+		g.drawLine(leftPoint.x, leftPoint.y, leftPoint.x + 5, leftPoint.y + 5);
+		g.drawLine(rightPoint.x, rightPoint.y, rightPoint.x - 5, rightPoint.y - 5);
+		g.drawLine(rightPoint.x, rightPoint.y, rightPoint.x - 5, rightPoint.y + 5);
 	}
 	
 	public int calcRadius(int numTests) {
