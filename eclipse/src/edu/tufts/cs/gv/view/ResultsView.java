@@ -53,9 +53,11 @@ public class ResultsView extends VizView {
 		VizState.getState().addVizUpdateListener(this);
 		maxBarChartHeight = 0;
 		this.setToolTipText("");
-		shouldUpdatePreferredSize = false;
-		
-		this.addComponentListener(new ComponentListener() {
+		shouldUpdatePreferredSize = false;		
+	}
+	
+	public ComponentListener getListener() {
+		return new ComponentListener() {
 			
 			@Override
 			public void componentShown(ComponentEvent arg0) {	
@@ -64,6 +66,7 @@ public class ResultsView extends VizView {
 			@Override
 			public void componentResized(ComponentEvent arg0) {
 				bars = null;
+				shouldUpdatePreferredSize = true;
 			}
 			
 			@Override
@@ -73,13 +76,12 @@ public class ResultsView extends VizView {
 			@Override
 			public void componentHidden(ComponentEvent arg0) {
 			}
-		});
+		};
 	}
 
 	@Override
 	public void vizUpdated(VizEventType eventType) {
 		if (eventType == VizEventType.NEW_DATA_SOURCE) {
-			int screenWidth = 0;
 			Dataset dataset = VizState.getState().getDataset();
 			Set<String> testNames = dataset.getAllTestNames();
 			witnesses = new ArrayList<>(testNames.size());
@@ -98,16 +100,12 @@ public class ResultsView extends VizView {
 							count += witnessMap.get(witness);
 						} else {
 							numUniqueWitnesses++;
-							if (numUniqueWitnesses <= maxBars) {
-								screenWidth += barSpacing + barWidth;
-							}
 						}
 						maxBarChartHeight = Math.max(maxBarChartHeight, count);
 						witnessMap.put(witness, count);
 					}
 				}
 				// TODO: if there are more than 5, limit to 5
-				screenWidth += testCaseSpacing;
 			}
 			shouldUpdatePreferredSize = true;
 			bars = null;
@@ -168,6 +166,7 @@ public class ResultsView extends VizView {
 			colorIndex = (colorIndex + 1) % Colors.resultsBars.length;
 			g.fillRect(bar.x, bar.y, bar.width, bar.height);
 		}
+		int bottomOfBars = bars.keySet().iterator().next().y;
 		int x = 0;
 		Graphics2D g2 = (Graphics2D) g;
 		int maxTextHeight = 0;
@@ -176,7 +175,7 @@ public class ResultsView extends VizView {
 		}
 		
 		g.setColor(Colors.foreground);
-		int y = this.getParent().getHeight() - totalTextHeight(maxTextHeight) - paddingY;
+		int y = bottomOfBars + paddingY;
 		for (int i = 0; i < testcases.size(); i++) {
 			String text = testcases.get(i);
 			AffineTransform orig = g2.getTransform();
@@ -189,17 +188,13 @@ public class ResultsView extends VizView {
 			g2.setTransform(orig);
 		}
 		if(shouldUpdatePreferredSize) {
-			int height;
-			if(bars.size() > 0) {
-				height = bars.keySet().iterator().next().y + maxTextHeight;
-			} else {
-				height = this.getParent().getHeight();
-			}
+			int height = bottomOfBars + maxTextHeight;
 			int width = (int)(x + paddingX * 2 + maxTextHeight/Math.sqrt(3));
 			
 			this.setPreferredSize(new Dimension(width, height));
 			this.getParent().revalidate();
 			shouldUpdatePreferredSize = false;
+			System.out.println("I updated my size");
 		}
 	}
 	

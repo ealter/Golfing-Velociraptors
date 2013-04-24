@@ -115,6 +115,7 @@ public class Visualization extends JFrame {
 		resultsView = new ResultsView();
 		resultsScrollView = new JScrollPane(resultsView);
 		resultsScrollView.setBorder(BorderFactory.createEmptyBorder());
+		resultsScrollView.addComponentListener(((ResultsView)resultsView).getListener());
 		
 		// Graph view
 		graphView = new GraphView();
