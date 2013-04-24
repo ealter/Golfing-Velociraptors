@@ -27,6 +27,7 @@ import edu.tufts.cs.gv.model.Dataset;
 import edu.tufts.cs.gv.model.graph.Edge;
 import edu.tufts.cs.gv.model.graph.Graph;
 import edu.tufts.cs.gv.model.graph.Vertex;
+import edu.tufts.cs.gv.util.Colors;
 import edu.tufts.cs.gv.util.Vector;
 
 public class GraphView extends VizView implements MouseListener, MouseMotionListener, MouseWheelListener {
@@ -119,26 +120,30 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		g.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
 			RenderingHints.VALUE_ANTIALIAS_ON);
 		
-		g.setColor(Color.WHITE);
+		g.setColor(Colors.graphBackground);
 		g.fillRect(0, 0, this.getWidth(), this.getHeight());
 		if (graph != null) {
-			g.setColor(Color.BLACK);
+			g.setColor(Colors.graphLine);
 			for (Edge e : graph.getEdges()) {
 				Vector a = worldToScreen(e.getA().getX(), e.getA().getY());
 				Vector b = worldToScreen(e.getB().getX(), e.getB().getY());
 				g.drawLine((int)a.x, (int)a.y, (int)b.x, (int)b.y);
 			}
 			for (Vertex v : graph.getVertices()) {
-				if (v.isSelected()) {
-					g.setColor(Color.CYAN);
+				if (VizState.getState().getMousedOverStudent() == null) {
+					g.setColor(Colors.graphUnselected);
 				} else {
-					g.setColor(Color.RED);
+					if (v.isSelected()) {
+						g.setColor(Colors.graphSelectedPass);
+					} else {
+						g.setColor(Colors.graphSelectedFail);
+					}
 				}
 				Vector center = worldToScreen(v.getX(), v.getY());
 				double radius = calcRadius(v.getTestNames().size());
 				double diameter = 2 * radius;
 				g.fillOval((int)(center.x - radius * scale), (int)(center.y - radius * scale), (int)(diameter * scale), (int)(diameter * scale));
-				g.setColor(Color.BLACK);
+				g.setColor(Colors.graphLine);
 				g.drawOval((int)(center.x - radius * scale), (int)(center.y - radius * scale), (int)(diameter * scale), (int)(diameter * scale));
 			}
 		}
