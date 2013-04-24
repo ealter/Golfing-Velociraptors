@@ -11,7 +11,6 @@ import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 import java.awt.event.MouseEvent;
 import java.awt.geom.AffineTransform;
-import java.awt.geom.Rectangle2D;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -37,6 +36,8 @@ public class ResultsView extends VizView {
 	private static final int barWidth = 14;
 	private static final float testCaseSpacing = 20; // Spacing between test
 														// cases
+	private static final int paddingX = 10;
+	private static final int paddingY = 5;
 	private static final List<String> helpString = Arrays.asList("This view shows the distribution of witnesses for each test case.\n",
 																 "For each witness, the top " + maxBars + " witnesses are shown along with their\n",
 																 "respective counts. Mouse over various bars to see their witness names.\n",
@@ -107,7 +108,7 @@ public class ResultsView extends VizView {
 				// TODO: if there are more than 5, limit to 5
 				screenWidth += testCaseSpacing;
 			}
-			this.setPreferredSize(new Dimension(screenWidth, this.getHeight()));
+			this.setPreferredSize(new Dimension(screenWidth + paddingX * 2, this.getHeight() + paddingY * 2));
 			this.getParent().revalidate();
 			bars = null;
 		}
@@ -118,15 +119,15 @@ public class ResultsView extends VizView {
 			return;
 		FontMetrics metrics = g.getFontMetrics();
 		bars = new LinkedHashMap<>();
-		int height = this.getHeight();
+		int height = this.getHeight() - paddingY * 2;
 		// Find the height that the text will take up
 		int maxTextHeight = 0;
 		for (String testname : testcases) {
 			maxTextHeight = Math.max(maxTextHeight,	getTextHeight(metrics, testname));
 		}
-		float heightFactor = height / (float) maxBarChartHeight;
-		float x = 0;
-		int y = height - 1 - maxTextHeight;
+		float heightFactor = (height - maxTextHeight) / (float) maxBarChartHeight;
+		float x = paddingX;
+		int y = height - 1 - maxTextHeight + paddingY;
 		for (int i = 0; i < witnesses.size(); i++) {
 			HashMap<String, Integer> testcase = witnesses.get(i);
 			for (String witness : testcase.keySet()) {
@@ -170,7 +171,7 @@ public class ResultsView extends VizView {
 			maxTextHeight = Math.max(maxTextHeight, getTextHeight(g.getFontMetrics(), testname));
 		}
 		g.setColor(Color.BLACK);
-		int y = this.getHeight() - maxTextHeight;
+		int y = this.getHeight() - maxTextHeight - paddingY;
 		for (int i = 0; i < testcases.size(); i++) {
 			String text = testcases.get(i);
 			AffineTransform orig = g2.getTransform();
