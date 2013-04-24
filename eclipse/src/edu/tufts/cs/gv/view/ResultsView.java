@@ -43,7 +43,7 @@ public class ResultsView extends VizView {
 																 "respective counts. Mouse over various bars to see their witness names.\n",
 																 "The bar height is directly proportional to the frequency of that particular\n",
 																 "witness.");
-
+	private boolean shouldUpdatePreferredSize;
 	private ArrayList<HashMap<String, Integer>> witnesses;
 	private ArrayList<String> testcases;
 	private int maxBarChartHeight;
@@ -53,6 +53,7 @@ public class ResultsView extends VizView {
 		VizState.getState().addVizUpdateListener(this);
 		maxBarChartHeight = 0;
 		this.setToolTipText("");
+		shouldUpdatePreferredSize = false;
 		
 		this.addComponentListener(new ComponentListener() {
 			
@@ -108,14 +109,13 @@ public class ResultsView extends VizView {
 				// TODO: if there are more than 5, limit to 5
 				screenWidth += testCaseSpacing;
 			}
-			
-			int height = this.getHeight() + paddingY * 2;
-			int width = screenWidth + paddingX * 2;
-			
-			this.setPreferredSize(new Dimension(height, width));
-			this.getParent().revalidate();
+			shouldUpdatePreferredSize = true;
 			bars = null;
 		}
+	}
+	
+	private int totalTextHeight(int maxTextHeight) {
+		return Math.min((this.getParent().getHeight() - paddingY)/3, maxTextHeight);
 	}
 
 	private void updateRectangles(Graphics g) {
@@ -123,15 +123,16 @@ public class ResultsView extends VizView {
 			return;
 		FontMetrics metrics = g.getFontMetrics();
 		bars = new LinkedHashMap<>();
-		int height = this.getHeight() - paddingY * 2;
+		int height = this.getParent().getHeight() - paddingY * 2;
 		// Find the height that the text will take up
 		int maxTextHeight = 0;
 		for (String testname : testcases) {
 			maxTextHeight = Math.max(maxTextHeight,	getTextHeight(metrics, testname));
 		}
-		float heightFactor = (height - maxTextHeight) / (float) maxBarChartHeight;
+		int heightDiff = totalTextHeight(maxTextHeight);
+		float heightFactor = (height - heightDiff) / (float) maxBarChartHeight;
 		float x = paddingX;
-		int y = height - 1 - maxTextHeight + paddingY;
+		int y = height - 1 - heightDiff + paddingY;
 		for (int i = 0; i < witnesses.size(); i++) {
 			HashMap<String, Integer> testcase = witnesses.get(i);
 			for (String witness : testcase.keySet()) {
@@ -175,7 +176,7 @@ public class ResultsView extends VizView {
 		}
 		
 		g.setColor(Colors.foreground);
-		int y = this.getHeight() - maxTextHeight - paddingY;
+		int y = this.getParent().getHeight() - totalTextHeight(maxTextHeight) - paddingY;
 		for (int i = 0; i < testcases.size(); i++) {
 			String text = testcases.get(i);
 			AffineTransform orig = g2.getTransform();
@@ -186,6 +187,19 @@ public class ResultsView extends VizView {
 			g2.drawString(text, 0, 0);
 			x += getTestcaseWidth(g.getFontMetrics(), i) + testCaseSpacing;
 			g2.setTransform(orig);
+		}
+		if(shouldUpdatePreferredSize) {
+			int height;
+			if(bars.size() > 0) {
+				height = bars.keySet().iterator().next().y + maxTextHeight;
+			} else {
+				height = this.getParent().getHeight();
+			}
+			int width = (int)(x + paddingX * 2 + maxTextHeight/Math.sqrt(3));
+			
+			this.setPreferredSize(new Dimension(width, height));
+			this.getParent().revalidate();
+			shouldUpdatePreferredSize = false;
 		}
 	}
 	
