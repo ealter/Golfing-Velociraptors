@@ -15,6 +15,8 @@ import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.controller.VizUpdateListener;
 import edu.tufts.cs.gv.util.Colors;
 
+// Extensive inspiration from: 
+// <http://www.coderanch.com/t/545299/GUI/java/ListCellRenderer>
 public class StudentListCellView extends JLabel implements
 		ListCellRenderer<String>, VizUpdateListener {
 	
