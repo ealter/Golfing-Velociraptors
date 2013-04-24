@@ -108,6 +108,7 @@ public class ResultsView extends VizView {
 				screenWidth += testCaseSpacing;
 			}
 			this.setPreferredSize(new Dimension(screenWidth, this.getHeight()));
+			this.getParent().revalidate();
 			bars = null;
 		}
 	}
