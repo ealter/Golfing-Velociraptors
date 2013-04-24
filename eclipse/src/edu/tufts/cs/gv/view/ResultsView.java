@@ -12,6 +12,8 @@ import java.awt.event.MouseEvent;
 import java.awt.geom.AffineTransform;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -43,7 +45,7 @@ public class ResultsView extends VizView {
 																 "respective counts. Mouse over various bars to see their witness names.\n",
 																 "The bar height is directly proportional to the frequency of that particular\n",
 																 "witness.");
-
+	private boolean shouldUpdatePreferredSize;
 	private ArrayList<HashMap<String, Integer>> witnesses;
 	private ArrayList<String> testcases;
 	private int maxBarChartHeight;
@@ -53,8 +55,11 @@ public class ResultsView extends VizView {
 		VizState.getState().addVizUpdateListener(this);
 		maxBarChartHeight = 0;
 		this.setToolTipText("");
-		
-		this.addComponentListener(new ComponentListener() {
+		shouldUpdatePreferredSize = false;		
+	}
+	
+	public ComponentListener getListener() {
+		return new ComponentListener() {
 			
 			@Override
 			public void componentShown(ComponentEvent arg0) {	
@@ -63,6 +68,7 @@ public class ResultsView extends VizView {
 			@Override
 			public void componentResized(ComponentEvent arg0) {
 				bars = null;
+				shouldUpdatePreferredSize = true;
 			}
 			
 			@Override
@@ -72,13 +78,12 @@ public class ResultsView extends VizView {
 			@Override
 			public void componentHidden(ComponentEvent arg0) {
 			}
-		});
+		};
 	}
 
 	@Override
 	public void vizUpdated(VizEventType eventType) {
 		if (eventType == VizEventType.NEW_DATA_SOURCE) {
-			int screenWidth = 0;
 			Dataset dataset = VizState.getState().getDataset();
 			Set<String> testNames = dataset.getAllTestNames();
 			witnesses = new ArrayList<>(testNames.size());
@@ -88,34 +93,40 @@ public class ResultsView extends VizView {
 				testcases.add(testName);
 				HashMap<String, Integer> witnessMap = new HashMap<>();
 				witnesses.add(witnessMap);
-				int numUniqueWitnesses = 0;
 				for (TestCase t : testCases) {
 					if (!t.didPass()) {
 						String witness = t.getWitness();
 						int count = 1;
 						if (witnessMap.containsKey(witness)) {
 							count += witnessMap.get(witness);
-						} else {
-							numUniqueWitnesses++;
-							if (numUniqueWitnesses <= maxBars) {
-								screenWidth += barSpacing + barWidth;
-							}
 						}
 						maxBarChartHeight = Math.max(maxBarChartHeight, count);
 						witnessMap.put(witness, count);
 					}
 				}
-				// TODO: if there are more than 5, limit to 5
-				screenWidth += testCaseSpacing;
+				if(witnessMap.size() > maxBars) {
+					ArrayList<String> keys = new ArrayList<>(witnessMap.keySet());
+					final HashMap<String, Integer> clojures = witnessMap;
+					Collections.sort(keys, new Comparator<String>() {
+						public int compare(String s1, String s2) {
+							return clojures.get(s2).intValue() - clojures.get(s1).intValue();
+						  }
+					});
+					HashMap<String, Integer> smallerWitnessMap = new HashMap<>();
+					for(int i=0; i<maxBars && i<witnessMap.size(); i++) {
+						String key = keys.get(i);
+						smallerWitnessMap.put(key, witnessMap.get(key));
+					}
+					witnessMap = smallerWitnessMap;
+				}
 			}
-			
-			int height = this.getHeight() + paddingY * 2;
-			int width = screenWidth + paddingX * 2;
-			
-			this.setPreferredSize(new Dimension(height, width));
-			this.getParent().revalidate();
+			shouldUpdatePreferredSize = true;
 			bars = null;
 		}
+	}
+	
+	private int totalTextHeight(int maxTextHeight) {
+		return Math.min((this.getParent().getHeight() - paddingY)/3, maxTextHeight);
 	}
 
 	private void updateRectangles(Graphics g) {
@@ -123,17 +134,23 @@ public class ResultsView extends VizView {
 			return;
 		FontMetrics metrics = g.getFontMetrics();
 		bars = new LinkedHashMap<>();
-		int height = this.getHeight() - paddingY * 2;
+		int height = this.getParent().getHeight() - paddingY * 2;
 		// Find the height that the text will take up
 		int maxTextHeight = 0;
 		for (String testname : testcases) {
 			maxTextHeight = Math.max(maxTextHeight,	getTextHeight(metrics, testname));
 		}
-		float heightFactor = (height - maxTextHeight) / (float) maxBarChartHeight;
+		int heightDiff = totalTextHeight(maxTextHeight);
+		
 		float x = paddingX;
-		int y = height - 1 - maxTextHeight + paddingY;
+		int y = height - 1 - heightDiff + paddingY;
 		for (int i = 0; i < witnesses.size(); i++) {
 			HashMap<String, Integer> testcase = witnesses.get(i);
+			int maxBar = 0;
+			for(String witness: testcase.keySet()) {
+				maxBar = Math.max(maxBar, ((Integer)(testcase.get(witness)).intValue()));
+			}
+			float heightFactor = (height - heightDiff) / (float) maxBar;
 			for (String witness : testcase.keySet()) {
 				int count = ((Integer) testcase.get(witness)).intValue();
 				int barHeight = (int) (count * heightFactor);
@@ -167,6 +184,8 @@ public class ResultsView extends VizView {
 			colorIndex = (colorIndex + 1) % Colors.resultsBars.length;
 			g.fillRect(bar.x, bar.y, bar.width, bar.height);
 		}
+		Rectangle aBar = bars.keySet().iterator().next();
+		int bottomOfBars = aBar.y + aBar.height;
 		int x = 0;
 		Graphics2D g2 = (Graphics2D) g;
 		int maxTextHeight = 0;
@@ -175,7 +194,7 @@ public class ResultsView extends VizView {
 		}
 		
 		g.setColor(Colors.foreground);
-		int y = this.getHeight() - maxTextHeight - paddingY;
+		int y = bottomOfBars;
 		for (int i = 0; i < testcases.size(); i++) {
 			String text = testcases.get(i);
 			AffineTransform orig = g2.getTransform();
@@ -186,6 +205,14 @@ public class ResultsView extends VizView {
 			g2.drawString(text, 0, 0);
 			x += getTestcaseWidth(g.getFontMetrics(), i) + testCaseSpacing;
 			g2.setTransform(orig);
+		}
+		if(shouldUpdatePreferredSize) {
+			int height = bottomOfBars + maxTextHeight;
+			int width = (int)(x + paddingX * 2 + maxTextHeight/Math.sqrt(3));
+			
+			this.setPreferredSize(new Dimension(width, height));
+			this.getParent().revalidate();
+			shouldUpdatePreferredSize = false;
 		}
 	}
 	
