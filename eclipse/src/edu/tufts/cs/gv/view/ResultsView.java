@@ -141,11 +141,16 @@ public class ResultsView extends VizView {
 			maxTextHeight = Math.max(maxTextHeight,	getTextHeight(metrics, testname));
 		}
 		int heightDiff = totalTextHeight(maxTextHeight);
-		float heightFactor = (height - heightDiff) / (float) maxBarChartHeight;
+		
 		float x = paddingX;
 		int y = height - 1 - heightDiff + paddingY;
 		for (int i = 0; i < witnesses.size(); i++) {
 			HashMap<String, Integer> testcase = witnesses.get(i);
+			int maxBar = 0;
+			for(String witness: testcase.keySet()) {
+				maxBar = Math.max(maxBar, ((Integer)(testcase.get(witness)).intValue()));
+			}
+			float heightFactor = (height - heightDiff) / (float) maxBar;
 			for (String witness : testcase.keySet()) {
 				int count = ((Integer) testcase.get(witness)).intValue();
 				int barHeight = (int) (count * heightFactor);
