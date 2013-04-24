@@ -15,14 +15,12 @@ import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.controller.VizUpdateListener;
 
+import edu.tufts.cs.gv.util.Colors;
+
 public class StudentListCellView extends JLabel implements
 		ListCellRenderer<String>, VizUpdateListener {
 	
 	private static final long serialVersionUID = 1L;
-
-	private static final Color clrFail = new Color(255, 100, 100);
-	private static final Color clrPass = new Color(173, 216, 230);
-	private static final Color clrHover = new Color(200, 200, 200);
 	
 	private Set<String> tests, students;
 	private String student;
@@ -46,9 +44,9 @@ public class StudentListCellView extends JLabel implements
 		setOpaque(true);
 		
 		if (tests != null) {
-			setBackground(students.contains(value) ? clrPass : clrFail);
+			setBackground(students.contains(value) ? Colors.listPass : Colors.listFail);
 		} else if (student != null && student == value) {
-			setBackground(clrHover);
+			setBackground(Colors.listHover);
 		} else {
 			setBackground(list.getBackground());
 		}
