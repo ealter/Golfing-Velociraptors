@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.concurrent.BrokenBarrierException;
 
 import javax.swing.BorderFactory;
 import javax.swing.Box;
@@ -59,8 +60,8 @@ public class Visualization extends JFrame {
 	private JSplitPane studentSplit, testSplit;
 	
 	// Student view & chooser button
-	private JButton btnDiff;
-	private JPanel pnlDiff;
+	private JButton btnDiff, btnHelp;
+	private JPanel pnlDiff, pnlStudents;
 	private StudentView studentView;
 	
 	// Results view
@@ -72,8 +73,6 @@ public class Visualization extends JFrame {
 	private JLabel lblSpring, lblSpringLen, lblRepel, lblGrav, lblEnergy;
 	private JSlider sldSpring, sldSpringLen, sldRepel, sldGrav, sldEnergy;
 	private JPanel pnlAdvanced;
-	private JButton btnAdvanced, btnHelp;
-	private JPanel pnlSimple, pnlFiller;
 	private JPanel pnlGraphView;
 	
 	private JPanel pnlVisualization;
@@ -106,10 +105,20 @@ public class Visualization extends JFrame {
 		btnDiff.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) { onOpenDataset(); }
 		});
+		btnHelp = new JButton("Help");
+		btnHelp.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				VizState.getState().setShowingHelp(!VizState.getState().isShowingHelp());
+			}
+		});
 		
 		pnlDiff = new JPanel(new BorderLayout());
-		pnlDiff.add(studentView, BorderLayout.CENTER);
-		pnlDiff.add(btnDiff, BorderLayout.NORTH);
+		pnlDiff.add(btnDiff, BorderLayout.WEST);
+		pnlDiff.add(btnHelp, BorderLayout.EAST);
+		
+		pnlStudents = new JPanel(new BorderLayout());
+		pnlStudents.add(studentView, BorderLayout.CENTER);
+		pnlStudents.add(pnlDiff, BorderLayout.NORTH);
 		
 		// Results view
 		resultsView = new ResultsView();
@@ -164,37 +173,9 @@ public class Visualization extends JFrame {
 						.addComponent(sldGrav)
 						.addComponent(sldEnergy)));
 		
-		btnAdvanced = new JButton("Advanced Mode");
-		btnAdvanced.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				pnlGraphView.remove(pnlSimple);
-				pnlGraphView.add(pnlAdvanced, BorderLayout.NORTH);
-				pnlGraphView.revalidate();
-				validate();
-			}
-		});
-		btnHelp = new JButton("Help");
-		btnHelp.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				VizState.getState().setShowingHelp(!VizState.getState().isShowingHelp());
-			}
-		});
-		pnlFiller = new JPanel();
-		pnlSimple = new JPanel();
-		layout = new GroupLayout(pnlSimple);
-		pnlSimple.setLayout(layout);
-		layout.setHorizontalGroup(layout.createSequentialGroup()
-				.addComponent(pnlFiller)
-				.addComponent(btnAdvanced)
-				.addComponent(btnHelp));
-		layout.setVerticalGroup(layout.createParallelGroup()
-				.addComponent(pnlFiller)
-				.addComponent(btnAdvanced)
-				.addComponent(btnHelp));
-		
 		pnlGraphView = new JPanel();
 		pnlGraphView.setLayout(new BorderLayout());
-		pnlGraphView.add(pnlSimple, BorderLayout.NORTH);
+		pnlGraphView.add(pnlAdvanced, BorderLayout.NORTH);
 		pnlGraphView.add(graphView, BorderLayout.CENTER);
 		pnlGraphView.setBorder(null);
 		
@@ -205,7 +186,7 @@ public class Visualization extends JFrame {
 		testSplit.setOneTouchExpandable(true);
 		testSplit.setBorder(BorderFactory.createEmptyBorder());
 		
-		studentSplit = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true, pnlDiff, testSplit);
+		studentSplit = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true, pnlStudents, testSplit);
 		studentSplit.setResizeWeight(.3);
 		studentSplit.setDividerLocation(.3);
 		studentSplit.setOneTouchExpandable(true);
