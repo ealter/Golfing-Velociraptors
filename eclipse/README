@@ -1,0 +1,14 @@
+# Golfing Velociraptors
+
+## Authors
+- Eliot Alter (PM)
+- Andrew Pellegrini (Dev)
+- Jonathan Wilde (Design)
+
+## Compile & Run
+This product should be distributed as a JAR file that can be run using 
+`java -jar`. In the event one has access to the source and needs to access 
+that, install Eclipse. Import the `eclipse/` folder as a project with 
+Java 1.7 enabled (File -> Import, select "Existing Projects into 
+Workspace"). Build and run in Eclipse from the GUI.
+
