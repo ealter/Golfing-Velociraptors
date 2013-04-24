@@ -1,5 +1,6 @@
 package edu.tufts.cs.gv.view;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
@@ -49,7 +50,17 @@ public class ResultsView extends VizView {
 	private ArrayList<HashMap<String, Integer>> witnesses;
 	private ArrayList<String> testcases;
 	private int maxBarChartHeight;
-	private LinkedHashMap<Rectangle, String> bars;
+	private LinkedHashMap<Bar, String> bars;
+	
+	class Bar extends Rectangle {
+		private static final long serialVersionUID = 1L;
+		
+		public Color c;
+		public Bar(Color c, int x, int y, int width, int height) {
+			super(x, y, width, height);
+			this.c = c;
+		}
+	}
 
 	public ResultsView() {
 		VizState.getState().addVizUpdateListener(this);
@@ -151,12 +162,15 @@ public class ResultsView extends VizView {
 				maxBar = Math.max(maxBar, ((Integer)(testcase.get(witness)).intValue()));
 			}
 			float heightFactor = (height - heightDiff) / (float) maxBar;
+			int q = 0;
 			for (String witness : testcase.keySet()) {
 				int count = ((Integer) testcase.get(witness)).intValue();
 				int barHeight = (int) (count * heightFactor);
-				bars.put(new Rectangle((int)x, y - barHeight,
+				bars.put(new Bar(Colors.resultsBars[q],
+						(int) x, y - barHeight,
 						barWidth, barHeight), witness);
 				x += barWidth + barSpacing;
+				q++;
 			}
 			x += testCaseSpacing;
 		}
@@ -179,12 +193,11 @@ public class ResultsView extends VizView {
 			return;
 		}
 		int colorIndex = 0;
-		for (Rectangle bar : bars.keySet()) {
-			g.setColor(Colors.resultsBars[colorIndex]);
-			colorIndex = (colorIndex + 1) % Colors.resultsBars.length;
+		for (Bar bar : bars.keySet()) {
+			g.setColor(bar.c);
 			g.fillRect(bar.x, bar.y, bar.width, bar.height);
 		}
-		Rectangle aBar = bars.keySet().iterator().next();
+		Bar aBar = bars.keySet().iterator().next();
 		int bottomOfBars = aBar.y + aBar.height;
 		int x = 0;
 		Graphics2D g2 = (Graphics2D) g;
@@ -234,7 +247,7 @@ public class ResultsView extends VizView {
 
 	public String getToolTipText(MouseEvent e) {
 		if (bars != null) {
-			for (Rectangle bar : bars.keySet()) {
+			for (Bar bar : bars.keySet()) {
 				if (bar.contains(e.getX(), e.getY())) {
 					return bars.get(bar);
 				}
