@@ -224,6 +224,8 @@ public class ResultsView extends VizView {
 		Graphics2D g2 = (Graphics2D) g;
 		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
 				RenderingHints.VALUE_ANTIALIAS_ON);
+		g.setColor(Colors.canvasBackground);
+		g.fillRect(0, 0, getWidth(), getHeight());
 		paintBarGraph(g);
 		if(VizState.getState().isShowingHelp()) {
 			paintHelp(g);
