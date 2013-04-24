@@ -31,6 +31,13 @@ public class Colors {
 	public static final Color graphSelectedFail = new Color(255, 100, 100);
 	
 	//
-	// Chart
+	// Results
 	//
+	
+	public static final Color resultsForeground = new Color(100, 100, 100);
+	public static final Color[] resultsBars = { 
+		Color.BLUE, 
+		Color.GREEN, 
+		Color.ORANGE
+	};
 }
