@@ -6,16 +6,17 @@ public class Colors {
 	
 	public static final Color foreground = new Color(100, 100, 100);
 	
-	public static final Color helpBackground = new Color(255, 255, 157);
+	public static final Color helpBackground = new Color(254, 224, 144);
 	public static final Color canvasBackground = Color.WHITE;
 	
-	public static final Color pass = new Color(195, 235, 159);
-	public static final Color fail = new Color(255, 97, 56);
+	public static final Color pass = new Color(171, 217, 233);
+	public static final Color fail = new Color(254, 224, 144);
 	public static final Color hover = new Color(200, 200, 200);
 	
 	public static final Color[] resultsBars = { 
-		new Color(195, 235, 159), 
-		new Color(121, 189, 143),
-		new Color(0, 163, 136)
+		new Color(254, 224, 144),
+		new Color(253, 174, 97), 
+		new Color(244, 109, 67),
+		new Color(215, 48, 39)
 	};
 }

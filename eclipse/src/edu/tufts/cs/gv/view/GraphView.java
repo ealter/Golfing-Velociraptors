@@ -4,6 +4,8 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.RenderingHints;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
@@ -29,7 +31,7 @@ import edu.tufts.cs.gv.util.Colors;
 import edu.tufts.cs.gv.util.DrawingHelp;
 import edu.tufts.cs.gv.util.Vector;
 
-public class GraphView extends VizView implements MouseListener, MouseMotionListener, MouseWheelListener {
+public class GraphView extends VizView implements MouseListener, MouseMotionListener, MouseWheelListener, ComponentListener {
 	private static final long serialVersionUID = 1L;
 
 	private static double Kc = 50;
@@ -57,16 +59,20 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 	private Vector offset;
 	private double scale;
 	
+	private Vector lastSize;
+	
 	public GraphView() {
 		VizState.getState().addVizUpdateListener(this);
 		this.addMouseListener(this);
 		this.addMouseMotionListener(this);
 		this.addMouseWheelListener(this);
+		this.addComponentListener(this);
 		dataset = null;
 		graph = null;
 		simulating = false;
 		lastPoint = null;
 		offset = new Vector();
+		lastSize = new Vector(this.getWidth(), this.getHeight());
 		this.setToolTipText("");
 		ToolTipManager.sharedInstance().setDismissDelay(Integer.MAX_VALUE);
 		ToolTipManager.sharedInstance().setInitialDelay(100);
@@ -80,8 +86,8 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 			graph = new Graph(dataset);
 			for (Vertex v : graph.getVertices()) {
 				if (v.isRoot()) {
-					v.setX(getWidth() / 2);
-					v.setY(diameter);
+					v.setX(diameter);
+					v.setY(getHeight() / 2);
 				} else {
 					v.setX(Math.random() * getWidth() * .5 + .25 * getWidth());
 					v.setY(Math.random() * getWidth() * .5 + .25 * getHeight());
@@ -186,7 +192,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 					repel.scale(mag);
 					a.applyForce(repel.getX(), repel.getY());
 				}
-				a.applyForce(0, Kg);
+				a.applyForce(Kg, 0);
 			}
 			for (Edge e : graph.getEdges()) {
 				Vertex a = e.getA();
@@ -194,7 +200,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 				Vector attract = new Vector(a.getX() - b.getX(), a.getY() - b.getY());
 				attract.normalize();
 				double mag = - Ks * (a.getDistance(b) - (e.getStudentDiff() / (float)dataset.getAllStudents().size())
-						* getHeight() * SPRING_LENGTH);
+						* getWidth() * SPRING_LENGTH);
 				attract.scale(mag);
 				a.applyForce(attract.getX(), attract.getY());
 				b.applyForce(-attract.getX(), -attract.getY());
@@ -277,6 +283,12 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 		};
 	}
 	
+	public void componentResized(ComponentEvent e) {
+		offset.x += (getWidth() - lastSize.x) / 2;
+		offset.y += (getHeight() - lastSize.y) / 2;
+		lastSize = new Vector(getWidth(), getHeight());
+	}
+	
 	public void mouseDragged(MouseEvent e) {
 		if (moving != null) {
 			double dx = e.getX() - lastPoint.x;
@@ -353,4 +365,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 	public void mouseClicked(MouseEvent e) {}
 	public void mouseEntered(MouseEvent e) {}
 	public void mouseExited(MouseEvent e) {}
+	public void componentHidden(ComponentEvent e) {}
+	public void componentMoved(ComponentEvent e) {}
+	public void componentShown(ComponentEvent e) {}
 }
