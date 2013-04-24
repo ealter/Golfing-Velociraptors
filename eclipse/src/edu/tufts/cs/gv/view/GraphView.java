@@ -157,9 +157,9 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 			}
 			height += 20;
 			width += 20;
-			g.setColor(Color.YELLOW);
+			g.setColor(Colors.helpBackground);
 			g.fillRect(getWidth() - width - 1, 0, width, height);
-			g.setColor(Color.BLACK);
+			g.setColor(Colors.helpForeground);
 			g.drawRect(getWidth() - width - 1, 0, width, height);
 			int y = 7;
 			for (String line : helpString) {
