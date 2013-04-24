@@ -11,7 +11,9 @@ import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 import java.awt.geom.Rectangle2D;
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.swing.JSlider;
@@ -37,7 +39,11 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 	private static double SPRING_LENGTH = 7.5;
 	private static final double radius = 10;
 	private static final double diameter = radius * 2;
-	private static final String helpString = "You can zoom the view with the mouse wheel";
+	private static final List<String> helpString = Arrays.asList("A graph of tests. Each test is connected to other tests that have",
+																 "a strict subset of passing students. Hover over a node to get the",
+																 "name of the test and see the passing and failing students on the",
+																 "left. You can zoom the view with the mouse wheel and pan by",
+																 "dragging.");
 	
 	private static final double zoom_rate = .9;
 	
@@ -137,11 +143,25 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 			}
 		}
 		if (VizState.getState().isShowingHelp()) {
+			int height = 0;
+			int width = 0;
+			for (String line : helpString) {
+				Rectangle2D bounds = g.getFontMetrics().getStringBounds(line, g);
+				height += bounds.getHeight();
+				width = Math.max(width, (int)bounds.getWidth());
+			}
+			height += 20;
+			width += 20;
+			g.setColor(Color.YELLOW);
+			g.fillRect(getWidth() - width - 1, 0, width, height);
 			g.setColor(Color.BLACK);
-			g.fillRect(0, 0, getWidth(), getHeight());
-			Rectangle2D bounds = g.getFontMetrics().getStringBounds(helpString, g);
-			g.setColor(Color.WHITE);
-			g.drawString(helpString, (int)(getWidth() / 2 - bounds.getWidth() / 2), (int)(getHeight() / 2 - bounds.getHeight() / 2));
+			g.drawRect(getWidth() - width - 1, 0, width, height);
+			int y = 7;
+			for (String line : helpString) {
+				Rectangle2D bounds = g.getFontMetrics().getStringBounds(line, g);
+				y += bounds.getHeight();
+				g.drawString(line, getWidth() - width + 10, y);
+			}
 		}
 	}
 	
