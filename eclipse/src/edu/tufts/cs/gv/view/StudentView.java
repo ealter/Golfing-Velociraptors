@@ -1,7 +1,6 @@
 package edu.tufts.cs.gv.view;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 
 import javax.swing.BorderFactory;
 import javax.swing.DefaultListModel;
@@ -16,7 +15,6 @@ import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.controller.VizUpdateListener;
 import edu.tufts.cs.gv.util.Colors;
-import edu.tufts.cs.gv.view.StudentListCellView;
 
 public class StudentView extends JPanel implements VizUpdateListener {
 	private static final long serialVersionUID = 1L;

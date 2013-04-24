@@ -1,6 +1,5 @@
 package edu.tufts.cs.gv.view;
 
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -14,7 +13,6 @@ import javax.swing.ListCellRenderer;
 import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.controller.VizUpdateListener;
-
 import edu.tufts.cs.gv.util.Colors;
 
 public class StudentListCellView extends JLabel implements
