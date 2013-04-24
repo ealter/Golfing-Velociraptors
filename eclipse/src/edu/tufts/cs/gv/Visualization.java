@@ -41,8 +41,6 @@ public class Visualization extends JFrame {
 	
 	static final String STARTSCREEN = "Start Screen";
 	static final String VIZSCREEN = "Visualization Screen";
-	static final String SIMPLE = "Simple Options";
-	static final String ADVANCED = "Advanced Options";
 	
 	private Timer renderTimer;
 	
@@ -80,8 +78,6 @@ public class Visualization extends JFrame {
 	private JPanel pnlAdvanced;
 	private JButton btnAdvanced, btnHelp;
 	private JPanel pnlSimple, pnlFiller;
-	private JPanel pnlOptions;
-	private CardLayout crdOptionsLayout;
 	private JPanel pnlGraphView;
 	
 	private JPanel pnlVisualization;
@@ -174,7 +170,11 @@ public class Visualization extends JFrame {
 		btnAdvanced = new JButton("Advanced Mode");
 		btnAdvanced.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				crdOptionsLayout.show(pnlOptions, ADVANCED);
+				pnlGraphView.remove(pnlSimple);
+				pnlGraphView.add(pnlAdvanced, BorderLayout.NORTH);
+				pnlGraphView.revalidate();
+				validate();
+				//pack();
 			}
 		});
 		btnHelp = new JButton("Help");
@@ -196,14 +196,9 @@ public class Visualization extends JFrame {
 				.addComponent(btnAdvanced)
 				.addComponent(btnHelp));
 		
-		crdOptionsLayout = new CardLayout();
-		pnlOptions = new JPanel(crdOptionsLayout);
-		pnlOptions.add(pnlSimple, SIMPLE);
-		pnlOptions.add(pnlAdvanced, ADVANCED);
-		
 		pnlGraphView = new JPanel();
 		pnlGraphView.setLayout(new BorderLayout());
-		pnlGraphView.add(pnlOptions, BorderLayout.NORTH);
+		pnlGraphView.add(pnlSimple, BorderLayout.NORTH);
 		pnlGraphView.add(graphView, BorderLayout.CENTER);
 		
 		
