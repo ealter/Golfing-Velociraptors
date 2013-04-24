@@ -27,6 +27,7 @@ import edu.tufts.cs.gv.model.Dataset;
 import edu.tufts.cs.gv.model.graph.Edge;
 import edu.tufts.cs.gv.model.graph.Graph;
 import edu.tufts.cs.gv.model.graph.Vertex;
+import edu.tufts.cs.gv.util.DrawingHelp;
 import edu.tufts.cs.gv.util.Vector;
 
 public class GraphView extends VizView implements MouseListener, MouseMotionListener, MouseWheelListener {
@@ -143,25 +144,7 @@ public class GraphView extends VizView implements MouseListener, MouseMotionList
 			}
 		}
 		if (VizState.getState().isShowingHelp()) {
-			int height = 0;
-			int width = 0;
-			for (String line : helpString) {
-				Rectangle2D bounds = g.getFontMetrics().getStringBounds(line, g);
-				height += bounds.getHeight();
-				width = Math.max(width, (int)bounds.getWidth());
-			}
-			height += 20;
-			width += 20;
-			g.setColor(Color.YELLOW);
-			g.fillRect(getWidth() - width - 1, 0, width, height);
-			g.setColor(Color.BLACK);
-			g.drawRect(getWidth() - width - 1, 0, width, height);
-			int y = 7;
-			for (String line : helpString) {
-				Rectangle2D bounds = g.getFontMetrics().getStringBounds(line, g);
-				y += bounds.getHeight();
-				g.drawString(line, getWidth() - width + 10, y);
-			}
+			DrawingHelp.renderHelpText(this, helpString, g);
 		}
 	}
 	

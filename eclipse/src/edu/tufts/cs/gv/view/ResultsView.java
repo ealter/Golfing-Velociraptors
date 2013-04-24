@@ -11,15 +11,19 @@ import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 import java.awt.event.MouseEvent;
 import java.awt.geom.AffineTransform;
+import java.awt.geom.Rectangle2D;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Set;
 
 import edu.tufts.cs.gv.controller.VizEventType;
 import edu.tufts.cs.gv.controller.VizState;
 import edu.tufts.cs.gv.model.Dataset;
 import edu.tufts.cs.gv.model.TestCase;
+import edu.tufts.cs.gv.util.DrawingHelp;
 
 //This class will be a bar chart of the witnesses.
 
@@ -33,6 +37,11 @@ public class ResultsView extends VizView {
 	private static final int barWidth = 14;
 	private static final float testCaseSpacing = 20; // Spacing between test
 														// cases
+	private static final List<String> helpString = Arrays.asList("This view shows the distribution of witnesses for each test case.\n",
+																 "For each witness, the top " + maxBars + " witnesses are shown along with their\n",
+																 "respective counts. Mouse over various bars to see their witness names.\n",
+																 "The bar height is directly proportional to the frequency of that particular\n",
+																 "witness.");
 
 	private ArrayList<HashMap<String, Integer>> witnesses;
 	private ArrayList<String> testcases;
@@ -138,8 +147,8 @@ public class ResultsView extends VizView {
 		int numBars = Math.min(maxBars, witnesses.get(testIndex).size());
 		return (int)(numBars * (barSpacing + barWidth));
 	}
-
-	public void paint(Graphics g) {
+	
+	private void paintBarGraph(Graphics g) {
 		if (bars == null) {
 			updateRectangles(g);
 		}
@@ -155,8 +164,6 @@ public class ResultsView extends VizView {
 		}
 		int x = 0;
 		Graphics2D g2 = (Graphics2D) g;
-		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
-				RenderingHints.VALUE_ANTIALIAS_ON);
 		int maxTextHeight = 0;
 		for(String testname : testcases) {
 			maxTextHeight = Math.max(maxTextHeight, getTextHeight(g.getFontMetrics(), testname));
@@ -173,6 +180,20 @@ public class ResultsView extends VizView {
 			g2.drawString(text, 0, 0);
 			x += getTestcaseWidth(g.getFontMetrics(), i) + testCaseSpacing;
 			g2.setTransform(orig);
+		}
+	}
+	
+	private void paintHelp(Graphics g) {
+		DrawingHelp.renderHelpText(this.getParent(), helpString, g);
+	}
+	
+	public void paint(Graphics g) {
+		Graphics2D g2 = (Graphics2D) g;
+		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+				RenderingHints.VALUE_ANTIALIAS_ON);
+		paintBarGraph(g);
+		if(VizState.getState().isShowingHelp()) {
+			paintHelp(g);
 		}
 	}
 
