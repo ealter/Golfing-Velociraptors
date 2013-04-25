@@ -11,9 +11,6 @@ student. Same thing when hovering over a node.
 8. Try putting the dual data into the visualization
 10. Have some way to filter out uninteresting witnesses.
 
-Misc
-1. Remove the pdfs!
-
 Remco
 1. Only show the edges when I highlight over a node. They are usually too messy.
 

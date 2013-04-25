@@ -1,0 +1,1008 @@
+given ali04    test  1, c26578b6068973564fb86346cd370421 passed
+given ali04    test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given ali04    test  1, 32f4a2caa8b00b746c349faae810152f passed
+given ali04    test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given ali04    test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given ali04    test  1, e94f69d0d129ac8a1a47af755179bdb4 passed
+given ali04    test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given ali04    test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(let ((add1 (lambda (x) (+ x 1)))) (add1 7))" should have type "int", but your interpreter failed with the uncaught exception MisMatch.
+given ali04    test  1, 74adefcfad2b9094ebffa600278d5992 passed
+given ali04    test  1, 0b2347e36d133d70508087620cc59572 passed
+given ali04    test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff errored -- Term "(let ((add1 (lambda (x) (+ x 1)))) (add1 7))" should have type "int", but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given ali04    test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given ali04    test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(let ((add1 (lambda (x) (+ x 1)))) (add1 7))" should have type "int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given ali04    test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given ali04    test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given ali04    test  1, 6c9100d05deb15fa8475dc16314718de did-not-type -- Term "(let ((add1 (lambda (x) (+ x 1)))) (add1 7))" should have type "int", but your interpreter found a type error: "cannot make int equal to int -> 'a".
+given ali04    test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given ali04    test  1, d358d1a6c9d5c6d052e6e03cceefb836 errored -- Term "(let ((add1 (lambda (x) (+ x 1)))) (add1 7))" should have type "int", but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given ali04    test  1, a7019858ea4e61160ee24203fe9c8012 errored -- Term "(let ((add1 (lambda (x) (+ x 1)))) (add1 7))" should have type "int", but your interpreter ran out of CPU time (probably because of an infinite loop).
+given ali04    test  1, de322c99a775aa837a14ef6246230ce9 passed
+given ali04    test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given ali04    test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 passed
+given ali04    test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given ali04    test  1, 99f9777dc97cbea2737dcff65a4d0427 errored -- Term "(let ((add1 (lambda (x) (+ x 1)))) (add1 7))" should have type "int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given ali04    test  1, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given ali04    test  1, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given ali04    test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given ali04    test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given ali04    test  1, fea3f17212dc3ddd25d5815689abd04f passed
+given ali04    test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(let ((add1 (lambda (x) (+ x 1)))) (add1 7))" should have type "int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given ali04    test  1, 89502d7ab700ef39a87468f7cf70aa86 typed-incorrectly -- Term "(let ((add1 (lambda (x) (+ x 1)))) (add1 7))" should have type "int", but your interpreter inferred type "forall 'a . 'a".
+given ali04    test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(let ((add1 (lambda (x) (+ x 1)))) (add1 7))" should have type "int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given ali04    test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given ali04    test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given ali04    test  1, 873b720bbee03b5a9f121393ccb1f484 errored -- Term "(let ((add1 (lambda (x) (+ x 1)))) (add1 7))" should have type "int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given ali04    test  1, 411df15fb4844be844ef1e903ab74795 passed
+given ali04    test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given ali04    test  1, 3a0653da84428d5f9210ccc9ef0a367c passed
+given ali04    test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given ali04    test  1, 878ab223ffd511a1df314b784e38cdf4 passed
+given ali04    test  1, 77676884c778c2899ae604eb6d02b9af passed
+given ali04    test  1, c346a77109d0db7830ea881b638563eb passed
+given sharri05 test  1, c26578b6068973564fb86346cd370421 passed
+given sharri05 test  1, c89c856c4a83a4f894c38aa9b6a4ea4a typed-untypeable -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter inferred type "forall 'a . 'a * int -> int list".
+given sharri05 test  1, 32f4a2caa8b00b746c349faae810152f passed
+given sharri05 test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given sharri05 test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given sharri05 test  1, e94f69d0d129ac8a1a47af755179bdb4 typed-untypeable -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter inferred type "forall 'a . 'a * int -> int list".
+given sharri05 test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given sharri05 test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given sharri05 test  1, 74adefcfad2b9094ebffa600278d5992 typed-untypeable -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't418 * 't418 list -> 't418 list =*= 't ...".
+given sharri05 test  1, 0b2347e36d133d70508087620cc59572 passed
+given sharri05 test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff typed-untypeable -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given sharri05 test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given sharri05 test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given sharri05 test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given sharri05 test  1, 7b5f0515ec027d7a290801db676bbd47 typed-untypeable -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter inferred type "forall 'a . 'a * int -> int list".
+given sharri05 test  1, 6c9100d05deb15fa8475dc16314718de passed
+given sharri05 test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given sharri05 test  1, d358d1a6c9d5c6d052e6e03cceefb836 errored -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given sharri05 test  1, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given sharri05 test  1, de322c99a775aa837a14ef6246230ce9 passed
+given sharri05 test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given sharri05 test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given sharri05 test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given sharri05 test  1, 99f9777dc97cbea2737dcff65a4d0427 passed
+given sharri05 test  1, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given sharri05 test  1, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given sharri05 test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given sharri05 test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given sharri05 test  1, fea3f17212dc3ddd25d5815689abd04f errored -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter failed with the uncaught exception UnequalLengths.
+given sharri05 test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given sharri05 test  1, 89502d7ab700ef39a87468f7cf70aa86 passed
+given sharri05 test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given sharri05 test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given sharri05 test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given sharri05 test  1, 873b720bbee03b5a9f121393ccb1f484 typed-untypeable -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given sharri05 test  1, 411df15fb4844be844ef1e903ab74795 passed
+given sharri05 test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given sharri05 test  1, 3a0653da84428d5f9210ccc9ef0a367c typed-untypeable -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter inferred type "forall 'a . 'a * int -> int list".
+given sharri05 test  1, 5f34ce7f7605f122c08baf5ddd41f9bc typed-untypeable -- Term "(define f(ls b)(cons (car (cons b '(1 2)) ls)))" should trigger a uML type error, but your interpreter inferred type "forall 'a . 'a * int -> int list".
+given sharri05 test  1, 878ab223ffd511a1df314b784e38cdf4 passed
+given sharri05 test  1, 77676884c778c2899ae604eb6d02b9af passed
+given sharri05 test  1, c346a77109d0db7830ea881b638563eb passed
+given sharri05 test  2, c26578b6068973564fb86346cd370421 passed
+given sharri05 test  2, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given sharri05 test  2, 32f4a2caa8b00b746c349faae810152f passed
+given sharri05 test  2, 47aba660da8f3336f6a27c1773323d24 passed
+given sharri05 test  2, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given sharri05 test  2, e94f69d0d129ac8a1a47af755179bdb4 passed
+given sharri05 test  2, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given sharri05 test  2, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(define h(ls b)  (letrec(       (f   (lambda(x)(#t)))        (xs  (map f ls)))    xs))" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given sharri05 test  2, 74adefcfad2b9094ebffa600278d5992 passed
+given sharri05 test  2, 0b2347e36d133d70508087620cc59572 passed
+given sharri05 test  2, ca18b15bd9d9ea3f7d56d02f47bae3ff errored -- Term "(define h(ls b)  (letrec(       (f   (lambda(x)(#t)))        (xs  (map f ls)))    xs))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given sharri05 test  2, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given sharri05 test  2, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(define h(ls b)  (letrec(       (f   (lambda(x)(#t)))        (xs  (map f ls)))    xs))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given sharri05 test  2, c8c61a737b3b621616699dc8fed7a619 passed
+given sharri05 test  2, 7b5f0515ec027d7a290801db676bbd47 passed
+given sharri05 test  2, 6c9100d05deb15fa8475dc16314718de passed
+given sharri05 test  2, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given sharri05 test  2, d358d1a6c9d5c6d052e6e03cceefb836 typed-untypeable -- Term "(define h(ls b)  (letrec(       (f   (lambda(x)(#t)))        (xs  (map f ls)))    xs))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given sharri05 test  2, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(define h(ls b)  (letrec(       (f   (lambda(x)(#t)))        (xs  (map f ls)))    xs))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given sharri05 test  2, de322c99a775aa837a14ef6246230ce9 passed
+given sharri05 test  2, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given sharri05 test  2, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(define h(ls b)  (letrec(       (f   (lambda(x)(#t)))        (xs  (map f ls)))    xs))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given sharri05 test  2, 443a9ba7929b510c0b9c987142badca9 passed
+given sharri05 test  2, 99f9777dc97cbea2737dcff65a4d0427 errored -- Term "(define h(ls b)  (letrec(       (f   (lambda(x)(#t)))        (xs  (map f ls)))    xs))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given sharri05 test  2, 91c61ac16e32daa1ddf594a2fb4398ef errored -- Term "(define h(ls b)  (letrec(       (f   (lambda(x)(#t)))        (xs  (map f ls)))    xs))" should trigger a uML type error, but your interpreter failed with the uncaught exception Unsatisfiable.
+given sharri05 test  2, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given sharri05 test  2, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given sharri05 test  2, e5810ae2688b0fd390ab8a00087bb68e passed
+given sharri05 test  2, fea3f17212dc3ddd25d5815689abd04f typed-untypeable -- Term "(define h(ls b)  (letrec(       (f   (lambda(x)(#t)))        (xs  (map f ls)))    xs))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Expression is poorly typed".
+given sharri05 test  2, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(define h(ls b)  (letrec(       (f   (lambda(x)(#t)))        (xs  (map f ls)))    xs))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given sharri05 test  2, 89502d7ab700ef39a87468f7cf70aa86 passed
+given sharri05 test  2, 0ee49745789721cd1ee40517fc42722a errored -- Term "(define h(ls b)  (letrec(       (f   (lambda(x)(#t)))        (xs  (map f ls)))    xs))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given sharri05 test  2, 9bc9c99945513f12f6e9b25f415c181e passed
+given sharri05 test  2, 8ebbf8b33580a15c96747dd08ed77418 passed
+given sharri05 test  2, 873b720bbee03b5a9f121393ccb1f484 typed-untypeable -- Term "(define h(ls b)  (letrec(       (f   (lambda(x)(#t)))        (xs  (map f ls)))    xs))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given sharri05 test  2, 411df15fb4844be844ef1e903ab74795 passed
+given sharri05 test  2, 6a573ec261e43db670c680962f4f6e5a passed
+given sharri05 test  2, 3a0653da84428d5f9210ccc9ef0a367c passed
+given sharri05 test  2, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given sharri05 test  2, 878ab223ffd511a1df314b784e38cdf4 passed
+given sharri05 test  2, 77676884c778c2899ae604eb6d02b9af passed
+given sharri05 test  2, c346a77109d0db7830ea881b638563eb passed
+given dlyle01  test  1, c26578b6068973564fb86346cd370421 passed
+given dlyle01  test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given dlyle01  test  1, 32f4a2caa8b00b746c349faae810152f passed
+given dlyle01  test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given dlyle01  test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given dlyle01  test  1, e94f69d0d129ac8a1a47af755179bdb4 passed
+given dlyle01  test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given dlyle01  test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(define fact (y)   (letrec ((f (lambda (x) (if (= x 1) x (* x (f (- x 1)))))))(f y)))" should have type "int -> int", but your interpreter failed with the uncaught exception MisMatch.
+given dlyle01  test  1, 74adefcfad2b9094ebffa600278d5992 passed
+given dlyle01  test  1, 0b2347e36d133d70508087620cc59572 passed
+given dlyle01  test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff errored -- Term "(define fact (y)   (letrec ((f (lambda (x) (if (= x 1) x (* x (f (- x 1)))))))(f y)))" should have type "int -> int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given dlyle01  test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given dlyle01  test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(define fact (y)   (letrec ((f (lambda (x) (if (= x 1) x (* x (f (- x 1)))))))(f y)))" should have type "int -> int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given dlyle01  test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given dlyle01  test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given dlyle01  test  1, 6c9100d05deb15fa8475dc16314718de typed-incorrectly -- Term "(define fact (y)   (letrec ((f (lambda (x) (if (= x 1) x (* x (f (- x 1)))))))(f y)))" should have type "int -> int", but your interpreter inferred type "forall 'a, 'b . 'a -> 'b".
+given dlyle01  test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given dlyle01  test  1, d358d1a6c9d5c6d052e6e03cceefb836 errored -- Term "(define fact (y)   (letrec ((f (lambda (x) (if (= x 1) x (* x (f (- x 1)))))))(f y)))" should have type "int -> int", but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given dlyle01  test  1, a7019858ea4e61160ee24203fe9c8012 errored -- Term "(define fact (y)   (letrec ((f (lambda (x) (if (= x 1) x (* x (f (- x 1)))))))(f y)))" should have type "int -> int", but your interpreter ran out of CPU time (probably because of an infinite loop).
+given dlyle01  test  1, de322c99a775aa837a14ef6246230ce9 passed
+given dlyle01  test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given dlyle01  test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 passed
+given dlyle01  test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given dlyle01  test  1, 99f9777dc97cbea2737dcff65a4d0427 errored -- Term "(define fact (y)   (letrec ((f (lambda (x) (if (= x 1) x (* x (f (- x 1)))))))(f y)))" should have type "int -> int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given dlyle01  test  1, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given dlyle01  test  1, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given dlyle01  test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given dlyle01  test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given dlyle01  test  1, fea3f17212dc3ddd25d5815689abd04f passed
+given dlyle01  test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(define fact (y)   (letrec ((f (lambda (x) (if (= x 1) x (* x (f (- x 1)))))))(f y)))" should have type "int -> int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given dlyle01  test  1, 89502d7ab700ef39a87468f7cf70aa86 typed-incorrectly -- Term "(define fact (y)   (letrec ((f (lambda (x) (if (= x 1) x (* x (f (- x 1)))))))(f y)))" should have type "int -> int", but your interpreter inferred type "forall 'a . 'a -> 'a".
+given dlyle01  test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(define fact (y)   (letrec ((f (lambda (x) (if (= x 1) x (* x (f (- x 1)))))))(f y)))" should have type "int -> int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given dlyle01  test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given dlyle01  test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given dlyle01  test  1, 873b720bbee03b5a9f121393ccb1f484 errored -- Term "(define fact (y)   (letrec ((f (lambda (x) (if (= x 1) x (* x (f (- x 1)))))))(f y)))" should have type "int -> int", but your interpreter ran out of CPU time (probably because of an infinite loop).
+given dlyle01  test  1, 411df15fb4844be844ef1e903ab74795 passed
+given dlyle01  test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given dlyle01  test  1, 3a0653da84428d5f9210ccc9ef0a367c passed
+given dlyle01  test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given dlyle01  test  1, 878ab223ffd511a1df314b784e38cdf4 passed
+given dlyle01  test  1, 77676884c778c2899ae604eb6d02b9af passed
+given dlyle01  test  1, c346a77109d0db7830ea881b638563eb passed
+given dlyle01  test  2, c26578b6068973564fb86346cd370421 passed
+given dlyle01  test  2, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given dlyle01  test  2, 32f4a2caa8b00b746c349faae810152f typed-untypeable -- Term "(if (begin (- 2 3) (< 4 5) (* 8 2))(+ 3 4)(+ 4 4))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given dlyle01  test  2, 47aba660da8f3336f6a27c1773323d24 passed
+given dlyle01  test  2, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given dlyle01  test  2, e94f69d0d129ac8a1a47af755179bdb4 passed
+given dlyle01  test  2, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given dlyle01  test  2, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(if (begin (- 2 3) (< 4 5) (* 8 2))(+ 3 4)(+ 4 4))" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given dlyle01  test  2, 74adefcfad2b9094ebffa600278d5992 typed-untypeable -- Term "(if (begin (- 2 3) (< 4 5) (* 8 2))(+ 3 4)(+ 4 4))" should trigger a uML type error, but your interpreter inferred type "int".
+given dlyle01  test  2, 0b2347e36d133d70508087620cc59572 passed
+given dlyle01  test  2, ca18b15bd9d9ea3f7d56d02f47bae3ff typed-untypeable -- Term "(if (begin (- 2 3) (< 4 5) (* 8 2))(+ 3 4)(+ 4 4))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given dlyle01  test  2, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given dlyle01  test  2, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(if (begin (- 2 3) (< 4 5) (* 8 2))(+ 3 4)(+ 4 4))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given dlyle01  test  2, c8c61a737b3b621616699dc8fed7a619 passed
+given dlyle01  test  2, 7b5f0515ec027d7a290801db676bbd47 passed
+given dlyle01  test  2, 6c9100d05deb15fa8475dc16314718de passed
+given dlyle01  test  2, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given dlyle01  test  2, d358d1a6c9d5c6d052e6e03cceefb836 typed-untypeable -- Term "(if (begin (- 2 3) (< 4 5) (* 8 2))(+ 3 4)(+ 4 4))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given dlyle01  test  2, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(if (begin (- 2 3) (< 4 5) (* 8 2))(+ 3 4)(+ 4 4))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given dlyle01  test  2, de322c99a775aa837a14ef6246230ce9 passed
+given dlyle01  test  2, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given dlyle01  test  2, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(if (begin (- 2 3) (< 4 5) (* 8 2))(+ 3 4)(+ 4 4))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given dlyle01  test  2, 443a9ba7929b510c0b9c987142badca9 passed
+given dlyle01  test  2, 99f9777dc97cbea2737dcff65a4d0427 passed
+given dlyle01  test  2, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given dlyle01  test  2, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given dlyle01  test  2, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given dlyle01  test  2, e5810ae2688b0fd390ab8a00087bb68e passed
+given dlyle01  test  2, fea3f17212dc3ddd25d5815689abd04f passed
+given dlyle01  test  2, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(if (begin (- 2 3) (< 4 5) (* 8 2))(+ 3 4)(+ 4 4))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given dlyle01  test  2, 89502d7ab700ef39a87468f7cf70aa86 passed
+given dlyle01  test  2, 0ee49745789721cd1ee40517fc42722a errored -- Term "(if (begin (- 2 3) (< 4 5) (* 8 2))(+ 3 4)(+ 4 4))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given dlyle01  test  2, 9bc9c99945513f12f6e9b25f415c181e passed
+given dlyle01  test  2, 8ebbf8b33580a15c96747dd08ed77418 passed
+given dlyle01  test  2, 873b720bbee03b5a9f121393ccb1f484 passed
+given dlyle01  test  2, 411df15fb4844be844ef1e903ab74795 passed
+given dlyle01  test  2, 6a573ec261e43db670c680962f4f6e5a passed
+given dlyle01  test  2, 3a0653da84428d5f9210ccc9ef0a367c passed
+given dlyle01  test  2, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given dlyle01  test  2, 878ab223ffd511a1df314b784e38cdf4 passed
+given dlyle01  test  2, 77676884c778c2899ae604eb6d02b9af passed
+given dlyle01  test  2, c346a77109d0db7830ea881b638563eb passed
+given dlyle01  test  3, c26578b6068973564fb86346cd370421 passed
+given dlyle01  test  3, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given dlyle01  test  3, 32f4a2caa8b00b746c349faae810152f passed
+given dlyle01  test  3, 47aba660da8f3336f6a27c1773323d24 passed
+given dlyle01  test  3, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given dlyle01  test  3, e94f69d0d129ac8a1a47af755179bdb4 passed
+given dlyle01  test  3, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given dlyle01  test  3, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(let* ((x 5)(y (* 5 x))(zs (cons y '(#t #f #f #t)))) zs)" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given dlyle01  test  3, 74adefcfad2b9094ebffa600278d5992 passed
+given dlyle01  test  3, 0b2347e36d133d70508087620cc59572 passed
+given dlyle01  test  3, ca18b15bd9d9ea3f7d56d02f47bae3ff typed-untypeable -- Term "(let* ((x 5)(y (* 5 x))(zs (cons y '(#t #f #f #t)))) zs)" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given dlyle01  test  3, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given dlyle01  test  3, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(let* ((x 5)(y (* 5 x))(zs (cons y '(#t #f #f #t)))) zs)" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given dlyle01  test  3, c8c61a737b3b621616699dc8fed7a619 passed
+given dlyle01  test  3, 7b5f0515ec027d7a290801db676bbd47 passed
+given dlyle01  test  3, 6c9100d05deb15fa8475dc16314718de passed
+given dlyle01  test  3, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given dlyle01  test  3, d358d1a6c9d5c6d052e6e03cceefb836 typed-untypeable -- Term "(let* ((x 5)(y (* 5 x))(zs (cons y '(#t #f #f #t)))) zs)" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given dlyle01  test  3, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(let* ((x 5)(y (* 5 x))(zs (cons y '(#t #f #f #t)))) zs)" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given dlyle01  test  3, de322c99a775aa837a14ef6246230ce9 passed
+given dlyle01  test  3, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given dlyle01  test  3, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(let* ((x 5)(y (* 5 x))(zs (cons y '(#t #f #f #t)))) zs)" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given dlyle01  test  3, 443a9ba7929b510c0b9c987142badca9 passed
+given dlyle01  test  3, 99f9777dc97cbea2737dcff65a4d0427 errored -- Term "(let* ((x 5)(y (* 5 x))(zs (cons y '(#t #f #f #t)))) zs)" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given dlyle01  test  3, 91c61ac16e32daa1ddf594a2fb4398ef errored -- Term "(let* ((x 5)(y (* 5 x))(zs (cons y '(#t #f #f #t)))) zs)" should trigger a uML type error, but your interpreter failed with the uncaught exception Unsatisfiable.
+given dlyle01  test  3, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given dlyle01  test  3, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given dlyle01  test  3, e5810ae2688b0fd390ab8a00087bb68e passed
+given dlyle01  test  3, fea3f17212dc3ddd25d5815689abd04f passed
+given dlyle01  test  3, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(let* ((x 5)(y (* 5 x))(zs (cons y '(#t #f #f #t)))) zs)" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given dlyle01  test  3, 89502d7ab700ef39a87468f7cf70aa86 typed-untypeable -- Term "(let* ((x 5)(y (* 5 x))(zs (cons y '(#t #f #f #t)))) zs)" should trigger a uML type error, but your interpreter inferred type "forall 'a . 'a".
+given dlyle01  test  3, 0ee49745789721cd1ee40517fc42722a errored -- Term "(let* ((x 5)(y (* 5 x))(zs (cons y '(#t #f #f #t)))) zs)" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given dlyle01  test  3, 9bc9c99945513f12f6e9b25f415c181e passed
+given dlyle01  test  3, 8ebbf8b33580a15c96747dd08ed77418 passed
+given dlyle01  test  3, 873b720bbee03b5a9f121393ccb1f484 errored -- Term "(let* ((x 5)(y (* 5 x))(zs (cons y '(#t #f #f #t)))) zs)" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given dlyle01  test  3, 411df15fb4844be844ef1e903ab74795 passed
+given dlyle01  test  3, 6a573ec261e43db670c680962f4f6e5a passed
+given dlyle01  test  3, 3a0653da84428d5f9210ccc9ef0a367c passed
+given dlyle01  test  3, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given dlyle01  test  3, 878ab223ffd511a1df314b784e38cdf4 passed
+given dlyle01  test  3, 77676884c778c2899ae604eb6d02b9af passed
+given dlyle01  test  3, c346a77109d0db7830ea881b638563eb passed
+given nr       test  1, c26578b6068973564fb86346cd370421 typed-incorrectly -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter inferred type "forall 'a, 'b . 'a * 'b".
+given nr       test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given nr       test  1, 32f4a2caa8b00b746c349faae810152f typed-incorrectly -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter inferred type "int * int".
+given nr       test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given nr       test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given nr       test  1, e94f69d0d129ac8a1a47af755179bdb4 did-not-type -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter found a type error: "cannot make int equal to bool".
+given nr       test  1, eaef72aa8d0751c4fa07ff68ee757e56 did-not-type -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter found a type error: "cannot make int equal to bool".
+given nr       test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter failed with the uncaught exception MisMatch.
+given nr       test  1, 74adefcfad2b9094ebffa600278d5992 did-not-type -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter found a type error: "cannot make int equal to bool".
+given nr       test  1, 0b2347e36d133d70508087620cc59572 passed
+given nr       test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff errored -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter failed with the uncaught exception LeftAsExercise.
+given nr       test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given nr       test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter failed with the uncaught exception LeftAsExercise.
+given nr       test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given nr       test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given nr       test  1, 6c9100d05deb15fa8475dc16314718de did-not-type -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter found a type error: "cannot make int equal to bool".
+given nr       test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given nr       test  1, d358d1a6c9d5c6d052e6e03cceefb836 errored -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given nr       test  1, a7019858ea4e61160ee24203fe9c8012 errored -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter ran out of CPU time (probably because of an infinite loop).
+given nr       test  1, de322c99a775aa837a14ef6246230ce9 passed
+given nr       test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given nr       test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 errored -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given nr       test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given nr       test  1, 99f9777dc97cbea2737dcff65a4d0427 errored -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter failed with the uncaught exception LeftAsExercise.
+given nr       test  1, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given nr       test  1, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given nr       test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 did-not-type -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter found a type error: "cannot make int equal to bool".
+given nr       test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given nr       test  1, fea3f17212dc3ddd25d5815689abd04f passed
+given nr       test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter failed with the uncaught exception LeftAsExercise.
+given nr       test  1, 89502d7ab700ef39a87468f7cf70aa86 passed
+given nr       test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter failed with the uncaught exception LeftAsExercise.
+given nr       test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given nr       test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given nr       test  1, 873b720bbee03b5a9f121393ccb1f484 errored -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter failed with the uncaught exception LeftAsExercise.
+given nr       test  1, 411df15fb4844be844ef1e903ab74795 passed
+given nr       test  1, 6a573ec261e43db670c680962f4f6e5a did-not-type -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter found a type error: "cannot make int equal to bool".
+given nr       test  1, 3a0653da84428d5f9210ccc9ef0a367c did-not-type -- Term "(letrec ((id (lambda (x) x))) (pair (id 0) (id #t)))" should have type "int * bool", but your interpreter found a type error: "cannot make int equal to bool".
+given nr       test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given nr       test  1, 878ab223ffd511a1df314b784e38cdf4 passed
+given nr       test  1, 77676884c778c2899ae604eb6d02b9af passed
+given nr       test  1, c346a77109d0db7830ea881b638563eb passed
+given cclair01 test  1, c26578b6068973564fb86346cd370421 typed-untypeable -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter inferred type "forall 'a, 'b . bool * 'a list * 'b list -> 'a list".
+given cclair01 test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given cclair01 test  1, 32f4a2caa8b00b746c349faae810152f typed-untypeable -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter inferred type "forall 'a . bool * 'a list * 'a list list -> 'a list list".
+given cclair01 test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given cclair01 test  1, 31995ee0f9bcdd2536d30eff4a0aae14 typed-untypeable -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't413 =*= bool /\\ 't414 =*= 't417 /\\ 't ...".
+given cclair01 test  1, e94f69d0d129ac8a1a47af755179bdb4 passed
+given cclair01 test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given cclair01 test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given cclair01 test  1, 74adefcfad2b9094ebffa600278d5992 passed
+given cclair01 test  1, 0b2347e36d133d70508087620cc59572 passed
+given cclair01 test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff typed-untypeable -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given cclair01 test  1, 1cee0dc37c0985d3fe390d0dac92d707 typed-untypeable -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter inferred type "forall 'a . bool * 'a list * 'a list list -> 'a list".
+given cclair01 test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given cclair01 test  1, c8c61a737b3b621616699dc8fed7a619 typed-untypeable -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't413 =*= bool /\\ 't414 =*= 't417 /\\ 't ...".
+given cclair01 test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given cclair01 test  1, 6c9100d05deb15fa8475dc16314718de passed
+given cclair01 test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given cclair01 test  1, d358d1a6c9d5c6d052e6e03cceefb836 typed-untypeable -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given cclair01 test  1, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given cclair01 test  1, de322c99a775aa837a14ef6246230ce9 passed
+given cclair01 test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given cclair01 test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given cclair01 test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given cclair01 test  1, 99f9777dc97cbea2737dcff65a4d0427 passed
+given cclair01 test  1, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given cclair01 test  1, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given cclair01 test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 typed-untypeable -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter inferred type "forall 'a . bool * 'a list * 'a list list -> 'a list".
+given cclair01 test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given cclair01 test  1, fea3f17212dc3ddd25d5815689abd04f passed
+given cclair01 test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given cclair01 test  1, 89502d7ab700ef39a87468f7cf70aa86 passed
+given cclair01 test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given cclair01 test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given cclair01 test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given cclair01 test  1, 873b720bbee03b5a9f121393ccb1f484 typed-untypeable -- Term "(lambda (x y z) (if x y (cons y z)))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given cclair01 test  1, 411df15fb4844be844ef1e903ab74795 passed
+given cclair01 test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given cclair01 test  1, 3a0653da84428d5f9210ccc9ef0a367c passed
+given cclair01 test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given cclair01 test  1, 878ab223ffd511a1df314b784e38cdf4 passed
+given cclair01 test  1, 77676884c778c2899ae604eb6d02b9af passed
+given cclair01 test  1, c346a77109d0db7830ea881b638563eb passed
+given sdusha01 test  1, c26578b6068973564fb86346cd370421 passed
+given sdusha01 test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given sdusha01 test  1, 32f4a2caa8b00b746c349faae810152f passed
+given sdusha01 test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given sdusha01 test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given sdusha01 test  1, e94f69d0d129ac8a1a47af755179bdb4 passed
+given sdusha01 test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given sdusha01 test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(val x 1)" should have type "int", but your interpreter failed with the uncaught exception MisMatch.
+given sdusha01 test  1, 74adefcfad2b9094ebffa600278d5992 passed
+given sdusha01 test  1, 0b2347e36d133d70508087620cc59572 passed
+given sdusha01 test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff passed
+given sdusha01 test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given sdusha01 test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(val x 1)" should have type "int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given sdusha01 test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given sdusha01 test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given sdusha01 test  1, 6c9100d05deb15fa8475dc16314718de passed
+given sdusha01 test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given sdusha01 test  1, d358d1a6c9d5c6d052e6e03cceefb836 passed
+given sdusha01 test  1, a7019858ea4e61160ee24203fe9c8012 errored -- Term "(val x 1)" should have type "int", but your interpreter ran out of CPU time (probably because of an infinite loop).
+given sdusha01 test  1, de322c99a775aa837a14ef6246230ce9 passed
+given sdusha01 test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given sdusha01 test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 passed
+given sdusha01 test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given sdusha01 test  1, 99f9777dc97cbea2737dcff65a4d0427 passed
+given sdusha01 test  1, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given sdusha01 test  1, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given sdusha01 test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given sdusha01 test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given sdusha01 test  1, fea3f17212dc3ddd25d5815689abd04f passed
+given sdusha01 test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(val x 1)" should have type "int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given sdusha01 test  1, 89502d7ab700ef39a87468f7cf70aa86 passed
+given sdusha01 test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(val x 1)" should have type "int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given sdusha01 test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given sdusha01 test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given sdusha01 test  1, 873b720bbee03b5a9f121393ccb1f484 passed
+given sdusha01 test  1, 411df15fb4844be844ef1e903ab74795 passed
+given sdusha01 test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given sdusha01 test  1, 3a0653da84428d5f9210ccc9ef0a367c passed
+given sdusha01 test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given sdusha01 test  1, 878ab223ffd511a1df314b784e38cdf4 passed
+given sdusha01 test  1, 77676884c778c2899ae604eb6d02b9af passed
+given sdusha01 test  1, c346a77109d0db7830ea881b638563eb passed
+given ntarrh01 test  1, c26578b6068973564fb86346cd370421 passed
+given ntarrh01 test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given ntarrh01 test  1, 32f4a2caa8b00b746c349faae810152f passed
+given ntarrh01 test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given ntarrh01 test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given ntarrh01 test  1, e94f69d0d129ac8a1a47af755179bdb4 passed
+given ntarrh01 test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given ntarrh01 test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(cons '() 5 '())" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given ntarrh01 test  1, 74adefcfad2b9094ebffa600278d5992 passed
+given ntarrh01 test  1, 0b2347e36d133d70508087620cc59572 passed
+given ntarrh01 test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff typed-untypeable -- Term "(cons '() 5 '())" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given ntarrh01 test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given ntarrh01 test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(cons '() 5 '())" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given ntarrh01 test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given ntarrh01 test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given ntarrh01 test  1, 6c9100d05deb15fa8475dc16314718de passed
+given ntarrh01 test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given ntarrh01 test  1, d358d1a6c9d5c6d052e6e03cceefb836 errored -- Term "(cons '() 5 '())" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given ntarrh01 test  1, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(cons '() 5 '())" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given ntarrh01 test  1, de322c99a775aa837a14ef6246230ce9 passed
+given ntarrh01 test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given ntarrh01 test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(cons '() 5 '())" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given ntarrh01 test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given ntarrh01 test  1, 99f9777dc97cbea2737dcff65a4d0427 passed
+given ntarrh01 test  1, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given ntarrh01 test  1, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given ntarrh01 test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given ntarrh01 test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given ntarrh01 test  1, fea3f17212dc3ddd25d5815689abd04f errored -- Term "(cons '() 5 '())" should trigger a uML type error, but your interpreter failed with the uncaught exception UnequalLengths.
+given ntarrh01 test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(cons '() 5 '())" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given ntarrh01 test  1, 89502d7ab700ef39a87468f7cf70aa86 passed
+given ntarrh01 test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(cons '() 5 '())" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given ntarrh01 test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given ntarrh01 test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given ntarrh01 test  1, 873b720bbee03b5a9f121393ccb1f484 passed
+given ntarrh01 test  1, 411df15fb4844be844ef1e903ab74795 passed
+given ntarrh01 test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given ntarrh01 test  1, 3a0653da84428d5f9210ccc9ef0a367c passed
+given ntarrh01 test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given ntarrh01 test  1, 878ab223ffd511a1df314b784e38cdf4 passed
+given ntarrh01 test  1, 77676884c778c2899ae604eb6d02b9af passed
+given ntarrh01 test  1, c346a77109d0db7830ea881b638563eb passed
+given eroths02 test  1, c26578b6068973564fb86346cd370421 passed
+given eroths02 test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given eroths02 test  1, 32f4a2caa8b00b746c349faae810152f passed
+given eroths02 test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given eroths02 test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given eroths02 test  1, e94f69d0d129ac8a1a47af755179bdb4 passed
+given eroths02 test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given eroths02 test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(+ 5 9)" should have type "int", but your interpreter failed with the uncaught exception MisMatch.
+given eroths02 test  1, 74adefcfad2b9094ebffa600278d5992 passed
+given eroths02 test  1, 0b2347e36d133d70508087620cc59572 passed
+given eroths02 test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff errored -- Term "(+ 5 9)" should have type "int", but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given eroths02 test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given eroths02 test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(+ 5 9)" should have type "int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given eroths02 test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given eroths02 test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given eroths02 test  1, 6c9100d05deb15fa8475dc16314718de passed
+given eroths02 test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given eroths02 test  1, d358d1a6c9d5c6d052e6e03cceefb836 passed
+given eroths02 test  1, a7019858ea4e61160ee24203fe9c8012 errored -- Term "(+ 5 9)" should have type "int", but your interpreter ran out of CPU time (probably because of an infinite loop).
+given eroths02 test  1, de322c99a775aa837a14ef6246230ce9 passed
+given eroths02 test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given eroths02 test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 passed
+given eroths02 test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given eroths02 test  1, 99f9777dc97cbea2737dcff65a4d0427 passed
+given eroths02 test  1, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given eroths02 test  1, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given eroths02 test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given eroths02 test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given eroths02 test  1, fea3f17212dc3ddd25d5815689abd04f passed
+given eroths02 test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(+ 5 9)" should have type "int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given eroths02 test  1, 89502d7ab700ef39a87468f7cf70aa86 passed
+given eroths02 test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(+ 5 9)" should have type "int", but your interpreter failed with the uncaught exception LeftAsExercise.
+given eroths02 test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given eroths02 test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given eroths02 test  1, 873b720bbee03b5a9f121393ccb1f484 passed
+given eroths02 test  1, 411df15fb4844be844ef1e903ab74795 passed
+given eroths02 test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given eroths02 test  1, 3a0653da84428d5f9210ccc9ef0a367c passed
+given eroths02 test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given eroths02 test  1, 878ab223ffd511a1df314b784e38cdf4 passed
+given eroths02 test  1, 77676884c778c2899ae604eb6d02b9af passed
+given eroths02 test  1, c346a77109d0db7830ea881b638563eb passed
+given eroths02 test  2, c26578b6068973564fb86346cd370421 passed
+given eroths02 test  2, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given eroths02 test  2, 32f4a2caa8b00b746c349faae810152f typed-untypeable -- Term "(= 5 #f)" should trigger a uML type error, but your interpreter inferred type "bool".
+given eroths02 test  2, 47aba660da8f3336f6a27c1773323d24 passed
+given eroths02 test  2, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given eroths02 test  2, e94f69d0d129ac8a1a47af755179bdb4 passed
+given eroths02 test  2, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given eroths02 test  2, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(= 5 #f)" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given eroths02 test  2, 74adefcfad2b9094ebffa600278d5992 passed
+given eroths02 test  2, 0b2347e36d133d70508087620cc59572 passed
+given eroths02 test  2, ca18b15bd9d9ea3f7d56d02f47bae3ff typed-untypeable -- Term "(= 5 #f)" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given eroths02 test  2, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given eroths02 test  2, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(= 5 #f)" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given eroths02 test  2, c8c61a737b3b621616699dc8fed7a619 passed
+given eroths02 test  2, 7b5f0515ec027d7a290801db676bbd47 passed
+given eroths02 test  2, 6c9100d05deb15fa8475dc16314718de passed
+given eroths02 test  2, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given eroths02 test  2, d358d1a6c9d5c6d052e6e03cceefb836 typed-untypeable -- Term "(= 5 #f)" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given eroths02 test  2, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(= 5 #f)" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given eroths02 test  2, de322c99a775aa837a14ef6246230ce9 passed
+given eroths02 test  2, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given eroths02 test  2, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(= 5 #f)" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given eroths02 test  2, 443a9ba7929b510c0b9c987142badca9 passed
+given eroths02 test  2, 99f9777dc97cbea2737dcff65a4d0427 passed
+given eroths02 test  2, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given eroths02 test  2, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given eroths02 test  2, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given eroths02 test  2, e5810ae2688b0fd390ab8a00087bb68e passed
+given eroths02 test  2, fea3f17212dc3ddd25d5815689abd04f passed
+given eroths02 test  2, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(= 5 #f)" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given eroths02 test  2, 89502d7ab700ef39a87468f7cf70aa86 passed
+given eroths02 test  2, 0ee49745789721cd1ee40517fc42722a errored -- Term "(= 5 #f)" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given eroths02 test  2, 9bc9c99945513f12f6e9b25f415c181e passed
+given eroths02 test  2, 8ebbf8b33580a15c96747dd08ed77418 passed
+given eroths02 test  2, 873b720bbee03b5a9f121393ccb1f484 passed
+given eroths02 test  2, 411df15fb4844be844ef1e903ab74795 passed
+given eroths02 test  2, 6a573ec261e43db670c680962f4f6e5a passed
+given eroths02 test  2, 3a0653da84428d5f9210ccc9ef0a367c passed
+given eroths02 test  2, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given eroths02 test  2, 878ab223ffd511a1df314b784e38cdf4 passed
+given eroths02 test  2, 77676884c778c2899ae604eb6d02b9af passed
+given eroths02 test  2, c346a77109d0db7830ea881b638563eb passed
+given jfrisc02 test  1, c26578b6068973564fb86346cd370421 typed-untypeable -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter inferred type "bool".
+given jfrisc02 test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given jfrisc02 test  1, 32f4a2caa8b00b746c349faae810152f typed-untypeable -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter inferred type "bool".
+given jfrisc02 test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given jfrisc02 test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given jfrisc02 test  1, e94f69d0d129ac8a1a47af755179bdb4 passed
+given jfrisc02 test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given jfrisc02 test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given jfrisc02 test  1, 74adefcfad2b9094ebffa600278d5992 passed
+given jfrisc02 test  1, 0b2347e36d133d70508087620cc59572 passed
+given jfrisc02 test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff errored -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfrisc02 test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given jfrisc02 test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfrisc02 test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given jfrisc02 test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given jfrisc02 test  1, 6c9100d05deb15fa8475dc16314718de passed
+given jfrisc02 test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given jfrisc02 test  1, d358d1a6c9d5c6d052e6e03cceefb836 typed-untypeable -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given jfrisc02 test  1, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given jfrisc02 test  1, de322c99a775aa837a14ef6246230ce9 passed
+given jfrisc02 test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given jfrisc02 test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given jfrisc02 test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given jfrisc02 test  1, 99f9777dc97cbea2737dcff65a4d0427 errored -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfrisc02 test  1, 91c61ac16e32daa1ddf594a2fb4398ef errored -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter failed with the uncaught exception Unsatisfiable.
+given jfrisc02 test  1, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given jfrisc02 test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given jfrisc02 test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given jfrisc02 test  1, fea3f17212dc3ddd25d5815689abd04f passed
+given jfrisc02 test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfrisc02 test  1, 89502d7ab700ef39a87468f7cf70aa86 typed-untypeable -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter inferred type "bool".
+given jfrisc02 test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfrisc02 test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given jfrisc02 test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given jfrisc02 test  1, 873b720bbee03b5a9f121393ccb1f484 errored -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfrisc02 test  1, 411df15fb4844be844ef1e903ab74795 passed
+given jfrisc02 test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given jfrisc02 test  1, 3a0653da84428d5f9210ccc9ef0a367c typed-untypeable -- Term "(letrec ((bad (lambda (x) (+ x 1)))          (bad' (lambda (x) (if (bad x) #t #f))))         (bad' 1))" should trigger a uML type error, but your interpreter inferred type "forall 'a . 'a".
+given jfrisc02 test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given jfrisc02 test  1, 878ab223ffd511a1df314b784e38cdf4 passed
+given jfrisc02 test  1, 77676884c778c2899ae604eb6d02b9af passed
+given jfrisc02 test  1, c346a77109d0db7830ea881b638563eb passed
+given jfrisc02 test  2, c26578b6068973564fb86346cd370421 typed-untypeable -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter inferred type "forall 'a, 'b . 'a -> 'b".
+given jfrisc02 test  2, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given jfrisc02 test  2, 32f4a2caa8b00b746c349faae810152f typed-untypeable -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter inferred type "forall 'a, 'b . ('a -> 'b) -> 'b".
+given jfrisc02 test  2, 47aba660da8f3336f6a27c1773323d24 passed
+given jfrisc02 test  2, 31995ee0f9bcdd2536d30eff4a0aae14 typed-untypeable -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't413 =*= 't415 -> 't416 /\\ 't415 -> 't ...".
+given jfrisc02 test  2, e94f69d0d129ac8a1a47af755179bdb4 passed
+given jfrisc02 test  2, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given jfrisc02 test  2, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given jfrisc02 test  2, 74adefcfad2b9094ebffa600278d5992 passed
+given jfrisc02 test  2, 0b2347e36d133d70508087620cc59572 passed
+given jfrisc02 test  2, ca18b15bd9d9ea3f7d56d02f47bae3ff typed-untypeable -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given jfrisc02 test  2, 1cee0dc37c0985d3fe390d0dac92d707 typed-untypeable -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter inferred type "forall 'a . 'a".
+given jfrisc02 test  2, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfrisc02 test  2, c8c61a737b3b621616699dc8fed7a619 typed-untypeable -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't413 =*= 't415 -> 't416 /\\ 't415 -> 't ...".
+given jfrisc02 test  2, 7b5f0515ec027d7a290801db676bbd47 passed
+given jfrisc02 test  2, 6c9100d05deb15fa8475dc16314718de passed
+given jfrisc02 test  2, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given jfrisc02 test  2, d358d1a6c9d5c6d052e6e03cceefb836 typed-untypeable -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given jfrisc02 test  2, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given jfrisc02 test  2, de322c99a775aa837a14ef6246230ce9 passed
+given jfrisc02 test  2, 5b9b04249ca17d6b6c2a73c0f00fa301 typed-untypeable -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter inferred type "forall 'a, 'b . 'a -> 'b".
+given jfrisc02 test  2, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given jfrisc02 test  2, 443a9ba7929b510c0b9c987142badca9 passed
+given jfrisc02 test  2, 99f9777dc97cbea2737dcff65a4d0427 errored -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfrisc02 test  2, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given jfrisc02 test  2, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given jfrisc02 test  2, 7f51ce5c216cea4a1c1fa7d93e4053c4 typed-untypeable -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter inferred type "forall 'a, 'b . ('a -> 'b) -> 'b".
+given jfrisc02 test  2, e5810ae2688b0fd390ab8a00087bb68e passed
+given jfrisc02 test  2, fea3f17212dc3ddd25d5815689abd04f passed
+given jfrisc02 test  2, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfrisc02 test  2, 89502d7ab700ef39a87468f7cf70aa86 typed-untypeable -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter inferred type "forall 'a, 'b . 'a -> 'b".
+given jfrisc02 test  2, 0ee49745789721cd1ee40517fc42722a errored -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfrisc02 test  2, 9bc9c99945513f12f6e9b25f415c181e passed
+given jfrisc02 test  2, 8ebbf8b33580a15c96747dd08ed77418 passed
+given jfrisc02 test  2, 873b720bbee03b5a9f121393ccb1f484 typed-untypeable -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given jfrisc02 test  2, 411df15fb4844be844ef1e903ab74795 passed
+given jfrisc02 test  2, 6a573ec261e43db670c680962f4f6e5a passed
+given jfrisc02 test  2, 3a0653da84428d5f9210ccc9ef0a367c passed
+given jfrisc02 test  2, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given jfrisc02 test  2, 878ab223ffd511a1df314b784e38cdf4 typed-untypeable -- Term "(define bad (x) (let ((bad' (lambda (x) (bad x)))) (bad' bad)))" should trigger a uML type error, but your interpreter inferred type "forall 'a, 'b . 'a -> 'b".
+given jfrisc02 test  2, 77676884c778c2899ae604eb6d02b9af passed
+given jfrisc02 test  2, c346a77109d0db7830ea881b638563eb passed
+given jfrisc02 test  3, c26578b6068973564fb86346cd370421 typed-incorrectly -- Term "(val x (cdr '(function)))" should have type "sym list", but your interpreter inferred type "forall 'a . 'a list".
+given jfrisc02 test  3, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given jfrisc02 test  3, 32f4a2caa8b00b746c349faae810152f did-not-type -- Term "(val x (cdr '(function)))" should have type "sym list", but your interpreter found a type error: "cannot make sym equal to 'a list".
+given jfrisc02 test  3, 47aba660da8f3336f6a27c1773323d24 passed
+given jfrisc02 test  3, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given jfrisc02 test  3, e94f69d0d129ac8a1a47af755179bdb4 passed
+given jfrisc02 test  3, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given jfrisc02 test  3, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(val x (cdr '(function)))" should have type "sym list", but your interpreter failed with the uncaught exception MisMatch.
+given jfrisc02 test  3, 74adefcfad2b9094ebffa600278d5992 passed
+given jfrisc02 test  3, 0b2347e36d133d70508087620cc59572 passed
+given jfrisc02 test  3, ca18b15bd9d9ea3f7d56d02f47bae3ff errored -- Term "(val x (cdr '(function)))" should have type "sym list", but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given jfrisc02 test  3, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given jfrisc02 test  3, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(val x (cdr '(function)))" should have type "sym list", but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfrisc02 test  3, c8c61a737b3b621616699dc8fed7a619 passed
+given jfrisc02 test  3, 7b5f0515ec027d7a290801db676bbd47 passed
+given jfrisc02 test  3, 6c9100d05deb15fa8475dc16314718de did-not-type -- Term "(val x (cdr '(function)))" should have type "sym list", but your interpreter found a type error: "Mismatched Pair".
+given jfrisc02 test  3, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given jfrisc02 test  3, d358d1a6c9d5c6d052e6e03cceefb836 passed
+given jfrisc02 test  3, a7019858ea4e61160ee24203fe9c8012 errored -- Term "(val x (cdr '(function)))" should have type "sym list", but your interpreter ran out of CPU time (probably because of an infinite loop).
+given jfrisc02 test  3, de322c99a775aa837a14ef6246230ce9 passed
+given jfrisc02 test  3, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given jfrisc02 test  3, 7ae31c8b6f4eeacabd2ec9b99f6d3956 passed
+given jfrisc02 test  3, 443a9ba7929b510c0b9c987142badca9 passed
+given jfrisc02 test  3, 99f9777dc97cbea2737dcff65a4d0427 passed
+given jfrisc02 test  3, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given jfrisc02 test  3, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given jfrisc02 test  3, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given jfrisc02 test  3, e5810ae2688b0fd390ab8a00087bb68e passed
+given jfrisc02 test  3, fea3f17212dc3ddd25d5815689abd04f passed
+given jfrisc02 test  3, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(val x (cdr '(function)))" should have type "sym list", but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfrisc02 test  3, 89502d7ab700ef39a87468f7cf70aa86 passed
+given jfrisc02 test  3, 0ee49745789721cd1ee40517fc42722a errored -- Term "(val x (cdr '(function)))" should have type "sym list", but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfrisc02 test  3, 9bc9c99945513f12f6e9b25f415c181e passed
+given jfrisc02 test  3, 8ebbf8b33580a15c96747dd08ed77418 passed
+given jfrisc02 test  3, 873b720bbee03b5a9f121393ccb1f484 passed
+given jfrisc02 test  3, 411df15fb4844be844ef1e903ab74795 passed
+given jfrisc02 test  3, 6a573ec261e43db670c680962f4f6e5a passed
+given jfrisc02 test  3, 3a0653da84428d5f9210ccc9ef0a367c passed
+given jfrisc02 test  3, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given jfrisc02 test  3, 878ab223ffd511a1df314b784e38cdf4 passed
+given jfrisc02 test  3, 77676884c778c2899ae604eb6d02b9af passed
+given jfrisc02 test  3, c346a77109d0db7830ea881b638563eb passed
+given msmile01 test  1, c26578b6068973564fb86346cd370421 passed
+given msmile01 test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given msmile01 test  1, 32f4a2caa8b00b746c349faae810152f typed-untypeable -- Term "(letrec ((x (lambda () 3)) (y (lambda () 4))         (z (lambda () 'a))) (+ (z) (+ (x) (y))))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "arithmetic on non-numbers".
+given msmile01 test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given msmile01 test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given msmile01 test  1, e94f69d0d129ac8a1a47af755179bdb4 passed
+given msmile01 test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given msmile01 test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(letrec ((x (lambda () 3)) (y (lambda () 4))         (z (lambda () 'a))) (+ (z) (+ (x) (y))))" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given msmile01 test  1, 74adefcfad2b9094ebffa600278d5992 passed
+given msmile01 test  1, 0b2347e36d133d70508087620cc59572 passed
+given msmile01 test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff errored -- Term "(letrec ((x (lambda () 3)) (y (lambda () 4))         (z (lambda () 'a))) (+ (z) (+ (x) (y))))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given msmile01 test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given msmile01 test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(letrec ((x (lambda () 3)) (y (lambda () 4))         (z (lambda () 'a))) (+ (z) (+ (x) (y))))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given msmile01 test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given msmile01 test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given msmile01 test  1, 6c9100d05deb15fa8475dc16314718de typed-untypeable -- Term "(letrec ((x (lambda () 3)) (y (lambda () 4))         (z (lambda () 'a))) (+ (z) (+ (x) (y))))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "arithmetic on non-numbers".
+given msmile01 test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given msmile01 test  1, d358d1a6c9d5c6d052e6e03cceefb836 typed-untypeable -- Term "(letrec ((x (lambda () 3)) (y (lambda () 4))         (z (lambda () 'a))) (+ (z) (+ (x) (y))))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given msmile01 test  1, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(letrec ((x (lambda () 3)) (y (lambda () 4))         (z (lambda () 'a))) (+ (z) (+ (x) (y))))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given msmile01 test  1, de322c99a775aa837a14ef6246230ce9 passed
+given msmile01 test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given msmile01 test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(letrec ((x (lambda () 3)) (y (lambda () 4))         (z (lambda () 'a))) (+ (z) (+ (x) (y))))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given msmile01 test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given msmile01 test  1, 99f9777dc97cbea2737dcff65a4d0427 errored -- Term "(letrec ((x (lambda () 3)) (y (lambda () 4))         (z (lambda () 'a))) (+ (z) (+ (x) (y))))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given msmile01 test  1, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given msmile01 test  1, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given msmile01 test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given msmile01 test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given msmile01 test  1, fea3f17212dc3ddd25d5815689abd04f passed
+given msmile01 test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(letrec ((x (lambda () 3)) (y (lambda () 4))         (z (lambda () 'a))) (+ (z) (+ (x) (y))))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given msmile01 test  1, 89502d7ab700ef39a87468f7cf70aa86 passed
+given msmile01 test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(letrec ((x (lambda () 3)) (y (lambda () 4))         (z (lambda () 'a))) (+ (z) (+ (x) (y))))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given msmile01 test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given msmile01 test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given msmile01 test  1, 873b720bbee03b5a9f121393ccb1f484 errored -- Term "(letrec ((x (lambda () 3)) (y (lambda () 4))         (z (lambda () 'a))) (+ (z) (+ (x) (y))))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given msmile01 test  1, 411df15fb4844be844ef1e903ab74795 passed
+given msmile01 test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given msmile01 test  1, 3a0653da84428d5f9210ccc9ef0a367c typed-untypeable -- Term "(letrec ((x (lambda () 3)) (y (lambda () 4))         (z (lambda () 'a))) (+ (z) (+ (x) (y))))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "arithmetic on non-numbers".
+given msmile01 test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given msmile01 test  1, 878ab223ffd511a1df314b784e38cdf4 passed
+given msmile01 test  1, 77676884c778c2899ae604eb6d02b9af passed
+given msmile01 test  1, c346a77109d0db7830ea881b638563eb passed
+given msmile01 test  2, c26578b6068973564fb86346cd370421 typed-untypeable -- Term "(append '(1 2 3) '(a b c))" should trigger a uML type error, but your interpreter inferred type "forall 'a . 'a".
+given msmile01 test  2, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given msmile01 test  2, 32f4a2caa8b00b746c349faae810152f passed
+given msmile01 test  2, 47aba660da8f3336f6a27c1773323d24 passed
+given msmile01 test  2, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given msmile01 test  2, e94f69d0d129ac8a1a47af755179bdb4 passed
+given msmile01 test  2, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given msmile01 test  2, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(append '(1 2 3) '(a b c))" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given msmile01 test  2, 74adefcfad2b9094ebffa600278d5992 passed
+given msmile01 test  2, 0b2347e36d133d70508087620cc59572 passed
+given msmile01 test  2, ca18b15bd9d9ea3f7d56d02f47bae3ff typed-untypeable -- Term "(append '(1 2 3) '(a b c))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given msmile01 test  2, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given msmile01 test  2, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(append '(1 2 3) '(a b c))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given msmile01 test  2, c8c61a737b3b621616699dc8fed7a619 passed
+given msmile01 test  2, 7b5f0515ec027d7a290801db676bbd47 passed
+given msmile01 test  2, 6c9100d05deb15fa8475dc16314718de passed
+given msmile01 test  2, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given msmile01 test  2, d358d1a6c9d5c6d052e6e03cceefb836 typed-untypeable -- Term "(append '(1 2 3) '(a b c))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given msmile01 test  2, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(append '(1 2 3) '(a b c))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given msmile01 test  2, de322c99a775aa837a14ef6246230ce9 passed
+given msmile01 test  2, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given msmile01 test  2, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(append '(1 2 3) '(a b c))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given msmile01 test  2, 443a9ba7929b510c0b9c987142badca9 passed
+given msmile01 test  2, 99f9777dc97cbea2737dcff65a4d0427 passed
+given msmile01 test  2, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given msmile01 test  2, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given msmile01 test  2, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given msmile01 test  2, e5810ae2688b0fd390ab8a00087bb68e passed
+given msmile01 test  2, fea3f17212dc3ddd25d5815689abd04f passed
+given msmile01 test  2, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(append '(1 2 3) '(a b c))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given msmile01 test  2, 89502d7ab700ef39a87468f7cf70aa86 passed
+given msmile01 test  2, 0ee49745789721cd1ee40517fc42722a errored -- Term "(append '(1 2 3) '(a b c))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given msmile01 test  2, 9bc9c99945513f12f6e9b25f415c181e passed
+given msmile01 test  2, 8ebbf8b33580a15c96747dd08ed77418 passed
+given msmile01 test  2, 873b720bbee03b5a9f121393ccb1f484 passed
+given msmile01 test  2, 411df15fb4844be844ef1e903ab74795 passed
+given msmile01 test  2, 6a573ec261e43db670c680962f4f6e5a passed
+given msmile01 test  2, 3a0653da84428d5f9210ccc9ef0a367c passed
+given msmile01 test  2, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given msmile01 test  2, 878ab223ffd511a1df314b784e38cdf4 passed
+given msmile01 test  2, 77676884c778c2899ae604eb6d02b9af passed
+given msmile01 test  2, c346a77109d0db7830ea881b638563eb passed
+given jdutko01 test  1, c26578b6068973564fb86346cd370421 typed-incorrectly -- Term "(val one (lambda (x y) (car (cons x y))))" should have type "forall 'a . 'a * 'a list -> 'a", but your interpreter inferred type "forall 'a, 'b, 'c . 'a * 'b list -> 'c".
+given jdutko01 test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given jdutko01 test  1, 32f4a2caa8b00b746c349faae810152f passed
+given jdutko01 test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given jdutko01 test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given jdutko01 test  1, e94f69d0d129ac8a1a47af755179bdb4 passed
+given jdutko01 test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given jdutko01 test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(val one (lambda (x y) (car (cons x y))))" should have type "forall 'a . 'a * 'a list -> 'a", but your interpreter failed with the uncaught exception MisMatch.
+given jdutko01 test  1, 74adefcfad2b9094ebffa600278d5992 passed
+given jdutko01 test  1, 0b2347e36d133d70508087620cc59572 passed
+given jdutko01 test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff errored -- Term "(val one (lambda (x y) (car (cons x y))))" should have type "forall 'a . 'a * 'a list -> 'a", but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given jdutko01 test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given jdutko01 test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(val one (lambda (x y) (car (cons x y))))" should have type "forall 'a . 'a * 'a list -> 'a", but your interpreter failed with the uncaught exception LeftAsExercise.
+given jdutko01 test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given jdutko01 test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given jdutko01 test  1, 6c9100d05deb15fa8475dc16314718de passed
+given jdutko01 test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given jdutko01 test  1, d358d1a6c9d5c6d052e6e03cceefb836 errored -- Term "(val one (lambda (x y) (car (cons x y))))" should have type "forall 'a . 'a * 'a list -> 'a", but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given jdutko01 test  1, a7019858ea4e61160ee24203fe9c8012 errored -- Term "(val one (lambda (x y) (car (cons x y))))" should have type "forall 'a . 'a * 'a list -> 'a", but your interpreter ran out of CPU time (probably because of an infinite loop).
+given jdutko01 test  1, de322c99a775aa837a14ef6246230ce9 passed
+given jdutko01 test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given jdutko01 test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 passed
+given jdutko01 test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given jdutko01 test  1, 99f9777dc97cbea2737dcff65a4d0427 passed
+given jdutko01 test  1, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given jdutko01 test  1, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given jdutko01 test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given jdutko01 test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given jdutko01 test  1, fea3f17212dc3ddd25d5815689abd04f passed
+given jdutko01 test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(val one (lambda (x y) (car (cons x y))))" should have type "forall 'a . 'a * 'a list -> 'a", but your interpreter failed with the uncaught exception LeftAsExercise.
+given jdutko01 test  1, 89502d7ab700ef39a87468f7cf70aa86 passed
+given jdutko01 test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(val one (lambda (x y) (car (cons x y))))" should have type "forall 'a . 'a * 'a list -> 'a", but your interpreter failed with the uncaught exception LeftAsExercise.
+given jdutko01 test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given jdutko01 test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given jdutko01 test  1, 873b720bbee03b5a9f121393ccb1f484 errored -- Term "(val one (lambda (x y) (car (cons x y))))" should have type "forall 'a . 'a * 'a list -> 'a", but your interpreter ran out of CPU time (probably because of an infinite loop).
+given jdutko01 test  1, 411df15fb4844be844ef1e903ab74795 passed
+given jdutko01 test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given jdutko01 test  1, 3a0653da84428d5f9210ccc9ef0a367c passed
+given jdutko01 test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given jdutko01 test  1, 878ab223ffd511a1df314b784e38cdf4 passed
+given jdutko01 test  1, 77676884c778c2899ae604eb6d02b9af passed
+given jdutko01 test  1, c346a77109d0db7830ea881b638563eb passed
+given jfishb01 test  1, c26578b6068973564fb86346cd370421 passed
+given jfishb01 test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given jfishb01 test  1, 32f4a2caa8b00b746c349faae810152f passed
+given jfishb01 test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given jfishb01 test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given jfishb01 test  1, e94f69d0d129ac8a1a47af755179bdb4 passed
+given jfishb01 test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given jfishb01 test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(let   ((f1 (lambda (x y) ((cdr (pair x x)))))   (f2 (lambda (f x y) (f x y)))   (a 3)   (b #t))  (f2 f1 a b))" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given jfishb01 test  1, 74adefcfad2b9094ebffa600278d5992 passed
+given jfishb01 test  1, 0b2347e36d133d70508087620cc59572 passed
+given jfishb01 test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff typed-untypeable -- Term "(let   ((f1 (lambda (x y) ((cdr (pair x x)))))   (f2 (lambda (f x y) (f x y)))   (a 3)   (b #t))  (f2 f1 a b))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given jfishb01 test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given jfishb01 test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(let   ((f1 (lambda (x y) ((cdr (pair x x)))))   (f2 (lambda (f x y) (f x y)))   (a 3)   (b #t))  (f2 f1 a b))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfishb01 test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given jfishb01 test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given jfishb01 test  1, 6c9100d05deb15fa8475dc16314718de passed
+given jfishb01 test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given jfishb01 test  1, d358d1a6c9d5c6d052e6e03cceefb836 errored -- Term "(let   ((f1 (lambda (x y) ((cdr (pair x x)))))   (f2 (lambda (f x y) (f x y)))   (a 3)   (b #t))  (f2 f1 a b))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfishb01 test  1, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(let   ((f1 (lambda (x y) ((cdr (pair x x)))))   (f2 (lambda (f x y) (f x y)))   (a 3)   (b #t))  (f2 f1 a b))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given jfishb01 test  1, de322c99a775aa837a14ef6246230ce9 passed
+given jfishb01 test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given jfishb01 test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(let   ((f1 (lambda (x y) ((cdr (pair x x)))))   (f2 (lambda (f x y) (f x y)))   (a 3)   (b #t))  (f2 f1 a b))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given jfishb01 test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given jfishb01 test  1, 99f9777dc97cbea2737dcff65a4d0427 errored -- Term "(let   ((f1 (lambda (x y) ((cdr (pair x x)))))   (f2 (lambda (f x y) (f x y)))   (a 3)   (b #t))  (f2 f1 a b))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfishb01 test  1, 91c61ac16e32daa1ddf594a2fb4398ef errored -- Term "(let   ((f1 (lambda (x y) ((cdr (pair x x)))))   (f2 (lambda (f x y) (f x y)))   (a 3)   (b #t))  (f2 f1 a b))" should trigger a uML type error, but your interpreter failed with the uncaught exception Unsatisfiable.
+given jfishb01 test  1, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given jfishb01 test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given jfishb01 test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given jfishb01 test  1, fea3f17212dc3ddd25d5815689abd04f errored -- Term "(let   ((f1 (lambda (x y) ((cdr (pair x x)))))   (f2 (lambda (f x y) (f x y)))   (a 3)   (b #t))  (f2 f1 a b))" should trigger a uML type error, but your interpreter failed with the uncaught exception UnequalLengths.
+given jfishb01 test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(let   ((f1 (lambda (x y) ((cdr (pair x x)))))   (f2 (lambda (f x y) (f x y)))   (a 3)   (b #t))  (f2 f1 a b))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfishb01 test  1, 89502d7ab700ef39a87468f7cf70aa86 passed
+given jfishb01 test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(let   ((f1 (lambda (x y) ((cdr (pair x x)))))   (f2 (lambda (f x y) (f x y)))   (a 3)   (b #t))  (f2 f1 a b))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfishb01 test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given jfishb01 test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given jfishb01 test  1, 873b720bbee03b5a9f121393ccb1f484 errored -- Term "(let   ((f1 (lambda (x y) ((cdr (pair x x)))))   (f2 (lambda (f x y) (f x y)))   (a 3)   (b #t))  (f2 f1 a b))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfishb01 test  1, 411df15fb4844be844ef1e903ab74795 passed
+given jfishb01 test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given jfishb01 test  1, 3a0653da84428d5f9210ccc9ef0a367c passed
+given jfishb01 test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given jfishb01 test  1, 878ab223ffd511a1df314b784e38cdf4 passed
+given jfishb01 test  1, 77676884c778c2899ae604eb6d02b9af passed
+given jfishb01 test  1, c346a77109d0db7830ea881b638563eb passed
+given jfishb01 test  2, c26578b6068973564fb86346cd370421 typed-untypeable -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter wrote the error message "run-time error: non-lambda in letrec".
+given jfishb01 test  2, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given jfishb01 test  2, 32f4a2caa8b00b746c349faae810152f passed
+given jfishb01 test  2, 47aba660da8f3336f6a27c1773323d24 passed
+given jfishb01 test  2, 31995ee0f9bcdd2536d30eff4a0aae14 typed-untypeable -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't416 =*= int list /\\ 't415 =*= int /\\  ...".
+given jfishb01 test  2, e94f69d0d129ac8a1a47af755179bdb4 passed
+given jfishb01 test  2, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given jfishb01 test  2, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given jfishb01 test  2, 74adefcfad2b9094ebffa600278d5992 passed
+given jfishb01 test  2, 0b2347e36d133d70508087620cc59572 passed
+given jfishb01 test  2, ca18b15bd9d9ea3f7d56d02f47bae3ff errored -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfishb01 test  2, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given jfishb01 test  2, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfishb01 test  2, c8c61a737b3b621616699dc8fed7a619 typed-untypeable -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't416 =*= int list /\\ 't415 =*= int /\\  ...".
+given jfishb01 test  2, 7b5f0515ec027d7a290801db676bbd47 passed
+given jfishb01 test  2, 6c9100d05deb15fa8475dc16314718de passed
+given jfishb01 test  2, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given jfishb01 test  2, d358d1a6c9d5c6d052e6e03cceefb836 typed-untypeable -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given jfishb01 test  2, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given jfishb01 test  2, de322c99a775aa837a14ef6246230ce9 passed
+given jfishb01 test  2, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given jfishb01 test  2, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given jfishb01 test  2, 443a9ba7929b510c0b9c987142badca9 passed
+given jfishb01 test  2, 99f9777dc97cbea2737dcff65a4d0427 errored -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfishb01 test  2, 91c61ac16e32daa1ddf594a2fb4398ef errored -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter failed with the uncaught exception Unsatisfiable.
+given jfishb01 test  2, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given jfishb01 test  2, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given jfishb01 test  2, e5810ae2688b0fd390ab8a00087bb68e passed
+given jfishb01 test  2, fea3f17212dc3ddd25d5815689abd04f passed
+given jfishb01 test  2, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfishb01 test  2, 89502d7ab700ef39a87468f7cf70aa86 typed-untypeable -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter wrote the error message "run-time error: non-lambda in letrec".
+given jfishb01 test  2, 0ee49745789721cd1ee40517fc42722a errored -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfishb01 test  2, 9bc9c99945513f12f6e9b25f415c181e passed
+given jfishb01 test  2, 8ebbf8b33580a15c96747dd08ed77418 passed
+given jfishb01 test  2, 873b720bbee03b5a9f121393ccb1f484 errored -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given jfishb01 test  2, 411df15fb4844be844ef1e903ab74795 passed
+given jfishb01 test  2, 6a573ec261e43db670c680962f4f6e5a passed
+given jfishb01 test  2, 3a0653da84428d5f9210ccc9ef0a367c typed-untypeable -- Term "(letrec     ((f (lambda (x y z)       (if (< x 0)         y         (f (- x 1) (cons y z) (cons y '())))))      (a 3)      (b 1)      (c '(2)))   (f a b c))" should trigger a uML type error, but your interpreter wrote the error message "run-time error: non-lambda in letrec".
+given jfishb01 test  2, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given jfishb01 test  2, 878ab223ffd511a1df314b784e38cdf4 passed
+given jfishb01 test  2, 77676884c778c2899ae604eb6d02b9af passed
+given jfishb01 test  2, c346a77109d0db7830ea881b638563eb passed
+given edougl01 test  1, c26578b6068973564fb86346cd370421 typed-incorrectly -- Term "(val goodcons (cons '(1) '()))" should have type "int list list", but your interpreter inferred type "forall 'a . 'a list".
+given edougl01 test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given edougl01 test  1, 32f4a2caa8b00b746c349faae810152f did-not-type -- Term "(val goodcons (cons '(1) '()))" should have type "int list list", but your interpreter found a type error: "cannot make int equal to 'a list".
+given edougl01 test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given edougl01 test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given edougl01 test  1, e94f69d0d129ac8a1a47af755179bdb4 passed
+given edougl01 test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given edougl01 test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(val goodcons (cons '(1) '()))" should have type "int list list", but your interpreter failed with the uncaught exception MisMatch.
+given edougl01 test  1, 74adefcfad2b9094ebffa600278d5992 passed
+given edougl01 test  1, 0b2347e36d133d70508087620cc59572 passed
+given edougl01 test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff errored -- Term "(val goodcons (cons '(1) '()))" should have type "int list list", but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given edougl01 test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given edougl01 test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(val goodcons (cons '(1) '()))" should have type "int list list", but your interpreter failed with the uncaught exception LeftAsExercise.
+given edougl01 test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given edougl01 test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given edougl01 test  1, 6c9100d05deb15fa8475dc16314718de did-not-type -- Term "(val goodcons (cons '(1) '()))" should have type "int list list", but your interpreter found a type error: "Mismatched Pair".
+given edougl01 test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given edougl01 test  1, d358d1a6c9d5c6d052e6e03cceefb836 errored -- Term "(val goodcons (cons '(1) '()))" should have type "int list list", but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given edougl01 test  1, a7019858ea4e61160ee24203fe9c8012 errored -- Term "(val goodcons (cons '(1) '()))" should have type "int list list", but your interpreter ran out of CPU time (probably because of an infinite loop).
+given edougl01 test  1, de322c99a775aa837a14ef6246230ce9 passed
+given edougl01 test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given edougl01 test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 passed
+given edougl01 test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given edougl01 test  1, 99f9777dc97cbea2737dcff65a4d0427 passed
+given edougl01 test  1, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given edougl01 test  1, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given edougl01 test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given edougl01 test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given edougl01 test  1, fea3f17212dc3ddd25d5815689abd04f passed
+given edougl01 test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(val goodcons (cons '(1) '()))" should have type "int list list", but your interpreter failed with the uncaught exception LeftAsExercise.
+given edougl01 test  1, 89502d7ab700ef39a87468f7cf70aa86 passed
+given edougl01 test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(val goodcons (cons '(1) '()))" should have type "int list list", but your interpreter failed with the uncaught exception LeftAsExercise.
+given edougl01 test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given edougl01 test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given edougl01 test  1, 873b720bbee03b5a9f121393ccb1f484 passed
+given edougl01 test  1, 411df15fb4844be844ef1e903ab74795 passed
+given edougl01 test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given edougl01 test  1, 3a0653da84428d5f9210ccc9ef0a367c passed
+given edougl01 test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given edougl01 test  1, 878ab223ffd511a1df314b784e38cdf4 passed
+given edougl01 test  1, 77676884c778c2899ae604eb6d02b9af passed
+given edougl01 test  1, c346a77109d0db7830ea881b638563eb passed
+given cpirai01 test  1, c26578b6068973564fb86346cd370421 typed-untypeable -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter inferred type "bool * int list -> bool".
+given cpirai01 test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given cpirai01 test  1, 32f4a2caa8b00b746c349faae810152f typed-untypeable -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter inferred type "forall 'a . int list * 'a -> int list".
+given cpirai01 test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given cpirai01 test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given cpirai01 test  1, e94f69d0d129ac8a1a47af755179bdb4 passed
+given cpirai01 test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given cpirai01 test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given cpirai01 test  1, 74adefcfad2b9094ebffa600278d5992 passed
+given cpirai01 test  1, 0b2347e36d133d70508087620cc59572 passed
+given cpirai01 test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff typed-untypeable -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given cpirai01 test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given cpirai01 test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given cpirai01 test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given cpirai01 test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given cpirai01 test  1, 6c9100d05deb15fa8475dc16314718de passed
+given cpirai01 test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given cpirai01 test  1, d358d1a6c9d5c6d052e6e03cceefb836 typed-untypeable -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given cpirai01 test  1, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given cpirai01 test  1, de322c99a775aa837a14ef6246230ce9 passed
+given cpirai01 test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 typed-untypeable -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter inferred type "forall 'a . int list * 'a -> int list".
+given cpirai01 test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given cpirai01 test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given cpirai01 test  1, 99f9777dc97cbea2737dcff65a4d0427 errored -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given cpirai01 test  1, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given cpirai01 test  1, 4dbae3d2f3fd67212c9e61cc549963b5 typed-untypeable -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter inferred type "forall 'a . int list * 'a -> int list".
+given cpirai01 test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given cpirai01 test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given cpirai01 test  1, fea3f17212dc3ddd25d5815689abd04f typed-untypeable -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Expression is poorly typed".
+given cpirai01 test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given cpirai01 test  1, 89502d7ab700ef39a87468f7cf70aa86 typed-untypeable -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter inferred type "forall 'a, 'b . 'a * 'b -> 'a".
+given cpirai01 test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given cpirai01 test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given cpirai01 test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given cpirai01 test  1, 873b720bbee03b5a9f121393ccb1f484 typed-untypeable -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given cpirai01 test  1, 411df15fb4844be844ef1e903ab74795 passed
+given cpirai01 test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given cpirai01 test  1, 3a0653da84428d5f9210ccc9ef0a367c passed
+given cpirai01 test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given cpirai01 test  1, 878ab223ffd511a1df314b784e38cdf4 typed-untypeable -- Term "(val bad  (lambda (x y)    (let (      (a (lambda (z) (if x z y)))      (b (cons 1 y)))      (a x))))" should trigger a uML type error, but your interpreter inferred type "forall 'a . int list * 'a -> int list".
+given cpirai01 test  1, 77676884c778c2899ae604eb6d02b9af passed
+given cpirai01 test  1, c346a77109d0db7830ea881b638563eb passed
+given dmanci01 test  1, c26578b6068973564fb86346cd370421 passed
+given dmanci01 test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given dmanci01 test  1, 32f4a2caa8b00b746c349faae810152f typed-untypeable -- Term "(val test1 (lambda (x)              (let ((y (lambda (z) (+ x z)))) (y 'a))))" should trigger a uML type error, but your interpreter inferred type "forall 'a . 'a -> int".
+given dmanci01 test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given dmanci01 test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given dmanci01 test  1, e94f69d0d129ac8a1a47af755179bdb4 passed
+given dmanci01 test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given dmanci01 test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(val test1 (lambda (x)              (let ((y (lambda (z) (+ x z)))) (y 'a))))" should trigger a uML type error, but your interpreter failed with the uncaught exception MisMatch.
+given dmanci01 test  1, 74adefcfad2b9094ebffa600278d5992 passed
+given dmanci01 test  1, 0b2347e36d133d70508087620cc59572 passed
+given dmanci01 test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff typed-untypeable -- Term "(val test1 (lambda (x)              (let ((y (lambda (z) (+ x z)))) (y 'a))))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given dmanci01 test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given dmanci01 test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(val test1 (lambda (x)              (let ((y (lambda (z) (+ x z)))) (y 'a))))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given dmanci01 test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given dmanci01 test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given dmanci01 test  1, 6c9100d05deb15fa8475dc16314718de passed
+given dmanci01 test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given dmanci01 test  1, d358d1a6c9d5c6d052e6e03cceefb836 typed-untypeable -- Term "(val test1 (lambda (x)              (let ((y (lambda (z) (+ x z)))) (y 'a))))" should trigger a uML type error, but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given dmanci01 test  1, a7019858ea4e61160ee24203fe9c8012 typed-untypeable -- Term "(val test1 (lambda (x)              (let ((y (lambda (z) (+ x z)))) (y 'a))))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given dmanci01 test  1, de322c99a775aa837a14ef6246230ce9 passed
+given dmanci01 test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 passed
+given dmanci01 test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 typed-untypeable -- Term "(val test1 (lambda (x)              (let ((y (lambda (z) (+ x z)))) (y 'a))))" should trigger a uML type error, but your interpreter wrote the error message "variable pair not found variable fst not found var ...".
+given dmanci01 test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given dmanci01 test  1, 99f9777dc97cbea2737dcff65a4d0427 errored -- Term "(val test1 (lambda (x)              (let ((y (lambda (z) (+ x z)))) (y 'a))))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given dmanci01 test  1, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given dmanci01 test  1, 4dbae3d2f3fd67212c9e61cc549963b5 passed
+given dmanci01 test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given dmanci01 test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given dmanci01 test  1, fea3f17212dc3ddd25d5815689abd04f passed
+given dmanci01 test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(val test1 (lambda (x)              (let ((y (lambda (z) (+ x z)))) (y 'a))))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given dmanci01 test  1, 89502d7ab700ef39a87468f7cf70aa86 typed-untypeable -- Term "(val test1 (lambda (x)              (let ((y (lambda (z) (+ x z)))) (y 'a))))" should trigger a uML type error, but your interpreter inferred type "forall 'a, 'b . 'a -> 'b".
+given dmanci01 test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(val test1 (lambda (x)              (let ((y (lambda (z) (+ x z)))) (y 'a))))" should trigger a uML type error, but your interpreter failed with the uncaught exception LeftAsExercise.
+given dmanci01 test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given dmanci01 test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given dmanci01 test  1, 873b720bbee03b5a9f121393ccb1f484 typed-untypeable -- Term "(val test1 (lambda (x)              (let ((y (lambda (z) (+ x z)))) (y 'a))))" should trigger a uML type error, but your interpreter ran out of CPU time (probably because of an infinite loop).
+given dmanci01 test  1, 411df15fb4844be844ef1e903ab74795 passed
+given dmanci01 test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given dmanci01 test  1, 3a0653da84428d5f9210ccc9ef0a367c passed
+given dmanci01 test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given dmanci01 test  1, 878ab223ffd511a1df314b784e38cdf4 passed
+given dmanci01 test  1, 77676884c778c2899ae604eb6d02b9af passed
+given dmanci01 test  1, c346a77109d0db7830ea881b638563eb passed
+given vcung01  test  1, c26578b6068973564fb86346cd370421 typed-incorrectly -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter inferred type "forall 'a, 'b . (bool -> 'a) * bool * 'b -> bool".
+given vcung01  test  1, c89c856c4a83a4f894c38aa9b6a4ea4a passed
+given vcung01  test  1, 32f4a2caa8b00b746c349faae810152f typed-incorrectly -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter inferred type "forall 'a, 'b, 'c . 'a * 'b * 'c -> bool".
+given vcung01  test  1, 47aba660da8f3336f6a27c1773323d24 passed
+given vcung01  test  1, 31995ee0f9bcdd2536d30eff4a0aae14 passed
+given vcung01  test  1, e94f69d0d129ac8a1a47af755179bdb4 passed
+given vcung01  test  1, eaef72aa8d0751c4fa07ff68ee757e56 passed
+given vcung01  test  1, 818d4a639d962dc0bc46fa4928646cbe errored -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter failed with the uncaught exception MisMatch.
+given vcung01  test  1, 74adefcfad2b9094ebffa600278d5992 passed
+given vcung01  test  1, 0b2347e36d133d70508087620cc59572 passed
+given vcung01  test  1, ca18b15bd9d9ea3f7d56d02f47bae3ff errored -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter wrote the error message "variable pair not found variable fst not found variable fst not found".
+given vcung01  test  1, 1cee0dc37c0985d3fe390d0dac92d707 passed
+given vcung01  test  1, 2e7f27bff05a23d6f8700f8110ff772d errored -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter failed with the uncaught exception LeftAsExercise.
+given vcung01  test  1, c8c61a737b3b621616699dc8fed7a619 passed
+given vcung01  test  1, 7b5f0515ec027d7a290801db676bbd47 passed
+given vcung01  test  1, 6c9100d05deb15fa8475dc16314718de did-not-type -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter found a type error: "variable g not found".
+given vcung01  test  1, 1cfecaa5871bc9b71aea25ab97d352f6 passed
+given vcung01  test  1, d358d1a6c9d5c6d052e6e03cceefb836 errored -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter signalled a bug in type inference, issuing message "Constraint 't2 * 't2 list -> 't2 list =*= 'x * 't3 ...".
+given vcung01  test  1, a7019858ea4e61160ee24203fe9c8012 errored -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter ran out of CPU time (probably because of an infinite loop).
+given vcung01  test  1, de322c99a775aa837a14ef6246230ce9 passed
+given vcung01  test  1, 5b9b04249ca17d6b6c2a73c0f00fa301 typed-incorrectly -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter inferred type "forall 'a, 'b, 'c . 'a * 'b * 'c -> bool".
+given vcung01  test  1, 7ae31c8b6f4eeacabd2ec9b99f6d3956 passed
+given vcung01  test  1, 443a9ba7929b510c0b9c987142badca9 passed
+given vcung01  test  1, 99f9777dc97cbea2737dcff65a4d0427 errored -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter failed with the uncaught exception LeftAsExercise.
+given vcung01  test  1, 91c61ac16e32daa1ddf594a2fb4398ef passed
+given vcung01  test  1, 4dbae3d2f3fd67212c9e61cc549963b5 typed-incorrectly -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter inferred type "forall 'a, 'b . (bool -> (bool -> bool)) * 'a * 'b -> bool".
+given vcung01  test  1, 7f51ce5c216cea4a1c1fa7d93e4053c4 passed
+given vcung01  test  1, e5810ae2688b0fd390ab8a00087bb68e passed
+given vcung01  test  1, fea3f17212dc3ddd25d5815689abd04f passed
+given vcung01  test  1, 3cbb7fe8e93d20c8200e919f7c5763bf errored -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter failed with the uncaught exception LeftAsExercise.
+given vcung01  test  1, 89502d7ab700ef39a87468f7cf70aa86 typed-incorrectly -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter inferred type "forall 'a, 'b, 'c, 'd . 'a * 'b * 'c -> 'd".
+given vcung01  test  1, 0ee49745789721cd1ee40517fc42722a errored -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter failed with the uncaught exception LeftAsExercise.
+given vcung01  test  1, 9bc9c99945513f12f6e9b25f415c181e passed
+given vcung01  test  1, 8ebbf8b33580a15c96747dd08ed77418 passed
+given vcung01  test  1, 873b720bbee03b5a9f121393ccb1f484 errored -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter ran out of CPU time (probably because of an infinite loop).
+given vcung01  test  1, 411df15fb4844be844ef1e903ab74795 passed
+given vcung01  test  1, 6a573ec261e43db670c680962f4f6e5a passed
+given vcung01  test  1, 3a0653da84428d5f9210ccc9ef0a367c passed
+given vcung01  test  1, 5f34ce7f7605f122c08baf5ddd41f9bc passed
+given vcung01  test  1, 878ab223ffd511a1df314b784e38cdf4 typed-incorrectly -- Term "(val e (lambda (a b c) (let ((f (not b)) (g (a b))) (g (g f)))))" should have type "forall 'a . (bool -> (bool -> bool)) * bool * 'a -> bool", but your interpreter inferred type "forall 'a, 'b, 'c . 'a * 'b * 'c -> bool".
+given vcung01  test  1, 77676884c778c2899ae604eb6d02b9af passed
+given vcung01  test  1, c346a77109d0db7830ea881b638563eb passed
