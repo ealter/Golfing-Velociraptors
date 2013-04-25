@@ -1,0 +1,19 @@
+Norman
+1. Show the current dataset name
+2. In the graph, when grouping things, sort the list of testnames in the
+tooltip.
+3. A way to freeze the physics
+4. When nodes in the graph overlap, make sure we can select the smaller one.
+5. The new data set crashes.
+6. When hovering over students, be able to click to "lock in" the selected
+student. Same thing when hovering over a node.
+7. Put some meaning to the ordering of the students
+8. Try putting the dual data into the visualization
+10. Have some way to filter out uninteresting witnesses.
+
+Misc
+1. Remove the pdfs!
+
+Remco
+1. Only show the edges when I highlight over a node. They are usually too messy.
+
