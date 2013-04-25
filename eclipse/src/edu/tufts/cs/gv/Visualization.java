@@ -198,7 +198,7 @@ public class Visualization extends JFrame {
 		pnlRoot.add(pnlStart, STARTSCREEN);
 		pnlRoot.add(pnlVisualization, VIZSCREEN);
 		
-		datasetChooser = new JFileChooser("..");
+		datasetChooser = new JFileChooser("../dataset/");
 		
 		this.setSize(600, 600);
 		this.add(pnlRoot);
